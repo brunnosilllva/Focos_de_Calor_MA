@@ -52,7 +52,7 @@ class FocosCalorDashboard {
       }
       
       // Se não houver dados processados, carregar CSVs diretamente
-      const dadosCSV = await this.buscarDadosCSV();
+      const dadosCSV = await this.buscarCSVsProcessados();
       
       if (dadosCSV && dadosCSV.length > 0) {
         this.dados = dadosCSV;
@@ -72,22 +72,74 @@ class FocosCalorDashboard {
 
   async buscarDadosProcessados() {
     try {
-      const response = await fetch('src/data/processed/processing-summary.json');
+      // Primeiro, tentar carregar o resumo do processamento
+      const summaryResponse = await fetch('src/data/processed/processing-summary.json');
       
-      if (!response.ok) {
-        console.log('📋 Dados processados não encontrados, tentando CSVs...');
-        return null;
+      if (!summaryResponse.ok) {
+        console.log('📋 Resumo não encontrado, tentando CSVs diretos...');
+        return await this.buscarCSVsProcessados();
       }
       
       const summary = await response.json();
-      console.log('📊 Resumo dos dados:', summary);
+      console.log('📊 Resumo dos dados encontrado:', summary);
       
-      // Por enquanto, retorna dados de exemplo baseados no resumo
-      // TODO: Implementar carregamento real dos dados processados
+      // Tentar carregar CSVs da pasta processed
+      return await this.buscarCSVsProcessados();
+      
+    } catch (error) {
+      console.log('📋 Erro ao buscar dados processados:', error.message);
+      return await this.buscarCSVsProcessados();
+    }
+  }
+
+  async buscarCSVsProcessados() {
+    try {
+      // Buscar CSVs que podem estar na pasta processed
+      console.log('🔍 Buscando CSVs na pasta processed...');
+      
+      // Listar arquivos possíveis baseado no padrão de nomes
+      const agora = new Date();
+      const hoje = agora.toISOString().slice(0, 10).replace(/-/g, '');
+      
+      // Tentar alguns horários recentes
+      const horasPossiveis = [];
+      for (let h = agora.getHours(); h >= Math.max(0, agora.getHours() - 3); h--) {
+        for (let m = 50; m >= 0; m -= 10) {
+          horasPossiveis.push(`${h.toString().padStart(2, '0')}${m.toString().padStart(2, '0')}`);
+        }
+      }
+      
+      // Tentar encontrar arquivos CSV
+      for (const hora of horasPossiveis) {
+        const arquivos = [
+          `src/data/processed/focos_10min_${hoje}_${hora}.csv`,
+          `src/data/raw/focos_10min_${hoje}_${hora}.csv` // backup
+        ];
+        
+        for (const arquivo of arquivos) {
+          try {
+            console.log(`🔍 Tentando carregar: ${arquivo}`);
+            const response = await fetch(arquivo);
+            
+            if (response.ok) {
+              const csvText = await response.text();
+              const dados = this.parseCSV(csvText);
+              
+              if (dados.length > 0) {
+                console.log(`✅ ${dados.length} focos carregados de: ${arquivo}`);
+                return dados;
+              }
+            }
+          } catch (error) {
+            console.log(`⏭️ ${arquivo} não encontrado`);
+          }
+        }
+      }
+      
       return null;
       
     } catch (error) {
-      console.log('📋 Dados processados não disponíveis:', error.message);
+      console.log('❌ Erro ao buscar CSVs processados:', error);
       return null;
     }
   }
