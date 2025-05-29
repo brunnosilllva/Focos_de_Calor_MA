@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Focos de Calor no Maranhão</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="dashboard-header">
+            <div class="container">
+                <h1>🔥 Dashboard - Focos de Calor no Maranhão</h1>
+                <div class="header-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="total-focos">-</span>
+                        <span class="stat-label">Total de Focos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="focos-hoje">-</span>
+                        <span class="stat-label">Focos Hoje</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="ultima-atualizacao">-</span>
+                        <span class="stat-label">Última Atualização</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-controls">
+            <div class="container">
+                <div class="filters">
+                    <select id="filter-municipio">
+                        <option value="">Todos os Municípios</option>
+                    </select>
+                    
+                    <select id="filter-bioma">
+                        <option value="">Todos os Biomas</option>
+                    </select>
+                    
+                    <input type="date" id="filter-data-inicio" />
+                    <input type="date" id="filter-data-fim" />
+                    
+                    <button id="apply-filters">Aplicar Filtros</button>
+                    <button id="clear-filters">Limpar</button>
+                </div>
+            </div>
+        </div>
+
+        <main class="dashboard-content">
+            <div class="container">
+                <div class="dashboard-grid">
+                    <!-- Mapa Principal -->
+                    <div class="map-container">
+                        <div id="map" class="map"></div>
+                        <div class="map-legend">
+                            <h4>Legenda</h4>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #ff4444;"></span>
+                                <span>Focos Últimas 24h</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #ff8800;"></span>
+                                <span>Focos Última Semana</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #ffaa00;"></span>
+                                <span>Focos Mais Antigos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gráficos -->
+                    <div class="charts-container">
+                        <div class="chart-card">
+                            <h3>Focos por Município (Top 10)</h3>
+                            <canvas id="chart-municipios"></canvas>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <h3>Evolução Temporal</h3>
+                            <canvas id="chart-temporal"></canvas>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <h3>Focos por Bioma</h3>
+                            <canvas id="chart-biomas"></canvas>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <h3>Distribuição por Uso do Solo</h3>
+                            <canvas id="chart-uso-solo"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Tabela de Dados -->
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h3>Dados Detalhados</h3>
+                            <div class="table-controls">
+                                <button id="export-csv">Exportar CSV</button>
+                                <button id="export-json">Exportar JSON</button>
+                            </div>
+                        </div>
+                        <div class="table-wrapper">
+                            <table id="focos-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data/Hora</th>
+                                        <th>Latitude</th>
+                                        <th>Longitude</th>
+                                        <th>Município</th>
+                                        <th>Bioma</th>
+                                        <th>Uso do Solo</th>
+                                        <th>UC</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="focos-table-body">
+                                    <!-- Dados carregados dinamicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-pagination">
+                            <button id="prev-page" disabled>Anterior</button>
+                            <span id="page-info">Página 1 de 1</span>
+                            <button id="next-page" disabled>Próxima</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="dashboard-footer">
+            <div class="container">
+                <p>Dashboard desenvolvido para monitoramento de focos de calor no Estado do Maranhão</p>
+                <p>Dados atualizados automaticamente a cada hora | Fonte: INPE/BDQUEIMADAS</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Carregando dados...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="src/js/dataLoader.js"></script>
+    <script src="src/js/spatialJoins.js"></script>
+    <script src="src/js/mapHandler.js"></script>
+    <script src="src/js/chartHandler.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
