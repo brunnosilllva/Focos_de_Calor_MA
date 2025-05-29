@@ -1,7 +1,9 @@
 // scripts/fetch-data.js
-const fetch = require('node-fetch');
 const fs = require('fs').promises;
 const path = require('path');
+
+// Compatibilidade com node-fetch ESM
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 class GoogleDriveDataFetcher {
   constructor() {
