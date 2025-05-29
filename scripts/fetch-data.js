@@ -1,4 +1,4 @@
-// scripts/fetch-data.js
+// scripts/fetch-data.js - Versão com suporte a subpastas
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -23,7 +23,7 @@ class GoogleDriveDataFetcher {
       query += ` and mimeType='${mimeType}'`;
     }
 
-    const url = `${this.baseUrl}/files?q=${encodeURIComponent(query)}&key=${this.apiKey}&fields=files(id,name,modifiedTime,size)`;
+    const url = `${this.baseUrl}/files?q=${encodeURIComponent(query)}&key=${this.apiKey}&fields=files(id,name,modifiedTime,size,mimeType)`;
     
     try {
       const response = await fetch(url);
@@ -50,7 +50,7 @@ class GoogleDriveDataFetcher {
         throw new Error(`Erro ao baixar ${fileName}: ${response.statusText}`);
       }
       
-      return await response.text();
+      return await response.arrayBuffer(); // Para shapefiles binários
     } catch (error) {
       console.error(`Erro ao baixar arquivo ${fileName}:`, error);
       throw error;
@@ -75,8 +75,11 @@ class GoogleDriveDataFetcher {
         console.log(`⬇️ Baixando: ${file.name}`);
         const content = await this.downloadFile(file.id, file.name);
         
+        // Converter ArrayBuffer para string para CSVs
+        const textContent = new TextDecoder('utf-8').decode(content);
+        
         const filePath = path.join(outputDir, file.name);
-        await fs.writeFile(filePath, content, 'utf8');
+        await fs.writeFile(filePath, textContent, 'utf8');
         
         downloadedFiles.push({
           name: file.name,
@@ -101,40 +104,85 @@ class GoogleDriveDataFetcher {
     return downloadedFiles;
   }
 
+  async downloadShapefilesFromFolder(folderId, folderName, outputDir) {
+    console.log(`🗂️ Buscando shapefiles na pasta: ${folderName}`);
+    
+    try {
+      const files = await this.listFiles(folderId);
+      const shapefileExtensions = ['.shp', '.shx', '.dbf', '.prj', '.cpg', '.sbn', '.sbx'];
+      const shapefiles = files.filter(file => 
+        shapefileExtensions.some(ext => file.name.toLowerCase().endsWith(ext))
+      );
+      
+      console.log(`📄 Encontrados ${shapefiles.length} arquivos shapefile em ${folderName}`);
+      
+      // Criar subpasta para organizar
+      const subDir = path.join(outputDir, folderName.replace(/[^a-zA-Z0-9]/g, '_'));
+      await fs.mkdir(subDir, { recursive: true });
+      
+      for (const file of shapefiles) {
+        try {
+          console.log(`⬇️ Baixando: ${folderName}/${file.name}`);
+          const content = await this.downloadFile(file.id, file.name);
+          
+          const filePath = path.join(subDir, file.name);
+          await fs.writeFile(filePath, Buffer.from(content));
+          
+          console.log(`✅ ${file.name} baixado com sucesso`);
+        } catch (error) {
+          console.error(`❌ Erro ao baixar ${file.name}:`, error);
+        }
+      }
+      
+      return shapefiles.length;
+    } catch (error) {
+      console.error(`❌ Erro ao processar pasta ${folderName}:`, error);
+      return 0;
+    }
+  }
+
   async downloadShapefiles() {
     if (!this.shapefileFolderId) {
       console.log('⚠️ SHAPEFILE_FOLDER_ID não configurado, pulando shapefiles');
       return [];
     }
 
-    console.log('🗺️ Buscando arquivos shapefile...');
+    console.log('🗺️ Buscando subpastas de shapefiles...');
     
-    const files = await this.listFiles(this.shapefileFolderId);
-    const shapefileExtensions = ['.shp', '.shx', '.dbf', '.prj', '.cpg'];
-    const shapefiles = files.filter(file => 
-      shapefileExtensions.some(ext => file.name.toLowerCase().endsWith(ext))
-    );
-    
-    console.log(`🗺️ Encontrados ${shapefiles.length} arquivos de shapefile`);
-    
-    const outputDir = path.join(__dirname, '../src/data/shapefiles');
-    await fs.mkdir(outputDir, { recursive: true });
-    
-    for (const file of shapefiles) {
-      try {
-        console.log(`⬇️ Baixando shapefile: ${file.name}`);
-        const content = await this.downloadFile(file.id, file.name);
-        
-        const filePath = path.join(outputDir, file.name);
-        await fs.writeFile(filePath, content, 'binary');
-        
-        console.log(`✅ ${file.name} baixado com sucesso`);
-      } catch (error) {
-        console.error(`❌ Erro ao baixar ${file.name}:`, error);
+    try {
+      const outputDir = path.join(__dirname, '../src/data/shapefiles');
+      await fs.mkdir(outputDir, { recursive: true });
+      
+      // Listar subpastas da pasta "2. Referências Espaciais"
+      const items = await this.listFiles(this.shapefileFolderId);
+      
+      // Filtrar apenas pastas (mimeType = folder)
+      const folders = items.filter(item => 
+        item.mimeType === 'application/vnd.google-apps.folder'
+      );
+      
+      console.log(`📁 Encontradas ${folders.length} subpastas`);
+      
+      let totalShapefiles = 0;
+      
+      // Processar cada subpasta
+      for (const folder of folders) {
+        console.log(`🔍 Processando pasta: ${folder.name}`);
+        const count = await this.downloadShapefilesFromFolder(
+          folder.id, 
+          folder.name, 
+          outputDir
+        );
+        totalShapefiles += count;
       }
+      
+      console.log(`🎉 Total de ${totalShapefiles} arquivos shapefile baixados`);
+      return totalShapefiles;
+      
+    } catch (error) {
+      console.error('❌ Erro no download de shapefiles:', error);
+      throw error;
     }
-    
-    return shapefiles;
   }
 
   async checkForUpdates() {
@@ -190,7 +238,7 @@ async function main() {
       // Baixar CSVs
       await fetcher.downloadCSVFiles();
       
-      // Baixar shapefiles (se configurado)
+      // Baixar shapefiles das subpastas
       await fetcher.downloadShapefiles();
       
       console.log('🎉 Download concluído com sucesso!');
