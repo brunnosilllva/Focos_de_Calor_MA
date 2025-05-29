@@ -1,8 +1,7 @@
 {
   "totalFiles": 100,
-  "processedAt": "2025-05-29T20:01:56.607Z",
+  "processedAt": "2025-05-29T20:11:26.291Z",
   "files": [
-    "focos_10min_20250529_0320.csv",
     "focos_10min_20250529_0330.csv",
     "focos_10min_20250529_0340.csv",
     "focos_10min_20250529_0350.csv",
@@ -101,7 +100,8 @@
     "focos_10min_20250529_1920.csv",
     "focos_10min_20250529_1930.csv",
     "focos_10min_20250529_1940.csv",
-    "focos_10min_20250529_1950.csv"
+    "focos_10min_20250529_1950.csv",
+    "focos_10min_20250529_2000.csv"
   ],
   "nextSteps": [
     "Implementar joins espaciais",
