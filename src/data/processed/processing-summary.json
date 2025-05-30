@@ -1,8 +1,7 @@
 {
   "totalFiles": 100,
-  "processedAt": "2025-05-30T12:57:02.358Z",
+  "processedAt": "2025-05-30T13:06:34.421Z",
   "files": [
-    "focos_10min_20250529_1950.csv",
     "focos_10min_20250529_2000.csv",
     "focos_10min_20250529_2010.csv",
     "focos_10min_20250529_2020.csv",
@@ -101,7 +100,8 @@
     "focos_10min_20250530_1220.csv",
     "focos_10min_20250530_1230.csv",
     "focos_10min_20250530_1240.csv",
-    "focos_10min_20250530_1250.csv"
+    "focos_10min_20250530_1250.csv",
+    "focos_10min_20250530_1300.csv"
   ],
   "dataPath": "src/data/raw",
   "status": "success",
