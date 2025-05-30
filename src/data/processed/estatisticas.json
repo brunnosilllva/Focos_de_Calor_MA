@@ -1,37 +1,37 @@
 {
-  "total_focos": 785,
+  "total_focos": 788,
   "por_municipio": {
-    "Balsas": 374,
-    "Timon": 186,
-    "Caxias": 169,
+    "Balsas": 375,
+    "Timon": 185,
+    "Caxias": 172,
     "Imperatriz": 32,
     "Açailândia": 20,
     "Codó": 3,
     "Chapadinha": 1
   },
   "por_bioma": {
-    "Cerrado": 764,
+    "Cerrado": 767,
     "Caatinga": 15,
     "Amazônia": 6
   },
   "por_periodo_temporal": {
-    "Hoje": 785
+    "Hoje": 788
   },
   "por_periodo_dia": {
-    "Desconhecido": 785
+    "Desconhecido": 788
   },
   "por_satelite": {
     "NOAA-21": 178,
     "NPP-375D": 177,
     "NOAA-20": 165,
-    "GOES-19": 122,
+    "GOES-19": 125,
     "TERRA_M-T": 79,
     "METOP-C": 57,
     "AQUA_M-M": 7
   },
-  "ultima_atualizacao": "2025-05-30T17:01:35.723Z",
+  "ultima_atualizacao": "2025-05-30T18:11:49.659Z",
   "resumo_temporal": {
-    "hoje": 785,
+    "hoje": 788,
     "ultima_semana": 0,
     "ultimo_mes": 0,
     "antigos": 0

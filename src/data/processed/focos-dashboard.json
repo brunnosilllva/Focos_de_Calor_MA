@@ -2,136 +2,6 @@
   {
     "lat": -7.2405,
     "lon": -43.0899,
-    "data": "2025-05-30",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 80
-  },
-  {
-    "lat": -7.6239,
-    "lon": -45.7447,
-    "data": "2025-05-30",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 71
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 00:10:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 72
-  },
-  {
-    "lat": -7.6239,
-    "lon": -45.7447,
-    "data": "2025-05-30 00:10:00",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 68
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 00:20:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 75
-  },
-  {
-    "lat": -7.6239,
-    "lon": -45.7447,
-    "data": "2025-05-30 00:20:00",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 73
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 00:30:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 82
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 00:40:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 91
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 00:50:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 99
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
-    "data": "2025-05-30 01:00:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 60
-  },
-  {
-    "lat": -7.2405,
-    "lon": -43.0899,
     "data": "2025-05-30 01:10:00",
     "municipio": "Timon",
     "bioma": "Cerrado",
@@ -140,7 +10,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 73
+    "confianca": 71
   },
   {
     "lat": -7.2405,
@@ -153,7 +23,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 99
+    "confianca": 64
   },
   {
     "lat": -7.2405,
@@ -166,7 +36,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 78
+    "confianca": 93
   },
   {
     "lat": -6.5561,
@@ -179,7 +49,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 81
+    "confianca": 95
   },
   {
     "lat": -6.5577,
@@ -192,7 +62,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 75
+    "confianca": 92
   },
   {
     "lat": -7.0061,
@@ -205,7 +75,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 87
+    "confianca": 60
   },
   {
     "lat": -6.6884,
@@ -218,7 +88,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 65
+    "confianca": 90
   },
   {
     "lat": -9.3478,
@@ -231,7 +101,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 94
+    "confianca": 79
   },
   {
     "lat": -7.6053,
@@ -244,7 +114,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 97
+    "confianca": 91
   },
   {
     "lat": -7.569,
@@ -257,7 +127,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 98
+    "confianca": 95
   },
   {
     "lat": -7.5707,
@@ -270,7 +140,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 90
+    "confianca": 87
   },
   {
     "lat": -7.5494,
@@ -283,7 +153,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 60
+    "confianca": 86
   },
   {
     "lat": -7.5298,
@@ -296,7 +166,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 62
+    "confianca": 74
   },
   {
     "lat": -7.5315,
@@ -309,7 +179,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 66
+    "confianca": 93
   },
   {
     "lat": -7.2398,
@@ -322,7 +192,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 64
+    "confianca": 63
   },
   {
     "lat": -7.2415,
@@ -335,7 +205,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 70
+    "confianca": 64
   },
   {
     "lat": -7.2431,
@@ -348,7 +218,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 68
+    "confianca": 66
   },
   {
     "lat": -7.2447,
@@ -361,7 +231,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 89
+    "confianca": 84
   },
   {
     "lat": -7.2317,
@@ -374,7 +244,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 67
+    "confianca": 83
   },
   {
     "lat": -7.181,
@@ -387,7 +257,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 84
+    "confianca": 95
   },
   {
     "lat": -7.1827,
@@ -400,7 +270,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 81
+    "confianca": 63
   },
   {
     "lat": -7.1843,
@@ -413,7 +283,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 88
+    "confianca": 84
   },
   {
     "lat": -6.9854,
@@ -426,7 +296,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 89
+    "confianca": 65
   },
   {
     "lat": -6.3495,
@@ -439,7 +309,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 82
+    "confianca": 93
   },
   {
     "lat": -6.3381,
@@ -452,7 +322,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 74
+    "confianca": 99
   },
   {
     "lat": -6.3397,
@@ -465,7 +335,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 70
+    "confianca": 81
   },
   {
     "lat": -6.3414,
@@ -491,7 +361,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 78
+    "confianca": 84
   },
   {
     "lat": -6.2448,
@@ -504,7 +374,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 78
+    "confianca": 67
   },
   {
     "lat": -6.2465,
@@ -517,7 +387,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 80
+    "confianca": 69
   },
   {
     "lat": -5.7845,
@@ -530,7 +400,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 83
+    "confianca": 73
   },
   {
     "lat": -5.6454,
@@ -543,7 +413,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 68
+    "confianca": 85
   },
   {
     "lat": -5.5897,
@@ -556,7 +426,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 69
+    "confianca": 67
   },
   {
     "lat": -5.2104,
@@ -569,7 +439,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 75
+    "confianca": 83
   },
   {
     "lat": -5.212,
@@ -582,7 +452,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 75
+    "confianca": 92
   },
   {
     "lat": -5.0521,
@@ -595,7 +465,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 94
+    "confianca": 77
   },
   {
     "lat": -3.9583,
@@ -608,7 +478,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 69
+    "confianca": 80
   },
   {
     "lat": -8.8157,
@@ -621,7 +491,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 64
+    "confianca": 98
   },
   {
     "lat": -9.2559,
@@ -634,7 +504,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 87
+    "confianca": 85
   },
   {
     "lat": -9.2461,
@@ -647,7 +517,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 65
+    "confianca": 81
   },
   {
     "lat": -8.548,
@@ -660,7 +530,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 92
+    "confianca": 77
   },
   {
     "lat": -7.9982,
@@ -673,7 +543,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 90
+    "confianca": 99
   },
   {
     "lat": -8.0003,
@@ -686,7 +556,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 61
+    "confianca": 93
   },
   {
     "lat": -7.9529,
@@ -699,7 +569,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 93
+    "confianca": 61
   },
   {
     "lat": -7.6221,
@@ -712,7 +582,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 64
+    "confianca": 79
   },
   {
     "lat": -7.6242,
@@ -725,7 +595,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 60
+    "confianca": 89
   },
   {
     "lat": -7.6264,
@@ -738,7 +608,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 74
+    "confianca": 71
   },
   {
     "lat": -7.6102,
@@ -751,7 +621,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 71
+    "confianca": 92
   },
   {
     "lat": -7.6123,
@@ -764,7 +634,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 70
+    "confianca": 64
   },
   {
     "lat": -7.6144,
@@ -777,7 +647,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 77
+    "confianca": 96
   },
   {
     "lat": -7.5772,
@@ -790,7 +660,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 88
+    "confianca": 72
   },
   {
     "lat": -7.5794,
@@ -803,7 +673,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 78
+    "confianca": 63
   },
   {
     "lat": -7.6323,
@@ -816,7 +686,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 85
+    "confianca": 95
   },
   {
     "lat": -7.5849,
@@ -829,7 +699,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 79
+    "confianca": 93
   },
   {
     "lat": -7.5871,
@@ -842,7 +712,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 92
+    "confianca": 80
   },
   {
     "lat": -7.5893,
@@ -855,7 +725,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 79
+    "confianca": 75
   },
   {
     "lat": -8.192,
@@ -868,7 +738,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 83
+    "confianca": 89
   },
   {
     "lat": -8.1958,
@@ -881,7 +751,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 75
+    "confianca": 93
   },
   {
     "lat": -7.0837,
@@ -894,7 +764,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 85
+    "confianca": 66
   },
   {
     "lat": -7.0859,
@@ -907,7 +777,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "METOP-C",
-    "confianca": 71
+    "confianca": 73
   },
   {
     "lat": -3.9603,
@@ -920,7 +790,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 81
+    "confianca": 65
   },
   {
     "lat": -6.34156,
@@ -933,7 +803,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 86
+    "confianca": 63
   },
   {
     "lat": -6.25007,
@@ -946,7 +816,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 80
+    "confianca": 70
   },
   {
     "lat": -5.05033,
@@ -959,7 +829,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 69
+    "confianca": 67
   },
   {
     "lat": -5.0495,
@@ -972,7 +842,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 87
+    "confianca": 71
   },
   {
     "lat": -7.5388,
@@ -985,7 +855,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 90
+    "confianca": 86
   },
   {
     "lat": -7.53304,
@@ -998,7 +868,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 99
+    "confianca": 95
   },
   {
     "lat": -7.24573,
@@ -1024,7 +894,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 99
+    "confianca": 74
   },
   {
     "lat": -7.24361,
@@ -1037,7 +907,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 83
+    "confianca": 81
   },
   {
     "lat": -7.24219,
@@ -1050,7 +920,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 64
+    "confianca": 96
   },
   {
     "lat": -7.24019,
@@ -1063,7 +933,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 81
+    "confianca": 61
   },
   {
     "lat": -7.23411,
@@ -1076,7 +946,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 91
+    "confianca": 99
   },
   {
     "lat": -7.23202,
@@ -1089,7 +959,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 93
+    "confianca": 67
   },
   {
     "lat": -7.1877,
@@ -1102,7 +972,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 68
+    "confianca": 66
   },
   {
     "lat": -7.18567,
@@ -1115,7 +985,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 85
+    "confianca": 89
   },
   {
     "lat": -5.58645,
@@ -1128,7 +998,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 81
+    "confianca": 61
   },
   {
     "lat": -5.20847,
@@ -1141,7 +1011,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 63
+    "confianca": 96
   },
   {
     "lat": -8.00001,
@@ -1154,7 +1024,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 84
+    "confianca": 75
   },
   {
     "lat": -7.62433,
@@ -1167,7 +1037,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 73
+    "confianca": 63
   },
   {
     "lat": -7.6099,
@@ -1180,7 +1050,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 92
+    "confianca": 99
   },
   {
     "lat": -7.59199,
@@ -1193,7 +1063,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 86
+    "confianca": 62
   },
   {
     "lat": -7.58818,
@@ -1206,7 +1076,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 70
+    "confianca": 91
   },
   {
     "lat": -9.49957,
@@ -1219,7 +1089,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 94
   },
   {
     "lat": -9.49723,
@@ -1232,7 +1102,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 81
+    "confianca": 72
   },
   {
     "lat": -9.39971,
@@ -1245,7 +1115,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 88
+    "confianca": 86
   },
   {
     "lat": -9.39829,
@@ -1258,7 +1128,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 83
   },
   {
     "lat": -9.83259,
@@ -1271,7 +1141,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 85
+    "confianca": 92
   },
   {
     "lat": -9.40562,
@@ -1284,7 +1154,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 90
   },
   {
     "lat": -9.40503,
@@ -1297,7 +1167,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 60
+    "confianca": 75
   },
   {
     "lat": -9.40284,
@@ -1310,7 +1180,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 83
+    "confianca": 61
   },
   {
     "lat": -9.40226,
@@ -1323,7 +1193,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 66
+    "confianca": 67
   },
   {
     "lat": -9.40167,
@@ -1336,7 +1206,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 92
+    "confianca": 76
   },
   {
     "lat": -9.3983,
@@ -1349,7 +1219,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 70
+    "confianca": 88
   },
   {
     "lat": -3.96153,
@@ -1362,7 +1232,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 83
+    "confianca": 76
   },
   {
     "lat": -3.95852,
@@ -1375,7 +1245,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 69
   },
   {
     "lat": -3.9578,
@@ -1388,7 +1258,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 93
+    "confianca": 62
   },
   {
     "lat": -6.55246,
@@ -1401,7 +1271,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 62
   },
   {
     "lat": -4.46798,
@@ -1414,7 +1284,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 94
+    "confianca": 73
   },
   {
     "lat": -6.34603,
@@ -1427,7 +1297,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 91
+    "confianca": 95
   },
   {
     "lat": -6.34545,
@@ -1440,7 +1310,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 60
+    "confianca": 79
   },
   {
     "lat": -6.34141,
@@ -1453,7 +1323,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 81
+    "confianca": 71
   },
   {
     "lat": -6.33736,
@@ -1466,7 +1336,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 77
+    "confianca": 81
   },
   {
     "lat": -6.33332,
@@ -1479,7 +1349,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 78
   },
   {
     "lat": -6.24349,
@@ -1492,7 +1362,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 76
+    "confianca": 97
   },
   {
     "lat": -6.24291,
@@ -1505,7 +1375,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 84
+    "confianca": 75
   },
   {
     "lat": -6.24233,
@@ -1518,7 +1388,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 72
+    "confianca": 64
   },
   {
     "lat": -5.30453,
@@ -1531,7 +1401,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 95
+    "confianca": 62
   },
   {
     "lat": -5.30051,
@@ -1544,7 +1414,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 94
   },
   {
     "lat": -7.55096,
@@ -1557,7 +1427,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 69
+    "confianca": 93
   },
   {
     "lat": -7.53348,
@@ -1570,7 +1440,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 62
   },
   {
     "lat": -7.52954,
@@ -1583,7 +1453,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 80
+    "confianca": 70
   },
   {
     "lat": -7.51697,
@@ -1596,7 +1466,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 90
+    "confianca": 96
   },
   {
     "lat": -7.49658,
@@ -1609,7 +1479,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 95
+    "confianca": 65
   },
   {
     "lat": -7.49657,
@@ -1622,7 +1492,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 66
+    "confianca": 94
   },
   {
     "lat": -7.49267,
@@ -1635,7 +1505,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 93
   },
   {
     "lat": -7.33043,
@@ -1648,7 +1518,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 77
+    "confianca": 98
   },
   {
     "lat": -7.32575,
@@ -1661,7 +1531,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 89
+    "confianca": 82
   },
   {
     "lat": -7.24537,
@@ -1674,7 +1544,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 73
+    "confianca": 75
   },
   {
     "lat": -7.24454,
@@ -1687,7 +1557,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 62
+    "confianca": 69
   },
   {
     "lat": -7.24146,
@@ -1700,7 +1570,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 83
+    "confianca": 64
   },
   {
     "lat": -7.24063,
@@ -1713,7 +1583,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 66
+    "confianca": 97
   },
   {
     "lat": -7.23837,
@@ -1726,7 +1596,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 90
+    "confianca": 84
   },
   {
     "lat": -7.23755,
@@ -1739,7 +1609,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 94
   },
   {
     "lat": -7.23447,
@@ -1752,7 +1622,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 73
+    "confianca": 77
   },
   {
     "lat": -7.23364,
@@ -1765,7 +1635,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 71
+    "confianca": 86
   },
   {
     "lat": -7.23171,
@@ -1778,7 +1648,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 90
   },
   {
     "lat": -7.22861,
@@ -1791,7 +1661,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 64
+    "confianca": 75
   },
   {
     "lat": -7.22551,
@@ -1804,7 +1674,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 64
+    "confianca": 81
   },
   {
     "lat": -7.1942,
@@ -1817,7 +1687,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 70
+    "confianca": 88
   },
   {
     "lat": -7.19029,
@@ -1830,7 +1700,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 76
   },
   {
     "lat": -7.18807,
@@ -1843,7 +1713,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 68
+    "confianca": 95
   },
   {
     "lat": -7.18776,
@@ -1856,7 +1726,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 62
+    "confianca": 95
   },
   {
     "lat": -7.18722,
@@ -1869,7 +1739,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 67
+    "confianca": 71
   },
   {
     "lat": -7.18695,
@@ -1882,7 +1752,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 64
+    "confianca": 79
   },
   {
     "lat": -7.18384,
@@ -1895,7 +1765,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 80
   },
   {
     "lat": -7.18331,
@@ -1908,7 +1778,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 93
+    "confianca": 74
   },
   {
     "lat": -7.18303,
@@ -1921,7 +1791,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 93
+    "confianca": 81
   },
   {
     "lat": -3.28477,
@@ -1934,7 +1804,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 98
+    "confianca": 76
   },
   {
     "lat": -4.82136,
@@ -1947,7 +1817,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 83
+    "confianca": 84
   },
   {
     "lat": -4.81694,
@@ -1960,7 +1830,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 82
+    "confianca": 88
   },
   {
     "lat": -5.76625,
@@ -1973,7 +1843,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 62
+    "confianca": 84
   },
   {
     "lat": -5.76564,
@@ -1986,7 +1856,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 85
+    "confianca": 95
   },
   {
     "lat": -5.59126,
@@ -1999,7 +1869,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 68
+    "confianca": 75
   },
   {
     "lat": -5.58714,
@@ -2012,7 +1882,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 91
+    "confianca": 90
   },
   {
     "lat": -6.26973,
@@ -2038,7 +1908,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 70
+    "confianca": 76
   },
   {
     "lat": -7.2724,
@@ -2051,7 +1921,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 67
   },
   {
     "lat": -7.10458,
@@ -2064,7 +1934,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 81
+    "confianca": 82
   },
   {
     "lat": -7.07386,
@@ -2077,7 +1947,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 89
+    "confianca": 84
   },
   {
     "lat": -7.00699,
@@ -2090,7 +1960,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 83
   },
   {
     "lat": -6.83078,
@@ -2103,7 +1973,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 96
+    "confianca": 84
   },
   {
     "lat": -6.83047,
@@ -2116,7 +1986,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 84
+    "confianca": 95
   },
   {
     "lat": -6.83009,
@@ -2129,7 +1999,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 97
+    "confianca": 69
   },
   {
     "lat": -6.82601,
@@ -2142,7 +2012,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 98
+    "confianca": 87
   },
   {
     "lat": -6.8257,
@@ -2155,7 +2025,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 70
   },
   {
     "lat": -6.75514,
@@ -2168,7 +2038,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 78
+    "confianca": 72
   },
   {
     "lat": -6.75399,
@@ -2181,7 +2051,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 94
+    "confianca": 69
   },
   {
     "lat": -6.69363,
@@ -2194,7 +2064,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 87
+    "confianca": 95
   },
   {
     "lat": -6.60403,
@@ -2207,7 +2077,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 69
+    "confianca": 92
   },
   {
     "lat": -6.60329,
@@ -2220,7 +2090,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 69
+    "confianca": 92
   },
   {
     "lat": -8.6268,
@@ -2233,7 +2103,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 92
   },
   {
     "lat": -8.9054,
@@ -2246,7 +2116,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 89
+    "confianca": 82
   },
   {
     "lat": -9.84282,
@@ -2259,7 +2129,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 87
+    "confianca": 91
   },
   {
     "lat": -9.84122,
@@ -2272,7 +2142,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 96
+    "confianca": 63
   },
   {
     "lat": -6.30059,
@@ -2285,7 +2155,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 62
+    "confianca": 60
   },
   {
     "lat": -8.00299,
@@ -2298,7 +2168,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 96
+    "confianca": 92
   },
   {
     "lat": -8.00213,
@@ -2324,7 +2194,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 68
+    "confianca": 71
   },
   {
     "lat": -7.97234,
@@ -2337,7 +2207,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 67
+    "confianca": 71
   },
   {
     "lat": -7.96766,
@@ -2350,7 +2220,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 89
+    "confianca": 87
   },
   {
     "lat": -7.9668,
@@ -2363,7 +2233,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 97
+    "confianca": 74
   },
   {
     "lat": -7.94801,
@@ -2376,7 +2246,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 70
+    "confianca": 73
   },
   {
     "lat": -7.94689,
@@ -2389,7 +2259,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 84
+    "confianca": 95
   },
   {
     "lat": -7.69282,
@@ -2402,7 +2272,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 72
   },
   {
     "lat": -7.68834,
@@ -2415,7 +2285,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 66
   },
   {
     "lat": -7.68784,
@@ -2428,7 +2298,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 96
   },
   {
     "lat": -7.63756,
@@ -2441,7 +2311,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 72
+    "confianca": 71
   },
   {
     "lat": -7.63737,
@@ -2454,7 +2324,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 93
+    "confianca": 92
   },
   {
     "lat": -7.63281,
@@ -2467,7 +2337,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 78
+    "confianca": 82
   },
   {
     "lat": -7.63261,
@@ -2480,7 +2350,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 97
+    "confianca": 82
   },
   {
     "lat": -7.62325,
@@ -2493,7 +2363,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 61
+    "confianca": 70
   },
   {
     "lat": -7.61948,
@@ -2506,7 +2376,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 74
+    "confianca": 79
   },
   {
     "lat": -7.6186,
@@ -2519,7 +2389,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 80
+    "confianca": 91
   },
   {
     "lat": -7.61569,
@@ -2532,7 +2402,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 91
+    "confianca": 96
   },
   {
     "lat": -7.61483,
@@ -2545,7 +2415,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 69
+    "confianca": 89
   },
   {
     "lat": -7.61104,
@@ -2558,7 +2428,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 93
   },
   {
     "lat": -7.6082,
@@ -2571,7 +2441,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 67
+    "confianca": 63
   },
   {
     "lat": -7.58839,
@@ -2584,7 +2454,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 84
+    "confianca": 76
   },
   {
     "lat": -7.58751,
@@ -2597,7 +2467,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 98
+    "confianca": 96
   },
   {
     "lat": -7.58662,
@@ -2610,7 +2480,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 94
+    "confianca": 75
   },
   {
     "lat": -7.5838,
@@ -2623,7 +2493,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 85
+    "confianca": 94
   },
   {
     "lat": -7.58369,
@@ -2636,7 +2506,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 73
+    "confianca": 74
   },
   {
     "lat": -7.5828,
@@ -2649,7 +2519,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 63
   },
   {
     "lat": -7.58173,
@@ -2662,7 +2532,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 97
+    "confianca": 77
   },
   {
     "lat": -7.57912,
@@ -2675,7 +2545,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 62
+    "confianca": 64
   },
   {
     "lat": -7.57705,
@@ -2688,7 +2558,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 67
   },
   {
     "lat": -7.08377,
@@ -2701,7 +2571,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 90
   },
   {
     "lat": -6.98272,
@@ -2714,7 +2584,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 85
+    "confianca": 67
   },
   {
     "lat": -8.54767,
@@ -2727,7 +2597,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 70
   },
   {
     "lat": -8.54746,
@@ -2740,7 +2610,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 95
+    "confianca": 79
   },
   {
     "lat": -8.542,
@@ -2753,7 +2623,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 92
+    "confianca": 90
   },
   {
     "lat": -7.96212,
@@ -2766,7 +2636,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 71
+    "confianca": 80
   },
   {
     "lat": -7.96178,
@@ -2779,7 +2649,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 77
+    "confianca": 64
   },
   {
     "lat": -7.96097,
@@ -2792,7 +2662,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 76
+    "confianca": 94
   },
   {
     "lat": -7.95733,
@@ -2805,7 +2675,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 76
+    "confianca": 92
   },
   {
     "lat": -7.957,
@@ -2818,7 +2688,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 89
+    "confianca": 72
   },
   {
     "lat": -7.95648,
@@ -2831,7 +2701,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 71
+    "confianca": 90
   },
   {
     "lat": -7.95618,
@@ -2844,7 +2714,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 66
+    "confianca": 96
   },
   {
     "lat": -7.95535,
@@ -2857,7 +2727,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 98
+    "confianca": 78
   },
   {
     "lat": -4.25102,
@@ -2870,7 +2740,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 72
   },
   {
     "lat": -4.25042,
@@ -2883,7 +2753,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 71
+    "confianca": 96
   },
   {
     "lat": -4.25011,
@@ -2896,7 +2766,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 61
+    "confianca": 92
   },
   {
     "lat": -4.24949,
@@ -2909,7 +2779,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 82
+    "confianca": 63
   },
   {
     "lat": -6.63223,
@@ -2922,7 +2792,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 94
   },
   {
     "lat": -6.63165,
@@ -2935,7 +2805,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 96
+    "confianca": 68
   },
   {
     "lat": -8.79243,
@@ -2948,7 +2818,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 74
+    "confianca": 65
   },
   {
     "lat": -8.78719,
@@ -2961,7 +2831,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 90
+    "confianca": 80
   },
   {
     "lat": -9.85104,
@@ -2974,7 +2844,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 78
+    "confianca": 91
   },
   {
     "lat": -9.85047,
@@ -2987,7 +2857,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 92
   },
   {
     "lat": -9.84639,
@@ -3000,7 +2870,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 92
+    "confianca": 91
   },
   {
     "lat": -9.84581,
@@ -3013,7 +2883,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 82
+    "confianca": 63
   },
   {
     "lat": -9.79463,
@@ -3026,7 +2896,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 90
   },
   {
     "lat": -9.71807,
@@ -3039,7 +2909,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 95
+    "confianca": 65
   },
   {
     "lat": -9.39882,
@@ -3052,7 +2922,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 63
+    "confianca": 69
   },
   {
     "lat": -9.39638,
@@ -3065,7 +2935,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 72
+    "confianca": 73
   },
   {
     "lat": -9.39574,
@@ -3078,7 +2948,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 82
   },
   {
     "lat": -9.39511,
@@ -3091,7 +2961,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 96
   },
   {
     "lat": -9.39447,
@@ -3104,7 +2974,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 97
   },
   {
     "lat": -9.39382,
@@ -3117,7 +2987,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 95
+    "confianca": 66
   },
   {
     "lat": -9.39345,
@@ -3130,7 +3000,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 97
+    "confianca": 65
   },
   {
     "lat": -9.39284,
@@ -3143,7 +3013,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 87
+    "confianca": 80
   },
   {
     "lat": -9.39223,
@@ -3156,7 +3026,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 77
+    "confianca": 92
   },
   {
     "lat": -9.3916,
@@ -3169,7 +3039,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 81
+    "confianca": 90
   },
   {
     "lat": -4.48593,
@@ -3182,7 +3052,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 66
+    "confianca": 84
   },
   {
     "lat": -7.70327,
@@ -3195,7 +3065,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 75
+    "confianca": 61
   },
   {
     "lat": -7.70242,
@@ -3208,7 +3078,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 67
+    "confianca": 80
   },
   {
     "lat": -7.70069,
@@ -3221,7 +3091,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 79
+    "confianca": 98
   },
   {
     "lat": -7.66865,
@@ -3234,7 +3104,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 96
+    "confianca": 90
   },
   {
     "lat": -9.2579,
@@ -3247,7 +3117,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 69
   },
   {
     "lat": -9.25377,
@@ -3260,7 +3130,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 94
+    "confianca": 65
   },
   {
     "lat": -9.25305,
@@ -3273,7 +3143,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 71
   },
   {
     "lat": -9.20136,
@@ -3286,7 +3156,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 65
+    "confianca": 68
   },
   {
     "lat": -9.20095,
@@ -3299,7 +3169,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 69
   },
   {
     "lat": -9.19557,
@@ -3312,7 +3182,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 92
+    "confianca": 64
   },
   {
     "lat": -9.19517,
@@ -3325,7 +3195,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 92
+    "confianca": 95
   },
   {
     "lat": -8.19734,
@@ -3338,7 +3208,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 83
+    "confianca": 73
   },
   {
     "lat": -8.1965,
@@ -3351,7 +3221,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 91
+    "confianca": 93
   },
   {
     "lat": -9.60959,
@@ -3364,7 +3234,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 88
+    "confianca": 93
   },
   {
     "lat": -9.60559,
@@ -3377,7 +3247,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 73
+    "confianca": 89
   },
   {
     "lat": -9.60405,
@@ -3390,7 +3260,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 86
+    "confianca": 77
   },
   {
     "lat": -9.60332,
@@ -3403,7 +3273,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-20",
-    "confianca": 75
+    "confianca": 89
   },
   {
     "lat": -6.33772,
@@ -3416,7 +3286,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 69
+    "confianca": 71
   },
   {
     "lat": -6.33607,
@@ -3429,7 +3299,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 79
+    "confianca": 62
   },
   {
     "lat": -6.23634,
@@ -3442,7 +3312,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 78
+    "confianca": 60
   },
   {
     "lat": -5.77766,
@@ -3455,7 +3325,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 70
+    "confianca": 65
   },
   {
     "lat": -5.21024,
@@ -3468,7 +3338,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 81
+    "confianca": 96
   },
   {
     "lat": -5.20854,
@@ -3481,7 +3351,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 71
+    "confianca": 76
   },
   {
     "lat": -7.61758,
@@ -3494,7 +3364,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "AQUA_M-M",
-    "confianca": 63
+    "confianca": 71
   },
   {
     "lat": -3.95829,
@@ -3507,7 +3377,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 77
+    "confianca": 65
   },
   {
     "lat": -3.95781,
@@ -3520,7 +3390,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 78
+    "confianca": 69
   },
   {
     "lat": -6.34689,
@@ -3533,7 +3403,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 98
   },
   {
     "lat": -6.34613,
@@ -3546,7 +3416,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 70
+    "confianca": 71
   },
   {
     "lat": -6.34281,
@@ -3559,7 +3429,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 87
+    "confianca": 62
   },
   {
     "lat": -6.34132,
@@ -3572,7 +3442,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 86
   },
   {
     "lat": -6.33651,
@@ -3585,7 +3455,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 90
+    "confianca": 62
   },
   {
     "lat": -6.2449,
@@ -3598,7 +3468,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 70
+    "confianca": 67
   },
   {
     "lat": -6.24415,
@@ -3611,7 +3481,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 60
+    "confianca": 72
   },
   {
     "lat": -5.05417,
@@ -3624,7 +3494,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 76
+    "confianca": 60
   },
   {
     "lat": -7.5537,
@@ -3637,7 +3507,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 74
   },
   {
     "lat": -7.54877,
@@ -3650,7 +3520,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 80
+    "confianca": 65
   },
   {
     "lat": -7.53814,
@@ -3663,7 +3533,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 80
   },
   {
     "lat": -7.53737,
@@ -3676,7 +3546,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 75
   },
   {
     "lat": -7.5332,
@@ -3689,7 +3559,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 60
+    "confianca": 97
   },
   {
     "lat": -7.49715,
@@ -3702,7 +3572,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 76
   },
   {
     "lat": -7.49675,
@@ -3715,7 +3585,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 73
   },
   {
     "lat": -7.32765,
@@ -3728,7 +3598,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 93
+    "confianca": 76
   },
   {
     "lat": -7.24635,
@@ -3741,7 +3611,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 94
+    "confianca": 63
   },
   {
     "lat": -7.24595,
@@ -3754,7 +3624,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 66
+    "confianca": 79
   },
   {
     "lat": -7.24176,
@@ -3767,7 +3637,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 92
+    "confianca": 78
   },
   {
     "lat": -7.24137,
@@ -3780,7 +3650,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 96
   },
   {
     "lat": -7.24097,
@@ -3793,7 +3663,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 72
   },
   {
     "lat": -7.23718,
@@ -3806,7 +3676,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 64
   },
   {
     "lat": -7.23678,
@@ -3819,7 +3689,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 85
   },
   {
     "lat": -7.23638,
@@ -3832,7 +3702,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 63
+    "confianca": 96
   },
   {
     "lat": -7.22802,
@@ -3845,7 +3715,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 71
+    "confianca": 80
   },
   {
     "lat": -7.19384,
@@ -3858,7 +3728,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 98
   },
   {
     "lat": -7.19345,
@@ -3871,7 +3741,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 61
   },
   {
     "lat": -7.19293,
@@ -3884,7 +3754,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 75
+    "confianca": 84
   },
   {
     "lat": -7.19252,
@@ -3897,7 +3767,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 87
   },
   {
     "lat": -7.18963,
@@ -3910,7 +3780,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 96
   },
   {
     "lat": -7.18924,
@@ -3923,7 +3793,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 86
+    "confianca": 70
   },
   {
     "lat": -7.18918,
@@ -3936,7 +3806,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 74
   },
   {
     "lat": -7.18877,
@@ -3949,7 +3819,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 62
+    "confianca": 96
   },
   {
     "lat": -7.18836,
@@ -3962,7 +3832,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 66
   },
   {
     "lat": -7.18465,
@@ -3975,7 +3845,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 66
   },
   {
     "lat": -7.18426,
@@ -3988,7 +3858,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 66
   },
   {
     "lat": -7.18387,
@@ -4001,7 +3871,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 92
+    "confianca": 87
   },
   {
     "lat": -7.18379,
@@ -4014,7 +3884,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 60
   },
   {
     "lat": -7.18338,
@@ -4027,7 +3897,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 70
+    "confianca": 73
   },
   {
     "lat": -7.18297,
@@ -4040,7 +3910,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 99
   },
   {
     "lat": -4.82249,
@@ -4066,7 +3936,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 80
   },
   {
     "lat": -5.78001,
@@ -4079,7 +3949,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 99
+    "confianca": 91
   },
   {
     "lat": -5.21656,
@@ -4092,7 +3962,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 64
   },
   {
     "lat": -5.21633,
@@ -4105,7 +3975,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 61
+    "confianca": 98
   },
   {
     "lat": -5.21584,
@@ -4118,7 +3988,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 71
   },
   {
     "lat": -5.21558,
@@ -4131,7 +4001,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 84
+    "confianca": 80
   },
   {
     "lat": -5.21482,
@@ -4144,7 +4014,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 60
+    "confianca": 73
   },
   {
     "lat": -5.21252,
@@ -4157,7 +4027,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 76
   },
   {
     "lat": -5.21181,
@@ -4170,7 +4040,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 63
   },
   {
     "lat": -5.21158,
@@ -4196,7 +4066,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 89
+    "confianca": 88
   },
   {
     "lat": -5.21083,
@@ -4209,7 +4079,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 70
   },
   {
     "lat": -5.20684,
@@ -4222,7 +4092,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 67
   },
   {
     "lat": -6.27229,
@@ -4235,7 +4105,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 89
   },
   {
     "lat": -6.27133,
@@ -4248,7 +4118,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 95
   },
   {
     "lat": -7.27706,
@@ -4261,7 +4131,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 86
+    "confianca": 78
   },
   {
     "lat": -7.27639,
@@ -4287,7 +4157,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 60
+    "confianca": 79
   },
   {
     "lat": -7.07472,
@@ -4300,7 +4170,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 61
   },
   {
     "lat": -7.07274,
@@ -4313,7 +4183,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 78
+    "confianca": 72
   },
   {
     "lat": -7.07214,
@@ -4326,7 +4196,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 77
   },
   {
     "lat": -7.01085,
@@ -4339,7 +4209,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 61
   },
   {
     "lat": -7.00704,
@@ -4352,7 +4222,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 62
+    "confianca": 97
   },
   {
     "lat": -6.83142,
@@ -4365,7 +4235,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 95
+    "confianca": 74
   },
   {
     "lat": -6.82634,
@@ -4378,7 +4248,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 66
+    "confianca": 82
   },
   {
     "lat": -6.75507,
@@ -4391,7 +4261,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 63
+    "confianca": 73
   },
   {
     "lat": -6.6957,
@@ -4404,7 +4274,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 75
+    "confianca": 71
   },
   {
     "lat": -6.69503,
@@ -4417,7 +4287,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 71
+    "confianca": 92
   },
   {
     "lat": -6.60379,
@@ -4430,7 +4300,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 64
   },
   {
     "lat": -8.90555,
@@ -4443,7 +4313,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 85
   },
   {
     "lat": -8.9048,
@@ -4456,7 +4326,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 78
   },
   {
     "lat": -8.00495,
@@ -4469,7 +4339,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 62
+    "confianca": 94
   },
   {
     "lat": -8.00442,
@@ -4482,7 +4352,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 73
+    "confianca": 75
   },
   {
     "lat": -8.00131,
@@ -4495,7 +4365,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 94
+    "confianca": 90
   },
   {
     "lat": -7.97169,
@@ -4508,7 +4378,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 93
+    "confianca": 98
   },
   {
     "lat": -7.96756,
@@ -4521,7 +4391,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 84
+    "confianca": 60
   },
   {
     "lat": -7.95549,
@@ -4534,7 +4404,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 62
   },
   {
     "lat": -7.95495,
@@ -4547,7 +4417,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 69
   },
   {
     "lat": -7.94729,
@@ -4560,7 +4430,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 73
   },
   {
     "lat": -7.84174,
@@ -4573,7 +4443,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 73
+    "confianca": 78
   },
   {
     "lat": -7.69228,
@@ -4586,7 +4456,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 81
+    "confianca": 95
   },
   {
     "lat": -7.63865,
@@ -4599,7 +4469,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 61
+    "confianca": 67
   },
   {
     "lat": -7.63457,
@@ -4612,7 +4482,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 61
+    "confianca": 94
   },
   {
     "lat": -7.62418,
@@ -4625,7 +4495,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 75
+    "confianca": 74
   },
   {
     "lat": -7.6211,
@@ -4638,7 +4508,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 67
+    "confianca": 75
   },
   {
     "lat": -7.62056,
@@ -4651,7 +4521,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 62
+    "confianca": 90
   },
   {
     "lat": -7.61747,
@@ -4664,7 +4534,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 99
+    "confianca": 71
   },
   {
     "lat": -7.61693,
@@ -4677,7 +4547,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 77
+    "confianca": 60
   },
   {
     "lat": -7.61639,
@@ -4690,7 +4560,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 88
+    "confianca": 73
   },
   {
     "lat": -7.61331,
@@ -4703,7 +4573,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 76
+    "confianca": 77
   },
   {
     "lat": -7.61277,
@@ -4716,7 +4586,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 67
+    "confianca": 89
   },
   {
     "lat": -7.60773,
@@ -4729,7 +4599,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 94
+    "confianca": 90
   },
   {
     "lat": -7.59148,
@@ -4742,7 +4612,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 66
+    "confianca": 88
   },
   {
     "lat": -7.59095,
@@ -4755,7 +4625,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 70
+    "confianca": 80
   },
   {
     "lat": -7.59042,
@@ -4768,7 +4638,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 63
+    "confianca": 97
   },
   {
     "lat": -7.5879,
@@ -4781,7 +4651,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 60
+    "confianca": 91
   },
   {
     "lat": -7.58736,
@@ -4794,7 +4664,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 67
   },
   {
     "lat": -7.58683,
@@ -4807,7 +4677,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 61
+    "confianca": 66
   },
   {
     "lat": -7.58306,
@@ -4820,7 +4690,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 66
   },
   {
     "lat": -7.58253,
@@ -4833,7 +4703,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 92
   },
   {
     "lat": -7.5784,
@@ -4846,7 +4716,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 77
   },
   {
     "lat": -7.08683,
@@ -4859,7 +4729,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 77
+    "confianca": 83
   },
   {
     "lat": -6.98629,
@@ -4872,7 +4742,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 66
+    "confianca": 71
   },
   {
     "lat": -8.55151,
@@ -4885,7 +4755,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 71
   },
   {
     "lat": -8.55099,
@@ -4898,7 +4768,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 63
+    "confianca": 68
   },
   {
     "lat": -8.54641,
@@ -4911,7 +4781,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 86
+    "confianca": 95
   },
   {
     "lat": -7.96306,
@@ -4924,7 +4794,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 75
+    "confianca": 79
   },
   {
     "lat": -7.95954,
@@ -4937,7 +4807,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 78
+    "confianca": 83
   },
   {
     "lat": -7.959,
@@ -4950,7 +4820,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 90
+    "confianca": 61
   },
   {
     "lat": -7.95846,
@@ -4963,7 +4833,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 98
   },
   {
     "lat": -4.81536,
@@ -4976,7 +4846,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 78
+    "confianca": 94
   },
   {
     "lat": -4.42579,
@@ -4989,7 +4859,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 83
   },
   {
     "lat": -4.42518,
@@ -5002,7 +4872,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 75
   },
   {
     "lat": -4.42223,
@@ -5015,7 +4885,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 88
+    "confianca": 84
   },
   {
     "lat": -4.25393,
@@ -5028,7 +4898,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 88
+    "confianca": 83
   },
   {
     "lat": -4.25036,
@@ -5041,7 +4911,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 68
   },
   {
     "lat": -3.76473,
@@ -5054,7 +4924,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 60
   },
   {
     "lat": -6.63446,
@@ -5067,7 +4937,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 87
   },
   {
     "lat": -6.6338,
@@ -5080,7 +4950,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 83
+    "confianca": 94
   },
   {
     "lat": -9.00969,
@@ -5093,7 +4963,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 95
+    "confianca": 99
   },
   {
     "lat": -9.42236,
@@ -5106,7 +4976,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 77
   },
   {
     "lat": -9.26964,
@@ -5119,7 +4989,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 89
+    "confianca": 71
   },
   {
     "lat": -8.79399,
@@ -5132,7 +5002,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 61
+    "confianca": 72
   },
   {
     "lat": -8.79029,
@@ -5145,7 +5015,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 98
   },
   {
     "lat": -8.41615,
@@ -5158,7 +5028,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 95
+    "confianca": 81
   },
   {
     "lat": -8.3194,
@@ -5171,7 +5041,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 77
+    "confianca": 76
   },
   {
     "lat": -9.97492,
@@ -5184,7 +5054,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 85
+    "confianca": 93
   },
   {
     "lat": -9.99276,
@@ -5197,7 +5067,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 83
+    "confianca": 71
   },
   {
     "lat": -9.98454,
@@ -5210,7 +5080,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 84
   },
   {
     "lat": -9.85187,
@@ -5223,7 +5093,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 94
   },
   {
     "lat": -9.84881,
@@ -5236,7 +5106,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 77
   },
   {
     "lat": -9.84816,
@@ -5249,7 +5119,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 99
+    "confianca": 85
   },
   {
     "lat": -9.79643,
@@ -5262,7 +5132,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 94
   },
   {
     "lat": -9.79264,
@@ -5275,7 +5145,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 84
   },
   {
     "lat": -9.71946,
@@ -5288,7 +5158,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 80
+    "confianca": 69
   },
   {
     "lat": -9.39883,
@@ -5301,7 +5171,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 77
   },
   {
     "lat": -9.3982,
@@ -5314,7 +5184,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 78
+    "confianca": 61
   },
   {
     "lat": -9.39758,
@@ -5327,7 +5197,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 87
   },
   {
     "lat": -9.3952,
@@ -5340,7 +5210,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 76
+    "confianca": 74
   },
   {
     "lat": -9.39395,
@@ -5353,7 +5223,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 95
   },
   {
     "lat": -4.6764,
@@ -5366,7 +5236,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 73
   },
   {
     "lat": -4.48957,
@@ -5379,7 +5249,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 76
   },
   {
     "lat": -6.21445,
@@ -5392,7 +5262,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 92
+    "confianca": 94
   },
   {
     "lat": -5.18579,
@@ -5405,7 +5275,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 65
   },
   {
     "lat": -5.18166,
@@ -5418,7 +5288,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 65
+    "confianca": 72
   },
   {
     "lat": -7.71154,
@@ -5431,7 +5301,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 72
+    "confianca": 62
   },
   {
     "lat": -7.7048,
@@ -5444,7 +5314,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 85
   },
   {
     "lat": -7.66856,
@@ -5457,7 +5327,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 88
   },
   {
     "lat": -7.61785,
@@ -5470,7 +5340,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 96
+    "confianca": 64
   },
   {
     "lat": -7.2624,
@@ -5483,7 +5353,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 64
+    "confianca": 94
   },
   {
     "lat": -9.26237,
@@ -5496,7 +5366,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 89
+    "confianca": 60
   },
   {
     "lat": -9.25943,
@@ -5509,7 +5379,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 82
+    "confianca": 77
   },
   {
     "lat": -9.25883,
@@ -5522,7 +5392,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 98
+    "confianca": 76
   },
   {
     "lat": -9.25648,
@@ -5535,7 +5405,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 94
+    "confianca": 68
   },
   {
     "lat": -9.25589,
@@ -5548,7 +5418,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 77
+    "confianca": 96
   },
   {
     "lat": -9.25354,
@@ -5561,7 +5431,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 96
   },
   {
     "lat": -9.25294,
@@ -5574,7 +5444,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 67
+    "confianca": 98
   },
   {
     "lat": -9.20087,
@@ -5587,7 +5457,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 84
   },
   {
     "lat": -9.11027,
@@ -5600,7 +5470,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 66
+    "confianca": 99
   },
   {
     "lat": -9.00152,
@@ -5613,7 +5483,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 69
+    "confianca": 78
   },
   {
     "lat": -8.84758,
@@ -5626,7 +5496,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 69
   },
   {
     "lat": -8.84702,
@@ -5639,7 +5509,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 89
+    "confianca": 71
   },
   {
     "lat": -8.74142,
@@ -5652,7 +5522,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 62
+    "confianca": 92
   },
   {
     "lat": -8.19977,
@@ -5665,7 +5535,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 68
+    "confianca": 60
   },
   {
     "lat": -8.19922,
@@ -5678,7 +5548,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 97
+    "confianca": 99
   },
   {
     "lat": -8.19583,
@@ -5717,7 +5587,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 79
+    "confianca": 66
   },
   {
     "lat": -8.16854,
@@ -5730,7 +5600,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 67
+    "confianca": 95
   },
   {
     "lat": -9.60927,
@@ -5743,7 +5613,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 67
+    "confianca": 88
   },
   {
     "lat": -9.60574,
@@ -5756,7 +5626,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NOAA-21",
-    "confianca": 74
+    "confianca": 68
   },
   {
     "lat": -9.49664,
@@ -5769,7 +5639,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 84
+    "confianca": 93
   },
   {
     "lat": -9.40673,
@@ -5782,7 +5652,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 73
+    "confianca": 65
   },
   {
     "lat": -9.40289,
@@ -5795,7 +5665,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 87
+    "confianca": 94
   },
   {
     "lat": -9.40194,
@@ -5808,7 +5678,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 65
+    "confianca": 75
   },
   {
     "lat": -9.40099,
@@ -5821,7 +5691,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 85
+    "confianca": 63
   },
   {
     "lat": -9.39714,
@@ -5834,7 +5704,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 80
+    "confianca": 70
   },
   {
     "lat": -3.96238,
@@ -5847,7 +5717,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 80
+    "confianca": 97
   },
   {
     "lat": -3.95672,
@@ -5860,7 +5730,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 82
   },
   {
     "lat": -6.34504,
@@ -5873,7 +5743,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 89
+    "confianca": 73
   },
   {
     "lat": -6.33887,
@@ -5886,7 +5756,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 90
   },
   {
     "lat": -6.3327,
@@ -5899,7 +5769,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 69
   },
   {
     "lat": -6.24748,
@@ -5912,7 +5782,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 84
+    "confianca": 69
   },
   {
     "lat": -6.24665,
@@ -5925,7 +5795,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 90
   },
   {
     "lat": -6.2463,
@@ -5938,7 +5808,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 92
+    "confianca": 75
   },
   {
     "lat": -6.24544,
@@ -5951,7 +5821,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 91
+    "confianca": 62
   },
   {
     "lat": -6.24457,
@@ -5964,7 +5834,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 82
+    "confianca": 61
   },
   {
     "lat": -6.24137,
@@ -5977,7 +5847,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 87
+    "confianca": 63
   },
   {
     "lat": -6.24055,
@@ -5990,7 +5860,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 85
   },
   {
     "lat": -6.24018,
@@ -6003,7 +5873,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 70
+    "confianca": 99
   },
   {
     "lat": -6.23933,
@@ -6016,7 +5886,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 86
+    "confianca": 95
   },
   {
     "lat": -5.30269,
@@ -6029,7 +5899,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 87
   },
   {
     "lat": -5.30188,
@@ -6042,7 +5912,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 95
   },
   {
     "lat": -7.24543,
@@ -6055,7 +5925,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 71
+    "confianca": 76
   },
   {
     "lat": -7.24465,
@@ -6068,7 +5938,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 68
+    "confianca": 80
   },
   {
     "lat": -7.24219,
@@ -6081,7 +5951,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 62
   },
   {
     "lat": -7.24138,
@@ -6094,7 +5964,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 60
   },
   {
     "lat": -7.23948,
@@ -6107,7 +5977,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 78
+    "confianca": 69
   },
   {
     "lat": -7.23871,
@@ -6120,7 +5990,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 70
+    "confianca": 66
   },
   {
     "lat": -7.23705,
@@ -6133,7 +6003,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 95
   },
   {
     "lat": -7.23625,
@@ -6146,7 +6016,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 64
   },
   {
     "lat": -7.23355,
@@ -6159,7 +6029,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 76
   },
   {
     "lat": -7.19307,
@@ -6172,7 +6042,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 84
   },
   {
     "lat": -7.18871,
@@ -6185,7 +6055,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 65
+    "confianca": 62
   },
   {
     "lat": -7.18792,
@@ -6198,7 +6068,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 65
+    "confianca": 71
   },
   {
     "lat": -7.18198,
@@ -6211,7 +6081,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 81
+    "confianca": 96
   },
   {
     "lat": -7.18119,
@@ -6224,7 +6094,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 99
+    "confianca": 64
   },
   {
     "lat": -7.53922,
@@ -6237,7 +6107,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 73
+    "confianca": 71
   },
   {
     "lat": -7.53819,
@@ -6250,7 +6120,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 62
+    "confianca": 95
   },
   {
     "lat": -7.53408,
@@ -6263,7 +6133,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 98
   },
   {
     "lat": -7.53324,
@@ -6276,7 +6146,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 86
   },
   {
     "lat": -7.53222,
@@ -6289,7 +6159,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 71
   },
   {
     "lat": -7.52728,
@@ -6302,7 +6172,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 87
   },
   {
     "lat": -5.78176,
@@ -6315,7 +6185,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 99
+    "confianca": 63
   },
   {
     "lat": -5.78086,
@@ -6328,7 +6198,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 65
   },
   {
     "lat": -5.21536,
@@ -6341,7 +6211,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 96
   },
   {
     "lat": -5.21448,
@@ -6354,7 +6224,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 90
+    "confianca": 73
   },
   {
     "lat": -5.2136,
@@ -6367,7 +6237,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 66
   },
   {
     "lat": -5.20997,
@@ -6380,7 +6250,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 97
+    "confianca": 60
   },
   {
     "lat": -5.20909,
@@ -6393,7 +6263,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 88
+    "confianca": 99
   },
   {
     "lat": -5.20821,
@@ -6406,7 +6276,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 89
+    "confianca": 62
   },
   {
     "lat": -7.27649,
@@ -6419,7 +6289,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 93
+    "confianca": 80
   },
   {
     "lat": -7.27551,
@@ -6432,7 +6302,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 95
   },
   {
     "lat": -7.26914,
@@ -6445,7 +6315,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 89
   },
   {
     "lat": -6.82733,
@@ -6458,7 +6328,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 86
+    "confianca": 78
   },
   {
     "lat": -6.82629,
@@ -6471,7 +6341,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 97
   },
   {
     "lat": -8.9068,
@@ -6484,7 +6354,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 84
+    "confianca": 70
   },
   {
     "lat": -8.90574,
@@ -6497,7 +6367,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 61
+    "confianca": 89
   },
   {
     "lat": -8.00477,
@@ -6510,7 +6380,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 98
   },
   {
     "lat": -7.99911,
@@ -6523,7 +6393,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 84
+    "confianca": 71
   },
   {
     "lat": -7.99771,
@@ -6536,7 +6406,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 96
   },
   {
     "lat": -7.97001,
@@ -6549,7 +6419,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 96
   },
   {
     "lat": -7.62481,
@@ -6562,7 +6432,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 75
   },
   {
     "lat": -7.62369,
@@ -6575,7 +6445,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 75
   },
   {
     "lat": -7.62356,
@@ -6588,7 +6458,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 89
+    "confianca": 60
   },
   {
     "lat": -7.61933,
@@ -6601,7 +6471,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 68
+    "confianca": 74
   },
   {
     "lat": -7.61911,
@@ -6614,7 +6484,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 79
   },
   {
     "lat": -7.61803,
@@ -6627,7 +6497,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 75
+    "confianca": 81
   },
   {
     "lat": -7.61784,
@@ -6640,7 +6510,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 90
+    "confianca": 93
   },
   {
     "lat": -7.61672,
@@ -6653,7 +6523,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 75
+    "confianca": 74
   },
   {
     "lat": -7.61335,
@@ -6666,7 +6536,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 83
+    "confianca": 79
   },
   {
     "lat": -7.6123,
@@ -6679,7 +6549,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 91
   },
   {
     "lat": -7.61212,
@@ -6692,7 +6562,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 62
+    "confianca": 68
   },
   {
     "lat": -7.61103,
@@ -6705,7 +6575,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 86
+    "confianca": 65
   },
   {
     "lat": -7.61088,
@@ -6718,7 +6588,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 85
+    "confianca": 73
   },
   {
     "lat": -7.59074,
@@ -6731,7 +6601,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 99
+    "confianca": 69
   },
   {
     "lat": -7.58742,
@@ -6744,7 +6614,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 97
+    "confianca": 73
   },
   {
     "lat": -7.58614,
@@ -6757,7 +6627,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 86
+    "confianca": 81
   },
   {
     "lat": -7.58503,
@@ -6770,7 +6640,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 65
+    "confianca": 77
   },
   {
     "lat": -7.58371,
@@ -6783,7 +6653,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 80
   },
   {
     "lat": -7.58162,
@@ -6796,7 +6666,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 69
   },
   {
     "lat": -7.57974,
@@ -6809,7 +6679,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 62
+    "confianca": 67
   },
   {
     "lat": -8.55215,
@@ -6822,7 +6692,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 97
+    "confianca": 72
   },
   {
     "lat": -8.55082,
@@ -6835,7 +6705,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 68
+    "confianca": 71
   },
   {
     "lat": -8.54803,
@@ -6848,7 +6718,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 71
   },
   {
     "lat": -8.5466,
@@ -6861,7 +6731,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 68
   },
   {
     "lat": -8.54385,
@@ -6874,7 +6744,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 61
   },
   {
     "lat": -7.96208,
@@ -6887,7 +6757,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 82
+    "confianca": 79
   },
   {
     "lat": -6.34435,
@@ -6900,7 +6770,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 64
+    "confianca": 82
   },
   {
     "lat": -6.34338,
@@ -6913,7 +6783,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 85
+    "confianca": 63
   },
   {
     "lat": -6.34273,
@@ -6926,7 +6796,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 87
+    "confianca": 74
   },
   {
     "lat": -6.3417,
@@ -6939,7 +6809,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 61
   },
   {
     "lat": -6.33614,
@@ -6952,7 +6822,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 62
   },
   {
     "lat": -6.33447,
@@ -6965,7 +6835,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 67
   },
   {
     "lat": -6.24634,
@@ -6978,7 +6848,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 91
+    "confianca": 90
   },
   {
     "lat": -6.23903,
@@ -7004,7 +6874,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 87
   },
   {
     "lat": -5.21568,
@@ -7017,7 +6887,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 74
   },
   {
     "lat": -5.21531,
@@ -7030,7 +6900,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 70
   },
   {
     "lat": -5.21469,
@@ -7043,7 +6913,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 69
   },
   {
     "lat": -5.21007,
@@ -7056,7 +6926,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 75
   },
   {
     "lat": -5.20912,
@@ -7069,7 +6939,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 97
   },
   {
     "lat": -5.20853,
@@ -7082,7 +6952,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 71
   },
   {
     "lat": -8.90538,
@@ -7095,7 +6965,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 68
+    "confianca": 76
   },
   {
     "lat": -8.90523,
@@ -7108,7 +6978,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 77
   },
   {
     "lat": -8.90459,
@@ -7121,7 +6991,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 74
   },
   {
     "lat": -8.90448,
@@ -7134,7 +7004,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 91
+    "confianca": 79
   },
   {
     "lat": -8.00444,
@@ -7147,7 +7017,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 93
   },
   {
     "lat": -7.99871,
@@ -7160,7 +7030,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 83
+    "confianca": 76
   },
   {
     "lat": -7.95653,
@@ -7173,7 +7043,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 78
+    "confianca": 91
   },
   {
     "lat": -7.95581,
@@ -7186,7 +7056,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 82
+    "confianca": 77
   },
   {
     "lat": -7.95373,
@@ -7199,7 +7069,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 94
+    "confianca": 88
   },
   {
     "lat": -7.62692,
@@ -7212,7 +7082,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 94
+    "confianca": 91
   },
   {
     "lat": -7.62648,
@@ -7225,7 +7095,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 64
+    "confianca": 98
   },
   {
     "lat": -7.62118,
@@ -7238,7 +7108,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 94
+    "confianca": 96
   },
   {
     "lat": -7.62077,
@@ -7251,7 +7121,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 92
+    "confianca": 93
   },
   {
     "lat": -7.62053,
@@ -7264,7 +7134,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 76
   },
   {
     "lat": -7.62009,
@@ -7277,7 +7147,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 93
   },
   {
     "lat": -7.61545,
@@ -7290,7 +7160,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 83
   },
   {
     "lat": -7.61508,
@@ -7303,7 +7173,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 83
   },
   {
     "lat": -7.61479,
@@ -7316,7 +7186,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 70
+    "confianca": 86
   },
   {
     "lat": -7.61438,
@@ -7329,7 +7199,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 90
+    "confianca": 67
   },
   {
     "lat": -7.59214,
@@ -7342,7 +7212,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 71
+    "confianca": 89
   },
   {
     "lat": -7.58893,
@@ -7355,7 +7225,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 65
   },
   {
     "lat": -7.58828,
@@ -7368,7 +7238,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 86
   },
   {
     "lat": -7.58763,
@@ -7381,7 +7251,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 87
   },
   {
     "lat": -7.58718,
@@ -7394,7 +7264,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 81
   },
   {
     "lat": -7.5865,
@@ -7407,7 +7277,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 63
   },
   {
     "lat": -7.58581,
@@ -7420,7 +7290,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 76
+    "confianca": 78
   },
   {
     "lat": -7.58546,
@@ -7433,7 +7303,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 69
   },
   {
     "lat": -7.58029,
@@ -7446,7 +7316,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 84
   },
   {
     "lat": -7.57965,
@@ -7459,7 +7329,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 80
+    "confianca": 83
   },
   {
     "lat": -7.57909,
@@ -7472,7 +7342,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 91
+    "confianca": 70
   },
   {
     "lat": -7.57842,
@@ -7485,7 +7355,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 82
+    "confianca": 77
   },
   {
     "lat": -7.08667,
@@ -7498,7 +7368,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 77
   },
   {
     "lat": -7.96275,
@@ -7511,7 +7381,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 63
   },
   {
     "lat": -7.962,
@@ -7524,7 +7394,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 99
+    "confianca": 82
   },
   {
     "lat": -7.9599,
@@ -7537,7 +7407,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 93
   },
   {
     "lat": -8.79609,
@@ -7550,7 +7420,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 74
   },
   {
     "lat": -8.79559,
@@ -7563,7 +7433,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 73
   },
   {
     "lat": -8.79432,
@@ -7576,7 +7446,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 65
   },
   {
     "lat": -8.7899,
@@ -7589,7 +7459,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 87
   },
   {
     "lat": -8.78863,
@@ -7602,7 +7472,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 79
+    "confianca": 86
   },
   {
     "lat": -9.85245,
@@ -7615,7 +7485,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 68
+    "confianca": 79
   },
   {
     "lat": -9.85127,
@@ -7628,7 +7498,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 70
   },
   {
     "lat": -9.85073,
@@ -7641,7 +7511,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 62
   },
   {
     "lat": -9.84726,
@@ -7654,7 +7524,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 85
+    "confianca": 67
   },
   {
     "lat": -9.84676,
@@ -7667,7 +7537,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 95
+    "confianca": 81
   },
   {
     "lat": -9.84558,
@@ -7680,7 +7550,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 70
   },
   {
     "lat": -9.7975,
@@ -7693,7 +7563,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 63
   },
   {
     "lat": -9.79721,
@@ -7706,7 +7576,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 61
+    "confianca": 79
   },
   {
     "lat": -9.79671,
@@ -7719,7 +7589,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 97
+    "confianca": 73
   },
   {
     "lat": -9.7917,
@@ -7745,7 +7615,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 93
+    "confianca": 91
   },
   {
     "lat": -9.39508,
@@ -7758,7 +7628,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 82
   },
   {
     "lat": -9.3946,
@@ -7771,7 +7641,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 67
+    "confianca": 70
   },
   {
     "lat": -9.39412,
@@ -7784,7 +7654,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 89
+    "confianca": 83
   },
   {
     "lat": -9.39365,
@@ -7797,7 +7667,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 60
+    "confianca": 92
   },
   {
     "lat": -4.48628,
@@ -7810,7 +7680,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 70
+    "confianca": 67
   },
   {
     "lat": -5.18538,
@@ -7823,7 +7693,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 63
+    "confianca": 69
   },
   {
     "lat": -5.18003,
@@ -7836,7 +7706,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 98
   },
   {
     "lat": -7.70608,
@@ -7849,7 +7719,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 75
+    "confianca": 81
   },
   {
     "lat": -7.70101,
@@ -7862,7 +7732,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 98
+    "confianca": 66
   },
   {
     "lat": -7.66675,
@@ -7875,7 +7745,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 92
+    "confianca": 61
   },
   {
     "lat": -9.25769,
@@ -7888,7 +7758,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 96
+    "confianca": 74
   },
   {
     "lat": -9.25725,
@@ -7901,7 +7771,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 91
+    "confianca": 73
   },
   {
     "lat": -9.25318,
@@ -7914,7 +7784,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 74
+    "confianca": 69
   },
   {
     "lat": -9.25275,
@@ -7927,7 +7797,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 71
+    "confianca": 75
   },
   {
     "lat": -9.25232,
@@ -7940,7 +7810,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 87
+    "confianca": 95
   },
   {
     "lat": -9.1997,
@@ -7953,7 +7823,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 81
+    "confianca": 85
   },
   {
     "lat": -9.11011,
@@ -7966,7 +7836,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 69
+    "confianca": 97
   },
   {
     "lat": -8.19744,
@@ -7979,7 +7849,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 90
+    "confianca": 84
   },
   {
     "lat": -8.19666,
@@ -7992,7 +7862,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 72
+    "confianca": 74
   },
   {
     "lat": -9.6101,
@@ -8005,7 +7875,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 66
+    "confianca": 94
   },
   {
     "lat": -9.60838,
@@ -8018,7 +7888,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 65
+    "confianca": 86
   },
   {
     "lat": -9.60796,
@@ -8031,7 +7901,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 94
+    "confianca": 84
   },
   {
     "lat": -9.60518,
@@ -8044,7 +7914,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 62
+    "confianca": 90
   },
   {
     "lat": -9.60474,
@@ -8057,7 +7927,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "NPP-375D",
-    "confianca": 73
+    "confianca": 66
   },
   {
     "lat": -6.9804,
@@ -8070,7 +7940,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 73
   },
   {
     "lat": -6.9804,
@@ -8083,259 +7953,12 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 72
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 11:20:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 90
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 11:20:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 94
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 11:30:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 66
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 11:30:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 89
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 11:40:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 68
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 11:40:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 96
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 11:40:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 84
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 11:50:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 69
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 11:50:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 93
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 11:50:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 63
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 12:00:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
     "confianca": 60
   },
   {
     "lat": -6.3536,
     "lon": -43.3816,
-    "data": "2025-05-30 12:00:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 94
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 12:00:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 70
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 12:10:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 94
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 12:10:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 92
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 12:10:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 79
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 12:20:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 92
-  },
-  {
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "data": "2025-05-30 12:20:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 72
-  },
-  {
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "data": "2025-05-30 12:20:00",
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 65
-  },
-  {
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "data": "2025-05-30 12:30:00",
+    "data": "2025-05-30 11:20:00",
     "municipio": "Caxias",
     "bioma": "Cerrado",
     "uc": "",
@@ -8346,9 +7969,22 @@
     "confianca": 77
   },
   {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 11:20:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 88
+  },
+  {
     "lat": -6.3536,
     "lon": -43.3816,
-    "data": "2025-05-30 12:30:00",
+    "data": "2025-05-30 11:30:00",
     "municipio": "Caxias",
     "bioma": "Cerrado",
     "uc": "",
@@ -8356,12 +7992,12 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 73
+    "confianca": 84
   },
   {
     "lat": -6.9804,
     "lon": -42.7854,
-    "data": "2025-05-30 12:30:00",
+    "data": "2025-05-30 11:30:00",
     "municipio": "Timon",
     "bioma": "Cerrado",
     "uc": "",
@@ -8374,7 +8010,7 @@
   {
     "lat": -6.3348,
     "lon": -43.3832,
-    "data": "2025-05-30 12:40:00",
+    "data": "2025-05-30 11:40:00",
     "municipio": "Caxias",
     "bioma": "Cerrado",
     "uc": "",
@@ -8387,6 +8023,227 @@
   {
     "lat": -6.3536,
     "lon": -43.3816,
+    "data": "2025-05-30 11:40:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 64
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 11:40:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 65
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "data": "2025-05-30 11:50:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 79
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 11:50:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 79
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 11:50:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 88
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "data": "2025-05-30 12:00:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 73
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 12:00:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 83
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 12:00:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 84
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "data": "2025-05-30 12:10:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 62
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 12:10:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 70
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 12:10:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 77
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "data": "2025-05-30 12:20:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 61
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 12:20:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 66
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 12:20:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 82
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "data": "2025-05-30 12:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 80
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 12:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 76
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 12:30:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 86
+  },
+  {
+    "lat": -6.3348,
+    "lon": -43.3832,
     "data": "2025-05-30 12:40:00",
     "municipio": "Caxias",
     "bioma": "Cerrado",
@@ -8395,7 +8252,20 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 81
+    "confianca": 66
+  },
+  {
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "data": "2025-05-30 12:40:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 75
   },
   {
     "lat": -6.9804,
@@ -8408,7 +8278,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 64
+    "confianca": 66
   },
   {
     "lat": -6.3536,
@@ -8421,7 +8291,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 90
+    "confianca": 77
   },
   {
     "lat": -6.9804,
@@ -8434,7 +8304,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 62
+    "confianca": 70
   },
   {
     "lat": -6.3348,
@@ -8447,7 +8317,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 69
+    "confianca": 93
   },
   {
     "lat": -6.9804,
@@ -8460,7 +8330,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 99
+    "confianca": 77
   },
   {
     "lat": -6.3348,
@@ -8473,7 +8343,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 74
+    "confianca": 96
   },
   {
     "lat": -6.9804,
@@ -8486,7 +8356,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 93
   },
   {
     "lat": -6.9804,
@@ -8499,7 +8369,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 63
+    "confianca": 74
   },
   {
     "lat": -6.9804,
@@ -8512,7 +8382,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 76
+    "confianca": 93
   },
   {
     "lat": -6.2226,
@@ -8525,7 +8395,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 91
   },
   {
     "lat": -6.2414,
@@ -8538,7 +8408,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 96
+    "confianca": 60
   },
   {
     "lat": -6.2038,
@@ -8551,7 +8421,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 69
+    "confianca": 90
   },
   {
     "lat": -6.3536,
@@ -8564,7 +8434,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 97
+    "confianca": 78
   },
   {
     "lat": -6.9804,
@@ -8577,7 +8447,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 73
+    "confianca": 92
   },
   {
     "lat": -6.2226,
@@ -8590,7 +8460,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 85
+    "confianca": 65
   },
   {
     "lat": -6.2228,
@@ -8616,7 +8486,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 69
+    "confianca": 61
   },
   {
     "lat": -5.97715,
@@ -8629,7 +8499,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 61
+    "confianca": 94
   },
   {
     "lat": -6.3499,
@@ -8642,7 +8512,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 62
+    "confianca": 88
   },
   {
     "lat": -6.34851,
@@ -8655,7 +8525,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 62
+    "confianca": 68
   },
   {
     "lat": -6.34045,
@@ -8668,7 +8538,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 95
+    "confianca": 80
   },
   {
     "lat": -6.33906,
@@ -8681,7 +8551,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 93
+    "confianca": 86
   },
   {
     "lat": -6.19385,
@@ -8694,7 +8564,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 77
+    "confianca": 82
   },
   {
     "lat": -5.49736,
@@ -8707,7 +8577,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 83
+    "confianca": 60
   },
   {
     "lat": -5.49594,
@@ -8720,7 +8590,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 73
+    "confianca": 72
   },
   {
     "lat": -5.21038,
@@ -8733,7 +8603,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 75
+    "confianca": 71
   },
   {
     "lat": -5.1737,
@@ -8746,7 +8616,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 70
+    "confianca": 62
   },
   {
     "lat": -5.05489,
@@ -8759,7 +8629,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 89
+    "confianca": 94
   },
   {
     "lat": -7.18202,
@@ -8772,7 +8642,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 96
+    "confianca": 77
   },
   {
     "lat": -6.98405,
@@ -8785,7 +8655,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 63
+    "confianca": 73
   },
   {
     "lat": -6.98253,
@@ -8798,7 +8668,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 66
+    "confianca": 72
   },
   {
     "lat": -6.97264,
@@ -8811,7 +8681,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 76
+    "confianca": 72
   },
   {
     "lat": -6.95128,
@@ -8824,7 +8694,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 62
+    "confianca": 76
   },
   {
     "lat": -7.3444,
@@ -8837,7 +8707,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 80
+    "confianca": 98
   },
   {
     "lat": -7.32259,
@@ -8850,7 +8720,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 88
+    "confianca": 75
   },
   {
     "lat": -7.23193,
@@ -8863,7 +8733,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 79
+    "confianca": 75
   },
   {
     "lat": -8.0778,
@@ -8876,7 +8746,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 76
+    "confianca": 71
   },
   {
     "lat": -8.0764,
@@ -8889,7 +8759,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 63
+    "confianca": 78
   },
   {
     "lat": -5.78457,
@@ -8902,7 +8772,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 98
+    "confianca": 77
   },
   {
     "lat": -5.21227,
@@ -8915,7 +8785,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 75
+    "confianca": 72
   },
   {
     "lat": -6.32322,
@@ -8928,7 +8798,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 74
+    "confianca": 80
   },
   {
     "lat": -6.32191,
@@ -8941,7 +8811,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 60
+    "confianca": 98
   },
   {
     "lat": -6.27405,
@@ -8954,7 +8824,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 61
+    "confianca": 98
   },
   {
     "lat": -6.27272,
@@ -8967,7 +8837,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 89
+    "confianca": 84
   },
   {
     "lat": -6.05658,
@@ -8980,7 +8850,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 69
+    "confianca": 90
   },
   {
     "lat": -8.78495,
@@ -8993,7 +8863,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 80
+    "confianca": 90
   },
   {
     "lat": -8.7836,
@@ -9006,7 +8876,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 70
+    "confianca": 92
   },
   {
     "lat": -8.10769,
@@ -9019,7 +8889,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 93
+    "confianca": 85
   },
   {
     "lat": -8.10642,
@@ -9032,7 +8902,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 95
+    "confianca": 94
   },
   {
     "lat": -8.09878,
@@ -9045,7 +8915,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 64
+    "confianca": 60
   },
   {
     "lat": -8.09751,
@@ -9058,7 +8928,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 95
+    "confianca": 80
   },
   {
     "lat": -9.84289,
@@ -9071,7 +8941,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 65
+    "confianca": 99
   },
   {
     "lat": -6.33085,
@@ -9084,7 +8954,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 93
+    "confianca": 68
   },
   {
     "lat": -5.7717,
@@ -9097,7 +8967,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 90
+    "confianca": 76
   },
   {
     "lat": -5.77043,
@@ -9110,7 +8980,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 75
+    "confianca": 79
   },
   {
     "lat": -7.95525,
@@ -9123,7 +8993,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 64
+    "confianca": 82
   },
   {
     "lat": -7.7924,
@@ -9136,7 +9006,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 68
+    "confianca": 66
   },
   {
     "lat": -7.62048,
@@ -9149,7 +9019,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 75
+    "confianca": 68
   },
   {
     "lat": -7.58624,
@@ -9162,7 +9032,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 99
+    "confianca": 63
   },
   {
     "lat": -7.58497,
@@ -9175,7 +9045,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 82
+    "confianca": 80
   },
   {
     "lat": -7.57612,
@@ -9188,7 +9058,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 73
+    "confianca": 72
   },
   {
     "lat": -7.0892,
@@ -9201,7 +9071,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 80
+    "confianca": 91
   },
   {
     "lat": -8.546,
@@ -9214,7 +9084,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 63
+    "confianca": 87
   },
   {
     "lat": -8.1157,
@@ -9227,7 +9097,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 63
+    "confianca": 97
   },
   {
     "lat": -7.96409,
@@ -9240,7 +9110,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 62
+    "confianca": 98
   },
   {
     "lat": -5.04899,
@@ -9253,7 +9123,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 62
+    "confianca": 76
   },
   {
     "lat": -9.27002,
@@ -9266,7 +9136,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 74
+    "confianca": 98
   },
   {
     "lat": -9.26862,
@@ -9279,7 +9149,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 61
+    "confianca": 77
   },
   {
     "lat": -9.04216,
@@ -9292,7 +9162,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 99
+    "confianca": 72
   },
   {
     "lat": -9.04062,
@@ -9305,7 +9175,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 98
+    "confianca": 82
   },
   {
     "lat": -8.41091,
@@ -9318,7 +9188,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 97
+    "confianca": 99
   },
   {
     "lat": -9.6782,
@@ -9331,7 +9201,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "TERRA_M-T",
-    "confianca": 79
+    "confianca": 68
   },
   {
     "lat": -8.099,
@@ -9344,7 +9214,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 82
+    "confianca": 71
   },
   {
     "lat": -7.5201,
@@ -9357,7 +9227,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 97
+    "confianca": 89
   },
   {
     "lat": -7.5013,
@@ -9370,7 +9240,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 95
+    "confianca": 73
   },
   {
     "lat": -6.9804,
@@ -9383,7 +9253,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 91
+    "confianca": 97
   },
   {
     "lat": -6.2226,
@@ -9396,7 +9266,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 64
+    "confianca": 90
   },
   {
     "lat": -6.2228,
@@ -9409,7 +9279,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 95
+    "confianca": 77
   },
   {
     "lat": -8.099,
@@ -9422,7 +9292,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 68
+    "confianca": 64
   },
   {
     "lat": -7.5204,
@@ -9435,7 +9305,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 68
+    "confianca": 72
   },
   {
     "lat": -7.5013,
@@ -9448,7 +9318,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 70
+    "confianca": 64
   },
   {
     "lat": -6.9804,
@@ -9461,7 +9331,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 97
   },
   {
     "lat": -8.8101,
@@ -9474,7 +9344,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 95
+    "confianca": 60
   },
   {
     "lat": -6.2228,
@@ -9487,7 +9357,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 90
+    "confianca": 81
   },
   {
     "lat": -8.099,
@@ -9500,7 +9370,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 64
+    "confianca": 86
   },
   {
     "lat": -7.2384,
@@ -9513,7 +9383,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 78
+    "confianca": 80
   },
   {
     "lat": -6.2414,
@@ -9526,7 +9396,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 65
+    "confianca": 83
   },
   {
     "lat": -6.2038,
@@ -9539,7 +9409,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 66
+    "confianca": 68
   },
   {
     "lat": -8.8101,
@@ -9552,7 +9422,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 69
+    "confianca": 61
   },
   {
     "lat": -6.2226,
@@ -9565,7 +9435,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 69
+    "confianca": 88
   },
   {
     "lat": -6.2228,
@@ -9578,11 +9448,89 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 67
+    "confianca": 92
   },
   {
     "lat": -6.2038,
     "lon": -43.3475,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 98
+  },
+  {
+    "lat": -6.2224,
+    "lon": -43.3693,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 67
+  },
+  {
+    "lat": -6.2226,
+    "lon": -43.3459,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 72
+  },
+  {
+    "lat": -7.585,
+    "lon": -45.8608,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 84
+  },
+  {
+    "lat": -8.099,
+    "lon": -45.3144,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 93
+  },
+  {
+    "lat": -8.8101,
+    "lon": -47.1937,
+    "data": "2025-05-30 14:30:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 84
+  },
+  {
+    "lat": -6.2228,
+    "lon": -43.3226,
     "data": "2025-05-30 14:30:00",
     "municipio": "Caxias",
     "bioma": "Cerrado",
@@ -9594,84 +9542,6 @@
     "confianca": 91
   },
   {
-    "lat": -6.2224,
-    "lon": -43.3693,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 67
-  },
-  {
-    "lat": -6.2226,
-    "lon": -43.3459,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 84
-  },
-  {
-    "lat": -7.585,
-    "lon": -45.8608,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 89
-  },
-  {
-    "lat": -8.099,
-    "lon": -45.3144,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 76
-  },
-  {
-    "lat": -8.8101,
-    "lon": -47.1937,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 95
-  },
-  {
-    "lat": -6.2228,
-    "lon": -43.3226,
-    "data": "2025-05-30 14:30:00",
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "satelite": "GOES-19",
-    "confianca": 83
-  },
-  {
     "lat": -7.585,
     "lon": -45.8608,
     "data": "2025-05-30 14:40:00",
@@ -9682,7 +9552,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 72
+    "confianca": 88
   },
   {
     "lat": -8.099,
@@ -9695,7 +9565,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 81
+    "confianca": 60
   },
   {
     "lat": -6.2038,
@@ -9708,7 +9578,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 60
   },
   {
     "lat": -6.2224,
@@ -9721,7 +9591,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 94
+    "confianca": 86
   },
   {
     "lat": -6.9804,
@@ -9734,7 +9604,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 68
+    "confianca": 72
   },
   {
     "lat": -6.2226,
@@ -9747,7 +9617,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 76
+    "confianca": 96
   },
   {
     "lat": -6.2228,
@@ -9760,7 +9630,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 86
+    "confianca": 90
   },
   {
     "lat": -7.585,
@@ -9773,7 +9643,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 63
+    "confianca": 60
   },
   {
     "lat": -6.2127,
@@ -9786,7 +9656,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 84
+    "confianca": 97
   },
   {
     "lat": -7.2955,
@@ -9799,7 +9669,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 70
+    "confianca": 87
   },
   {
     "lat": -6.9804,
@@ -9812,7 +9682,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 80
+    "confianca": 64
   },
   {
     "lat": -6.2226,
@@ -9825,7 +9695,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 87
+    "confianca": 71
   },
   {
     "lat": -6.2228,
@@ -9838,7 +9708,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 82
+    "confianca": 63
   },
   {
     "lat": -7.585,
@@ -9851,7 +9721,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 98
+    "confianca": 84
   },
   {
     "lat": -7.5201,
@@ -9864,7 +9734,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 75
+    "confianca": 86
   },
   {
     "lat": -7.5662,
@@ -9877,7 +9747,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 98
+    "confianca": 68
   },
   {
     "lat": -6.2038,
@@ -9890,7 +9760,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 84
+    "confianca": 74
   },
   {
     "lat": -7.5848,
@@ -9903,7 +9773,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 60
+    "confianca": 71
   },
   {
     "lat": -6.9804,
@@ -9916,7 +9786,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 92
+    "confianca": 82
   },
   {
     "lat": -6.4324,
@@ -9929,7 +9799,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 96
+    "confianca": 84
   },
   {
     "lat": -7.585,
@@ -9942,7 +9812,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 82
+    "confianca": 83
   },
   {
     "lat": -8.099,
@@ -9955,7 +9825,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 68
+    "confianca": 63
   },
   {
     "lat": -6.2414,
@@ -9968,7 +9838,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 70
+    "confianca": 97
   },
   {
     "lat": -7.5848,
@@ -9981,7 +9851,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 61
+    "confianca": 60
   },
   {
     "lat": -6.9804,
@@ -9994,7 +9864,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 82
+    "confianca": 74
   },
   {
     "lat": -7.585,
@@ -10007,7 +9877,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 87
+    "confianca": 69
   },
   {
     "lat": -7.5662,
@@ -10020,7 +9890,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 81
+    "confianca": 70
   },
   {
     "lat": -7.5848,
@@ -10033,7 +9903,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 81
+    "confianca": 80
   },
   {
     "lat": -6.9804,
@@ -10059,7 +9929,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 72
+    "confianca": 93
   },
   {
     "lat": -8.099,
@@ -10072,7 +9942,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 87
+    "confianca": 66
   },
   {
     "lat": -7.5848,
@@ -10085,7 +9955,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 62
+    "confianca": 90
   },
   {
     "lat": -6.2226,
@@ -10098,7 +9968,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 90
+    "confianca": 85
   },
   {
     "lat": -7.585,
@@ -10111,7 +9981,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 90
+    "confianca": 93
   },
   {
     "lat": -7.5848,
@@ -10124,7 +9994,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 97
+    "confianca": 60
   },
   {
     "lat": -6.9804,
@@ -10137,7 +10007,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 95
+    "confianca": 77
   },
   {
     "lat": -7.585,
@@ -10150,7 +10020,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 68
+    "confianca": 75
   },
   {
     "lat": -7.5393,
@@ -10163,7 +10033,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 64
+    "confianca": 73
   },
   {
     "lat": -7.585,
@@ -10176,7 +10046,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 99
+    "confianca": 68
   },
   {
     "lat": -7.2198,
@@ -10189,7 +10059,7 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 92
+    "confianca": 91
   },
   {
     "lat": -6.2228,
@@ -10202,6 +10072,175 @@
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
     "satelite": "GOES-19",
-    "confianca": 75
+    "confianca": 61
+  },
+  {
+    "lat": -7.5204,
+    "lon": -43.3201,
+    "data": "2025-05-30 16:40:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 97
+  },
+  {
+    "lat": -6.2226,
+    "lon": -43.3459,
+    "data": "2025-05-30 17:00:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 62
+  },
+  {
+    "lat": -7.5201,
+    "lon": -43.3436,
+    "data": "2025-05-30 17:10:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 94
+  },
+  {
+    "lat": -7.5013,
+    "lon": -43.3455,
+    "data": "2025-05-30 17:10:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 93
+  },
+  {
+    "lat": -7.5393,
+    "lon": -43.3182,
+    "data": "2025-05-30 17:10:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 60
+  },
+  {
+    "lat": -6.2226,
+    "lon": -43.3459,
+    "data": "2025-05-30 17:10:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 64
+  },
+  {
+    "lat": -7.585,
+    "lon": -45.8608,
+    "data": "2025-05-30 17:30:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 68
+  },
+  {
+    "lat": -6.9424,
+    "lon": -42.8126,
+    "data": "2025-05-30 17:30:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 71
+  },
+  {
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "data": "2025-05-30 17:30:00",
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 88
+  },
+  {
+    "lat": -8.0874,
+    "lon": -46.2851,
+    "data": "2025-05-30 17:30:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 83
+  },
+  {
+    "lat": -6.2228,
+    "lon": -43.3226,
+    "data": "2025-05-30 17:30:00",
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 69
+  },
+  {
+    "lat": -7.585,
+    "lon": -45.8608,
+    "data": "2025-05-30 17:40:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 76
+  },
+  {
+    "lat": -8.0874,
+    "lon": -46.2851,
+    "data": "2025-05-30 17:40:00",
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "satelite": "GOES-19",
+    "confianca": 89
   }
 ]
