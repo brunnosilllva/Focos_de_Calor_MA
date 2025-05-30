@@ -1,4 +1,4 @@
-// scripts/fetch-data.js - Versão focada nos CSVs (que já estão funcionando!)
+// scripts/fetch-data.js - Versão com limpeza de estrutura
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -14,6 +14,43 @@ class GoogleDriveDataFetcher {
     
     if (!this.apiKey) {
       throw new Error('GOOGLE_API_KEY não configurada');
+    }
+  }
+
+  async prepararEstruturaDiretorios() {
+    console.log('🔧 Verificando e corrigindo estrutura de diretórios...');
+    
+    const baseDir = path.join(__dirname, '../src/data');
+    const rawDir = path.join(baseDir, 'raw');
+    const processedDir = path.join(baseDir, 'processed');
+    const shapefilesDir = path.join(baseDir, 'shapefiles');
+    
+    try {
+      // Criar diretório base
+      await fs.mkdir(baseDir, { recursive: true });
+      
+      // Verificar se 'raw' existe como arquivo e remover
+      try {
+        const rawStat = await fs.lstat(rawDir);
+        if (rawStat.isFile()) {
+          console.log('🗑️ Removendo arquivo conflitante: raw');
+          await fs.unlink(rawDir);
+        }
+      } catch (error) {
+        // Arquivo não existe, tudo bem
+      }
+      
+      // Criar diretórios necessários
+      await fs.mkdir(rawDir, { recursive: true });
+      await fs.mkdir(processedDir, { recursive: true });
+      await fs.mkdir(shapefilesDir, { recursive: true });
+      
+      console.log('✅ Estrutura de diretórios corrigida');
+      return rawDir;
+      
+    } catch (error) {
+      console.error('❌ Erro ao preparar estrutura:', error);
+      throw error;
     }
   }
 
@@ -65,14 +102,8 @@ class GoogleDriveDataFetcher {
     
     console.log(`📊 Encontrados ${csvFiles.length} arquivos CSV`);
     
-    const outputDir = path.join(__dirname, '../src/data/raw');
-    
-    try {
-      await fs.mkdir(outputDir, { recursive: true });
-    } catch (error) {
-      // Pasta já existe, continuar normalmente
-      console.log('📁 Pasta raw já existe, continuando...');
-    }
+    // Preparar estrutura de diretórios primeiro
+    const outputDir = await this.prepararEstruturaDiretorios();
     
     const downloadedFiles = [];
     
@@ -137,6 +168,9 @@ class GoogleDriveDataFetcher {
     console.log('🔄 Verificando atualizações...');
     
     try {
+      // Preparar estrutura primeiro
+      await this.prepararEstruturaDiretorios();
+      
       const metadataPath = path.join(__dirname, '../src/data/raw/download-metadata.json');
       let lastDownload = null;
       
@@ -178,6 +212,8 @@ class GoogleDriveDataFetcher {
     
     const rawDir = path.join(__dirname, '../src/data/raw');
     const processedDir = path.join(__dirname, '../src/data/processed');
+    
+    // Garantir que diretórios existem
     await fs.mkdir(processedDir, { recursive: true });
     
     try {
@@ -191,6 +227,8 @@ class GoogleDriveDataFetcher {
         totalFiles: csvFiles.length,
         processedAt: new Date().toISOString(),
         files: csvFiles,
+        dataPath: 'src/data/raw',
+        status: 'success',
         nextSteps: [
           'Implementar joins espaciais',
           'Criar agregações por município',
