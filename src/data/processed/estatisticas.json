@@ -1,39 +1,40 @@
 {
-  "total_focos": 1105,
+  "total_focos": 1233,
   "por_municipio": {
-    "Balsas": 500,
-    "Timon": 252,
-    "Caxias": 234,
-    "Imperatriz": 42,
-    "Chapadinha": 32,
-    "Açailândia": 24,
-    "Codó": 11,
-    "Santa Inês": 9,
+    "Balsas": 562,
+    "Timon": 275,
+    "Caxias": 256,
+    "Imperatriz": 48,
+    "Chapadinha": 37,
+    "Açailândia": 30,
+    "Codó": 14,
+    "Santa Inês": 10,
     "São Luís": 1
   },
   "por_bioma": {
-    "Cerrado": 1034,
-    "Caatinga": 51,
-    "Amazônia": 20
+    "Cerrado": 1147,
+    "Caatinga": 60,
+    "Amazônia": 26
   },
   "por_periodo_temporal": {
-    "Hoje": 1105
+    "Hoje": 1233
   },
   "por_periodo_dia": {
-    "Desconhecido": 1105
+    "Desconhecido": 1233
   },
   "por_satelite": {
     "NOAA-21": 287,
     "NPP-375": 246,
     "NPP-375D": 177,
     "NOAA-20": 165,
-    "GOES-19": 144,
+    "GOES-19": 163,
+    "AQUA_M-T": 109,
     "TERRA_M-T": 79,
     "AQUA_M-M": 7
   },
-  "ultima_atualizacao": "2025-05-30T19:01:53.346Z",
+  "ultima_atualizacao": "2025-05-30T19:30:09.248Z",
   "resumo_temporal": {
-    "hoje": 1105,
+    "hoje": 1233,
     "ultima_semana": 0,
     "ultimo_mes": 0,
     "antigos": 0

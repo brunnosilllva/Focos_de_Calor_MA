@@ -1,11 +1,11 @@
 {
-  "totalFiles": 1105,
-  "totalFocos": 1105,
-  "processedAt": "2025-05-30T19:01:53.347Z",
+  "totalFiles": 1233,
+  "totalFocos": 1233,
+  "processedAt": "2025-05-30T19:30:09.249Z",
   "dataPath": "src/data/processed",
   "status": "success",
   "estatisticas": {
-    "hoje": 1105,
+    "hoje": 1233,
     "ultima_semana": 0,
     "ultimo_mes": 0,
     "antigos": 0
