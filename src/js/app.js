@@ -1,9 +1,8 @@
-// app.js - Dashboard de Focos de Calor do Maranhão (Melhorias Chart.js)
+// app.js - Dashboard de Focos de Calor (Versão Simplificada para Debug)
 class DashboardFocosCalor {
     constructor() {
         this.dados = [];
         this.dadosFiltrados = [];
-        this.estatisticas = {};
         this.filtros = {
             municipio: 'todos',
             bioma: 'todos',
@@ -11,255 +10,187 @@ class DashboardFocosCalor {
             periodo: 'todos'
         };
         
-        // Handlers existentes + novo ChartHandler
+        // Handlers
         this.mapHandler = null;
         this.chartHandler = null;
         this.dataLoader = null;
         
+        console.log('🚀 Dashboard inicializando...');
         this.inicializar();
     }
 
     async inicializar() {
         try {
-            this.mostrarCarregamento('Carregando dados do dashboard...');
+            console.log('1️⃣ Iniciando carregamento...');
+            this.mostrarCarregamento('Carregando dados...');
             
-            // 1. Carregar dados
+            // Aguardar um pouco para garantir que DOM esteja pronto
+            await this.delay(500);
+            
+            // 1. Inicializar DataLoader
+            console.log('2️⃣ Inicializando DataLoader...');
+            this.dataLoader = new DataLoader();
+            
+            // 2. Carregar dados
+            console.log('3️⃣ Carregando dados...');
             await this.carregarDados();
             
-            // 2. Inicializar componentes
-            await this.inicializarMapa();
-            await this.inicializarGraficos(); // ← NOVA IMPLEMENTAÇÃO
+            // 3. Inicializar componentes (com fallback)
+            console.log('4️⃣ Inicializando componentes...');
+            await this.inicializarComponentes();
+            
+            // 4. Configurar filtros
+            console.log('5️⃣ Configurando filtros...');
             this.inicializarFiltros();
             this.inicializarEventos();
             
-            // 3. Primeira renderização
+            // 5. Primeira renderização
+            console.log('6️⃣ Renderizando dados...');
             this.aplicarFiltros();
             this.atualizarEstatisticas();
             
+            // 6. Ocultar loading
+            console.log('7️⃣ Finalizando...');
+            await this.delay(1000); // Aguardar um pouco para suavizar
             this.ocultarCarregamento();
-            console.log('✅ Dashboard inicializado com sucesso!', {
-                focos: this.dados.length,
-                graficos: 'Chart.js integrado',
-                mapa: 'Leaflet ativo'
-            });
+            
+            console.log('✅ Dashboard inicializado com sucesso!');
             
         } catch (error) {
-            console.error('❌ Erro ao inicializar dashboard:', error);
-            this.mostrarErro('Erro ao carregar o dashboard. Tente novamente.');
+            console.error('❌ Erro durante inicialização:', error);
+            this.mostrarErroInicializacao(error);
         }
     }
 
     async carregarDados() {
         try {
-            // Tentar carregar dados processados primeiro
-            const response = await fetch('./src/data/processed/focos-dashboard.json');
-            if (response.ok) {
-                this.dados = await response.json();
-                console.log(`📊 Dados carregados: ${this.dados.length} focos`);
-            } else {
-                throw new Error('Dados não encontrados');
-            }
-            
-            // Tentar carregar estatísticas
-            try {
-                const statsResponse = await fetch('./src/data/processed/estatisticas.json');
-                if (statsResponse.ok) {
-                    this.estatisticas = await statsResponse.json();
-                }
-            } catch (e) {
-                console.warn('⚠️ Estatísticas não encontradas, calculando...');
-                this.calcularEstatisticas();
-            }
-            
+            console.log('📊 Carregando dados...');
+            this.dados = await this.dataLoader.carregarDadosPrincipais();
             this.dadosFiltrados = [...this.dados];
-            
+            console.log(`✅ ${this.dados.length} focos carregados`);
         } catch (error) {
-            console.warn('⚠️ Usando dados de exemplo para demonstração');
+            console.error('❌ Erro ao carregar dados:', error);
+            // Em caso de erro, usar dados de exemplo
             this.dados = this.gerarDadosExemplo();
             this.dadosFiltrados = [...this.dados];
-            this.calcularEstatisticas();
         }
     }
 
-    // ═══════════════════════════════════════════════════════════════
-    // 🆕 NOVA IMPLEMENTAÇÃO: Inicialização dos Gráficos Chart.js
-    // ═══════════════════════════════════════════════════════════════
-    async inicializarGraficos() {
+    async inicializarComponentes() {
+        // Inicializar mapa (com tratamento de erro)
         try {
-            // Verificar se Chart.js está disponível
-            if (typeof Chart === 'undefined') {
-                console.error('❌ Chart.js não foi carregado!');
-                this.mostrarAviso('Chart.js não encontrado. Alguns gráficos podem não funcionar.');
-                return;
-            }
-
-            // Verificar se ChartHandler está disponível
-            if (typeof ChartHandler === 'undefined') {
-                console.error('❌ ChartHandler não foi carregado!');
-                this.mostrarAviso('ChartHandler não encontrado. Verifique se o arquivo foi incluído.');
-                return;
-            }
-
-            // Inicializar ChartHandler
-            this.chartHandler = new ChartHandler();
-            
-            // Aguardar um pouco para garantir que os elementos DOM existam
-            await new Promise(resolve => setTimeout(resolve, 100));
-            
-            // Inicializar gráficos com os dados atuais
-            await this.chartHandler.inicializarGraficos(this.dados);
-            
-            console.log('📈 Gráficos Chart.js inicializados com sucesso!');
-            
-        } catch (error) {
-            console.error('❌ Erro ao inicializar gráficos:', error);
-            this.mostrarAviso('Erro ao carregar gráficos. Algumas visualizações podem não estar disponíveis.');
-        }
-    }
-
-    async inicializarMapa() {
-        try {
-            if (typeof MapHandler !== 'undefined') {
+            console.log('🗺️ Inicializando mapa...');
+            if (typeof L !== 'undefined' && typeof MapHandler !== 'undefined') {
                 this.mapHandler = new MapHandler();
                 await this.mapHandler.inicializar('mapa-container');
-                this.mapHandler.adicionarFocos(this.dadosFiltrados);
-                console.log('🗺️ Mapa inicializado');
+                console.log('✅ Mapa inicializado');
+            } else {
+                console.warn('⚠️ Leaflet ou MapHandler não disponível');
             }
         } catch (error) {
             console.error('❌ Erro ao inicializar mapa:', error);
         }
+
+        // Inicializar gráficos (com tratamento de erro)
+        try {
+            console.log('📈 Inicializando gráficos...');
+            if (typeof Chart !== 'undefined' && typeof ChartHandler !== 'undefined') {
+                this.chartHandler = new ChartHandler();
+                await this.delay(500); // Aguardar DOM
+                await this.chartHandler.inicializarGraficos(this.dados);
+                console.log('✅ Gráficos inicializados');
+            } else {
+                console.warn('⚠️ Chart.js ou ChartHandler não disponível');
+            }
+        } catch (error) {
+            console.error('❌ Erro ao inicializar gráficos:', error);
+        }
     }
 
     inicializarFiltros() {
-        // Popular dropdowns baseado nos dados reais
+        console.log('🎛️ Configurando filtros...');
+        
+        // Popular dropdowns
         this.popularFiltroMunicipios();
         this.popularFiltroBiomas();
         this.popularFiltroSatelites();
     }
 
     inicializarEventos() {
-        // Eventos dos filtros principais
-        const filtroMunicipio = document.getElementById('filtro-municipio');
-        const filtroBioma = document.getElementById('filtro-bioma');
-        const filtroSatelite = document.getElementById('filtro-satelite');
-        const filtroPeriodo = document.getElementById('filtro-periodo');
+        console.log('⚡ Configurando eventos...');
+        
+        // Eventos dos filtros
+        const elementos = [
+            { id: 'filtro-municipio', propriedade: 'municipio' },
+            { id: 'filtro-bioma', propriedade: 'bioma' },
+            { id: 'filtro-satelite', propriedade: 'satelite' },
+            { id: 'filtro-periodo', propriedade: 'periodo' }
+        ];
 
-        if (filtroMunicipio) {
-            filtroMunicipio.addEventListener('change', (e) => {
-                this.filtros.municipio = e.target.value;
-                this.aplicarFiltros();
-            });
-        }
+        elementos.forEach(({ id, propriedade }) => {
+            const elemento = document.getElementById(id);
+            if (elemento) {
+                elemento.addEventListener('change', (e) => {
+                    this.filtros[propriedade] = e.target.value;
+                    this.aplicarFiltros();
+                });
+            }
+        });
 
-        if (filtroBioma) {
-            filtroBioma.addEventListener('change', (e) => {
-                this.filtros.bioma = e.target.value;
-                this.aplicarFiltros();
-            });
-        }
-
-        if (filtroSatelite) {
-            filtroSatelite.addEventListener('change', (e) => {
-                this.filtros.satelite = e.target.value;
-                this.aplicarFiltros();
-            });
-        }
-
-        if (filtroPeriodo) {
-            filtroPeriodo.addEventListener('change', (e) => {
-                this.filtros.periodo = e.target.value;
-                this.aplicarFiltros();
-            });
-        }
-
-        // Botão de reset
+        // Botão reset
         const btnReset = document.getElementById('btn-reset-filtros');
         if (btnReset) {
             btnReset.addEventListener('click', () => this.resetarFiltros());
         }
     }
 
-    // ═══════════════════════════════════════════════════════════════
-    // 🆕 MELHORIAS: Aplicação de Filtros com Atualização de Gráficos
-    // ═══════════════════════════════════════════════════════════════
     aplicarFiltros() {
-        // Aplicar filtros aos dados
+        console.log('🔍 Aplicando filtros...');
+        
         let dadosFiltrados = [...this.dados];
 
-        // Filtro por município
+        // Aplicar cada filtro
         if (this.filtros.municipio !== 'todos') {
-            dadosFiltrados = dadosFiltrados.filter(d => 
-                d.municipio === this.filtros.municipio
-            );
+            dadosFiltrados = dadosFiltrados.filter(d => d.municipio === this.filtros.municipio);
         }
 
-        // Filtro por bioma
         if (this.filtros.bioma !== 'todos') {
-            dadosFiltrados = dadosFiltrados.filter(d => 
-                d.bioma === this.filtros.bioma
-            );
+            dadosFiltrados = dadosFiltrados.filter(d => d.bioma === this.filtros.bioma);
         }
 
-        // Filtro por satélite
         if (this.filtros.satelite !== 'todos') {
-            dadosFiltrados = dadosFiltrados.filter(d => 
-                d.satelite === this.filtros.satelite
-            );
+            dadosFiltrados = dadosFiltrados.filter(d => d.satelite === this.filtros.satelite);
         }
 
-        // Aplicar filtro de período (implementação básica)
-        if (this.filtros.periodo !== 'todos') {
-            dadosFiltrados = this.aplicarFiltroPeriodo(dadosFiltrados);
-        }
-
-        // Atualizar dados filtrados
         this.dadosFiltrados = dadosFiltrados;
 
-        // 🆕 Atualizar todos os componentes
+        // Atualizar componentes
         this.atualizarComponentes();
-
-        console.log(`🔍 Filtros aplicados: ${dadosFiltrados.length} focos exibidos`);
+        
+        console.log(`✅ ${dadosFiltrados.length} focos filtrados`);
     }
 
-    // ═══════════════════════════════════════════════════════════════
-    // 🆕 NOVA FUNÇÃO: Atualizar Todos os Componentes
-    // ═══════════════════════════════════════════════════════════════
     atualizarComponentes() {
-        // 1. Atualizar estatísticas
-        this.atualizarEstatisticas();
-
-        // 2. Atualizar mapa
+        // Atualizar mapa
         if (this.mapHandler) {
-            this.mapHandler.atualizarFocos(this.dadosFiltrados);
+            try {
+                this.mapHandler.atualizarFocos(this.dadosFiltrados);
+            } catch (error) {
+                console.error('❌ Erro ao atualizar mapa:', error);
+            }
         }
 
-        // 3. 🆕 Atualizar gráficos
+        // Atualizar gráficos
         if (this.chartHandler) {
-            this.chartHandler.atualizarGraficos(this.dadosFiltrados);
+            try {
+                this.chartHandler.atualizarGraficos(this.dadosFiltrados);
+            } catch (error) {
+                console.error('❌ Erro ao atualizar gráficos:', error);
+            }
         }
 
-        // 4. Atualizar contadores na interface
-        this.atualizarContadores();
-    }
-
-    aplicarFiltroPeriodo(dados) {
-        const hoje = new Date();
-        const umaSemanaAtras = new Date(hoje.getTime() - 7 * 24 * 60 * 60 * 1000);
-        const umMesAtras = new Date(hoje.getTime() - 30 * 24 * 60 * 60 * 1000);
-
-        switch (this.filtros.periodo) {
-            case '7dias':
-                return dados.filter(d => new Date(d.data_hora || d.data) >= umaSemanaAtras);
-            case '30dias':
-                return dados.filter(d => new Date(d.data_hora || d.data) >= umMesAtras);
-            case 'hoje':
-                return dados.filter(d => {
-                    const dataFoco = new Date(d.data_hora || d.data);
-                    return dataFoco.toDateString() === hoje.toDateString();
-                });
-            default:
-                return dados;
-        }
+        // Atualizar contador
+        this.atualizarContador();
     }
 
     popularFiltroMunicipios() {
@@ -308,7 +239,6 @@ class DashboardFocosCalor {
     }
 
     resetarFiltros() {
-        // Resetar objeto de filtros
         this.filtros = {
             municipio: 'todos',
             bioma: 'todos',
@@ -316,34 +246,29 @@ class DashboardFocosCalor {
             periodo: 'todos'
         };
 
-        // Resetar dropdowns
-        document.getElementById('filtro-municipio')?.selectedIndex = 0;
-        document.getElementById('filtro-bioma')?.selectedIndex = 0;
-        document.getElementById('filtro-satelite')?.selectedIndex = 0;
-        document.getElementById('filtro-periodo')?.selectedIndex = 0;
+        // Resetar selects
+        ['filtro-municipio', 'filtro-bioma', 'filtro-satelite', 'filtro-periodo'].forEach(id => {
+            const elemento = document.getElementById(id);
+            if (elemento) elemento.selectedIndex = 0;
+        });
 
-        // Reaplicar sem filtros
         this.aplicarFiltros();
     }
 
     atualizarEstatisticas() {
-        const stats = this.calcularEstatisticasAtual(this.dadosFiltrados);
+        const stats = this.calcularEstatisticas(this.dadosFiltrados);
         
-        // Atualizar elementos na tela
         this.atualizarElemento('total-focos', stats.total.toLocaleString());
         this.atualizarElemento('municipio-lider', stats.municipioLider);
         this.atualizarElemento('bioma-predominante', stats.biomaPredominante);
         this.atualizarElemento('satelite-principal', stats.satelitePrincipal);
     }
 
-    atualizarContadores() {
-        const elemento = document.getElementById('contador-filtrado');
-        if (elemento) {
-            elemento.textContent = `${this.dadosFiltrados.length} focos exibidos`;
-        }
+    atualizarContador() {
+        this.atualizarElemento('contador-filtrado', `${this.dadosFiltrados.length} focos exibidos`);
     }
 
-    calcularEstatisticasAtual(dados) {
+    calcularEstatisticas(dados) {
         if (!dados || dados.length === 0) {
             return {
                 total: 0,
@@ -353,37 +278,22 @@ class DashboardFocosCalor {
             };
         }
 
-        // Contar por município
         const municipios = {};
+        const biomas = {};
+        const satelites = {};
+
         dados.forEach(d => {
             municipios[d.municipio] = (municipios[d.municipio] || 0) + 1;
-        });
-        const municipioLider = Object.entries(municipios).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A';
-
-        // Contar por bioma
-        const biomas = {};
-        dados.forEach(d => {
             biomas[d.bioma] = (biomas[d.bioma] || 0) + 1;
-        });
-        const biomaPredominante = Object.entries(biomas).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A';
-
-        // Contar por satélite
-        const satelites = {};
-        dados.forEach(d => {
             satelites[d.satelite] = (satelites[d.satelite] || 0) + 1;
         });
-        const satelitePrincipal = Object.entries(satelites).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A';
 
         return {
             total: dados.length,
-            municipioLider,
-            biomaPredominante,
-            satelitePrincipal
+            municipioLider: Object.entries(municipios).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A',
+            biomaPredominante: Object.entries(biomas).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A',
+            satelitePrincipal: Object.entries(satelites).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A'
         };
-    }
-
-    calcularEstatisticas() {
-        this.estatisticas = this.calcularEstatisticasAtual(this.dados);
     }
 
     // Métodos auxiliares
@@ -397,8 +307,9 @@ class DashboardFocosCalor {
     mostrarCarregamento(mensagem = 'Carregando...') {
         const elemento = document.getElementById('loading');
         if (elemento) {
-            elemento.textContent = mensagem;
-            elemento.style.display = 'block';
+            elemento.style.display = 'flex';
+            const texto = elemento.querySelector('p');
+            if (texto) texto.textContent = mensagem;
         }
     }
 
@@ -409,24 +320,41 @@ class DashboardFocosCalor {
         }
     }
 
-    mostrarErro(mensagem) {
-        console.error(mensagem);
-        alert(mensagem); // Implementar toast mais elegante depois
+    mostrarErroInicializacao(error) {
+        console.error('💥 Erro de inicialização:', error);
+        
+        // Ocultar loading
+        this.ocultarCarregamento();
+        
+        // Mostrar erro na tela
+        const container = document.querySelector('.main-container .container');
+        if (container) {
+            container.innerHTML = `
+                <div style="text-align: center; padding: 2rem; background: #fee2e2; border-radius: 8px; margin: 2rem 0;">
+                    <h2 style="color: #dc2626; margin-bottom: 1rem;">⚠️ Erro ao Carregar Dashboard</h2>
+                    <p style="margin-bottom: 1rem;">Detalhes do erro: ${error.message}</p>
+                    <button onclick="location.reload()" style="padding: 0.5rem 1rem; background: #dc2626; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                        🔄 Tentar Novamente
+                    </button>
+                </div>
+            `;
+        }
     }
 
-    mostrarAviso(mensagem) {
-        console.warn(mensagem);
-        // Implementar sistema de notificações depois
+    delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     // Dados de exemplo para fallback
     gerarDadosExemplo() {
+        console.log('🎲 Gerando dados de exemplo...');
+        
         const municipios = ['Balsas', 'Timon', 'Caxias', 'Imperatriz', 'São Luís'];
         const biomas = ['Cerrado', 'Caatinga', 'Amazônia'];
-        const satelites = ['NOAA-21', 'NPP-375D', 'GOES-19', 'TERRA_M-T'];
+        const satelites = ['NOAA-21', 'NPP-375D', 'GOES-19'];
         
         const dados = [];
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 50; i++) {
             dados.push({
                 id: i + 1,
                 latitude: -3.5 + (Math.random() - 0.5) * 6,
@@ -434,18 +362,39 @@ class DashboardFocosCalor {
                 municipio: municipios[Math.floor(Math.random() * municipios.length)],
                 bioma: biomas[Math.floor(Math.random() * biomas.length)],
                 satelite: satelites[Math.floor(Math.random() * satelites.length)],
-                data_hora: new Date(Date.now() - Math.random() * 30 * 24 * 60 * 60 * 1000).toISOString(),
+                data_hora: new Date().toISOString(),
                 confianca: Math.floor(Math.random() * 100)
             });
         }
+        
         return dados;
     }
 }
 
-// ═══════════════════════════════════════════════════════════════
-// 🚀 INICIALIZAÇÃO AUTOMÁTICA
-// ═══════════════════════════════════════════════════════════════
+// Inicialização automática com debug
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Inicializando Dashboard de Focos de Calor do Maranhão...');
-    window.dashboard = new DashboardFocosCalor();
+    console.log('🌐 DOM carregado, inicializando dashboard...');
+    
+    try {
+        window.dashboard = new DashboardFocosCalor();
+    } catch (error) {
+        console.error('💥 Erro crítico na inicialização:', error);
+        
+        // Fallback de emergência
+        setTimeout(() => {
+            const loading = document.getElementById('loading');
+            if (loading) {
+                loading.innerHTML = `
+                    <div style="text-align: center; color: white;">
+                        <h2>⚠️ Erro Crítico</h2>
+                        <p>Não foi possível inicializar o dashboard.</p>
+                        <p style="font-size: 0.8em; margin-top: 1rem;">${error.message}</p>
+                        <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: white; color: #1e40af; border: none; border-radius: 4px; cursor: pointer;">
+                            🔄 Recarregar Página
+                        </button>
+                    </div>
+                `;
+            }
+        }, 3000);
+    }
 });
