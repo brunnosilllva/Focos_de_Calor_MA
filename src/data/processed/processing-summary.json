@@ -1,6 +1,6 @@
 {
   "totalFiles": 100,
-  "processedAt": "2025-05-30T02:48:41.751Z",
+  "processedAt": "2025-05-30T02:50:58.840Z",
   "files": [
     "focos_10min_20250529_0940.csv",
     "focos_10min_20250529_0950.csv",
@@ -103,6 +103,8 @@
     "focos_10min_20250530_0230.csv",
     "focos_10min_20250530_0240.csv"
   ],
+  "dataPath": "src/data/raw",
+  "status": "success",
   "nextSteps": [
     "Implementar joins espaciais",
     "Criar agregações por município",
