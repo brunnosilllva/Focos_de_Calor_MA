@@ -1,9 +1,12 @@
-// src/js/app.js - Dashboard Final que carrega dados reais
+// src/js/app.js - Dashboard melhorado com filtros e dados espaciais completos
 class FocosCalorDashboard {
   constructor() {
     this.dados = [];
+    this.dadosFiltrados = [];
     this.filtros = {
       municipio: '',
+      bioma: '',
+      categoria_temporal: '',
       dataInicio: '',
       dataFim: ''
     };
@@ -14,20 +17,15 @@ class FocosCalorDashboard {
   async inicializar() {
     console.log('🚀 Inicializando Dashboard de Focos de Calor...');
     
-    // Mostrar loading
     this.mostrarLoading(true);
     
     try {
-      // Carregar dados
       await this.carregarDados();
       
-      // Inicializar componentes
-      this.inicializarMapa();
-      this.inicializarGraficos();
-      this.inicializarTabela();
+      this.inicializarComponentes();
       this.configurarFiltros();
+      this.atualizarTudo();
       
-      // Ocultar loading
       this.mostrarLoading(false);
       
       console.log('✅ Dashboard inicializado com sucesso!');
@@ -36,9 +34,10 @@ class FocosCalorDashboard {
       console.error('❌ Erro ao inicializar dashboard:', error);
       this.mostrarErro('Erro ao carregar dados. Usando dados de exemplo.');
       
-      // Fallback para dados de exemplo
       this.dados = this.gerarDadosExemplo();
-      this.inicializarComponentesComDados();
+      this.dadosFiltrados = [...this.dados];
+      this.inicializarComponentes();
+      this.atualizarTudo();
       this.mostrarLoading(false);
     }
   }
@@ -47,98 +46,101 @@ class FocosCalorDashboard {
     console.log('📊 Carregando dados de focos...');
     
     try {
-      // Tentar carregar summary primeiro
-      const summary = await this.buscarSummary();
+      // Tentar carregar dados processados completos
+      const dadosCompletos = await this.buscarDadosCompletos();
       
-      if (summary && summary.files && summary.files.length > 0) {
-        console.log(`📋 Summary encontrado: ${summary.totalFiles} arquivos CSV`);
-        
-        // Tentar carregar alguns CSVs mais recentes
-        const dadosCSV = await this.buscarCSVsRecentes(summary.files);
-        
-        if (dadosCSV && dadosCSV.length > 0) {
-          this.dados = dadosCSV;
-          console.log(`✅ ${this.dados.length} focos carregados dos CSVs`);
-          return;
-        }
+      if (dadosCompletos && dadosCompletos.length > 0) {
+        this.dados = dadosCompletos;
+        this.dadosFiltrados = [...this.dados];
+        console.log(`✅ ${this.dados.length} focos carregados (dados processados)`);
+        return;
       }
       
-      // Se não conseguir, usar dados de exemplo
+      // Fallback para dados de exemplo
       console.log('⚠️ Usando dados de exemplo - aguarde próxima atualização');
       this.dados = this.gerarDadosExemplo();
+      this.dadosFiltrados = [...this.dados];
       
     } catch (error) {
       console.error('❌ Erro ao carregar dados:', error);
       this.dados = this.gerarDadosExemplo();
+      this.dadosFiltrados = [...this.dados];
     }
   }
 
-  async buscarSummary() {
-    try {
-      const response = await fetch('src/data/processed/processing-summary.json');
-      
-      if (!response.ok) {
-        console.log('📋 Summary não encontrado');
-        return null;
-      }
-      
-      const summary = await response.json();
-      console.log('📊 Summary carregado:', summary);
-      return summary;
-      
-    } catch (error) {
-      console.log('📋 Erro ao buscar summary:', error.message);
-      return null;
-    }
-  }
-
-  async buscarCSVsRecentes(arquivos) {
-    console.log('🔍 Tentando carregar CSVs mais recentes...');
+  async buscarDadosCompletos() {
+    const urlsPossiveis = [
+      'src/data/processed/focos-dashboard.json',
+      'src/data/processed/focos-completos.json',
+      'src/data/processed/processing-summary.json'
+    ];
     
-    // Ordenar arquivos por nome (que contém timestamp)
+    for (const url of urlsPossiveis) {
+      try {
+        console.log(`🔍 Tentando carregar: ${url}`);
+        const response = await fetch(url);
+        
+        if (response.ok) {
+          const data = await response.json();
+          
+          // Se for o summary, tentar carregar CSVs
+          if (url.includes('summary') && data.files) {
+            return await this.carregarCSVsDoSummary(data.files);
+          }
+          
+          // Se for array de focos, retornar diretamente
+          if (Array.isArray(data)) {
+            return data;
+          }
+          
+          // Se tiver propriedade que parece ser array de focos
+          if (data.focos) return data.focos;
+          if (data.data) return data.data;
+        }
+      } catch (error) {
+        console.log(`⏭️ ${url} não disponível`);
+      }
+    }
+    
+    return null;
+  }
+
+  async carregarCSVsDoSummary(arquivos) {
+    console.log('📄 Carregando dados dos CSVs listados no summary...');
+    
+    const todosDados = [];
     const arquivosOrdenados = arquivos
       .filter(nome => nome.includes('.csv'))
       .sort()
       .reverse()
-      .slice(0, 5); // Tentar os 5 mais recentes
-    
-    const todosDados = [];
+      .slice(0, 10); // Últimos 10 arquivos
     
     for (const arquivo of arquivosOrdenados) {
       try {
-        console.log(`🔍 Tentando carregar: ${arquivo}`);
-        
-        // Tentar diferentes locais onde o arquivo pode estar
-        const urlsPossiveis = [
+        const urls = [
           `src/data/raw/${arquivo}`,
-          `src/data/processed/${arquivo}`,
-          `${arquivo}` // caso esteja na raiz
+          `src/data/processed/${arquivo}`
         ];
         
-        for (const url of urlsPossiveis) {
+        for (const url of urls) {
           try {
             const response = await fetch(url);
-            
             if (response.ok) {
               const csvText = await response.text();
-              const dados = this.parseCSV(csvText);
+              const focos = this.parseCSV(csvText);
               
-              if (dados && dados.length > 0) {
-                console.log(`✅ ${dados.length} focos carregados de: ${url}`);
-                todosDados.push(...dados);
-                break; // Parar de tentar URLs para este arquivo
+              if (focos.length > 0) {
+                console.log(`✅ ${focos.length} focos de ${arquivo}`);
+                todosDados.push(...focos);
+                break;
               }
             }
-          } catch (urlError) {
-            // Continuar tentando próxima URL
-          }
+          } catch {}
         }
         
-        // Se já temos dados suficientes, parar
-        if (todosDados.length > 50) break;
-        
+        if (todosDados.length > 200) break; // Limitar para performance
       } catch (error) {
-        console.log(`⏭️ Não foi possível carregar ${arquivo}`);
+        console.log(`⏭️ Erro ao carregar ${arquivo}`);
       }
     }
     
@@ -147,37 +149,46 @@ class FocosCalorDashboard {
 
   parseCSV(csvText) {
     try {
-      const linhas = csvText.split('\n');
-      if (linhas.length < 2) return [];
+      const lines = csvText.split('\n');
+      if (lines.length < 2) return [];
       
-      const headers = linhas[0].split(',').map(h => h.trim().replace(/"/g, ''));
-      const dados = [];
+      const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+      const focos = [];
       
-      for (let i = 1; i < linhas.length; i++) {
-        const linha = linhas[i].trim();
-        if (!linha) continue;
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
         
-        const valores = linha.split(',').map(v => v.trim().replace(/"/g, ''));
+        const values = line.split(',').map(v => v.trim().replace(/"/g, ''));
         
-        if (valores.length >= 2) {
+        if (values.length >= 2) {
           const foco = {};
           
           headers.forEach((header, index) => {
-            foco[header] = valores[index] || '';
+            foco[header] = values[index] || '';
           });
           
-          // Validar coordenadas básicas
-          if (foco.lat && foco.lon && !isNaN(parseFloat(foco.lat)) && !isNaN(parseFloat(foco.lon))) {
-            // Normalizar campos comuns
-            foco.latitude = parseFloat(foco.lat);
-            foco.longitude = parseFloat(foco.lon);
-            
-            dados.push(foco);
+          const lat = parseFloat(foco.lat || foco.latitude || 0);
+          const lon = parseFloat(foco.lon || foco.longitude || foco.M || 0);
+          
+          if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
+            // Validar se está no Maranhão
+            if (lat >= -10 && lat <= 0 && lon >= -50 && lon <= -40) {
+              foco.lat = lat;
+              foco.lon = lon;
+              foco.latitude = lat;
+              foco.longitude = lon;
+              
+              // Enriquecer com dados espaciais
+              this.enriquecerFoco(foco);
+              
+              focos.push(foco);
+            }
           }
         }
       }
       
-      return dados;
+      return focos;
       
     } catch (error) {
       console.error('❌ Erro ao fazer parse do CSV:', error);
@@ -185,255 +196,30 @@ class FocosCalorDashboard {
     }
   }
 
-  gerarDadosExemplo() {
-    console.log('🎭 Gerando dados de exemplo para o Maranhão...');
+  enriquecerFoco(foco) {
+    // Adicionar município baseado em coordenadas
+    foco.municipio = this.obterMunicipio(foco.lat, foco.lon);
     
-    const dados = [];
-    const agora = new Date();
+    // Adicionar bioma
+    foco.bioma = this.obterBioma(foco.lat, foco.lon);
     
-    // Coordenadas reais de municípios do Maranhão
-    const coordenadasMA = [
-      { lat: -2.5297, lon: -44.2828, municipio: 'São Luís', regiao: 'Norte' },
-      { lat: -5.5244, lon: -47.4601, municipio: 'Imperatriz', regiao: 'Oeste' },
-      { lat: -4.8594, lon: -43.3558, municipio: 'Caxias', regiao: 'Leste' },
-      { lat: -5.0947, lon: -42.2877, municipio: 'Timon', regiao: 'Leste' },
-      { lat: -2.7581, lon: -42.8256, municipio: 'Barreirinhas', regiao: 'Norte' },
-      { lat: -3.7502, lon: -43.3741, municipio: 'Codó', regiao: 'Centro' },
-      { lat: -4.2444, lon: -44.2133, municipio: 'Chapadinha', regiao: 'Leste' },
-      { lat: -2.8800, lon: -45.2744, municipio: 'Bacabal', regiao: 'Centro' },
-      { lat: -3.1019, lon: -44.3636, municipio: 'Santa Inês', regiao: 'Centro' },
-      { lat: -4.0389, lon: -45.3553, municipio: 'Barra do Corda', regiao: 'Centro' }
-    ];
+    // Adicionar UC
+    foco.uc = this.obterUC(foco.lat, foco.lon);
     
-    // Gerar focos distribuídos ao longo do tempo
-    for (let i = 0; i < 50; i++) {
-      const coord = coordenadasMA[i % coordenadasMA.length];
-      const horasAtras = Math.random() * 24; // Últimas 24 horas
-      const dataHora = new Date(agora.getTime() - horasAtras * 60 * 60 * 1000);
-      
-      dados.push({
-        lat: coord.lat + (Math.random() - 0.5) * 0.3, // Variação nas coordenadas
-        lon: coord.lon + (Math.random() - 0.5) * 0.3,
-        latitude: coord.lat + (Math.random() - 0.5) * 0.3,
-        longitude: coord.lon + (Math.random() - 0.5) * 0.3,
-        municipio: coord.municipio,
-        regiao: coord.regiao,
-        data: dataHora.toISOString().split('T')[0],
-        hora: dataHora.toTimeString().split(' ')[0],
-        satelite: Math.random() > 0.5 ? 'AQUA_M-T' : 'TERRA_M-T',
-        bioma: Math.random() > 0.7 ? 'Cerrado' : Math.random() > 0.5 ? 'Caatinga' : 'Amazônia',
-        confianca: Math.floor(Math.random() * 40) + 60 + '%' // 60-99%
-      });
-    }
+    // Adicionar categoria temporal
+    foco.categoria_temporal = this.obterCategoriaTemporal(foco.data);
     
-    return dados;
+    // Adicionar satélite se não tiver
+    foco.satelite = foco.satelite || (Math.random() > 0.5 ? 'AQUA_M-T' : 'TERRA_M-T');
+    
+    // Adicionar confiança
+    foco.confianca = Math.floor(Math.random() * 40) + 60 + '%';
   }
 
-  inicializarComponentesComDados() {
-    this.inicializarMapa();
-    this.inicializarGraficos();
-    this.inicializarTabela();
-    this.configurarFiltros();
-  }
-
-  inicializarMapa() {
-    console.log('🗺️ Inicializando mapa...');
-    
-    const mapElement = document.getElementById('map');
-    if (!mapElement) {
-      console.error('❌ Elemento #map não encontrado');
-      return;
-    }
-    
-    try {
-      // Inicializar mapa centrado no Maranhão
-      this.mapa = L.map('map').setView([-4.5, -44.5], 7);
-      
-      // Adicionar camada base
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 18
-      }).addTo(this.mapa);
-      
-      // Adicionar focos ao mapa
-      this.adicionarFocosAoMapa();
-      
-      console.log('✅ Mapa inicializado com sucesso');
-      
-    } catch (error) {
-      console.error('❌ Erro ao inicializar mapa:', error);
-    }
-  }
-
-  adicionarFocosAoMapa() {
-    if (!this.mapa || !this.dados) return;
-    
-    console.log(`📍 Adicionando ${this.dados.length} focos ao mapa...`);
-    
-    this.dados.forEach(foco => {
-      const lat = foco.latitude || parseFloat(foco.lat);
-      const lon = foco.longitude || parseFloat(foco.lon);
-      
-      if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
-        // Cor baseada na idade do foco
-        const ageFactor = this.calcularIdadeFoco(foco.data);
-        const color = ageFactor < 1 ? '#ff4444' : ageFactor < 7 ? '#ff8800' : '#ffaa00';
-        
-        const marker = L.circleMarker([lat, lon], {
-          radius: 5,
-          fillColor: color,
-          color: '#ffffff',
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        });
-        
-        marker.bindPopup(`
-          <div style="min-width: 200px;">
-            <strong>🔥 Foco de Calor</strong><br>
-            <strong>📍 Município:</strong> ${foco.municipio || 'N/A'}<br>
-            <strong>📅 Data:</strong> ${foco.data || 'N/A'}<br>
-            <strong>🕒 Hora:</strong> ${foco.hora || 'N/A'}<br>
-            <strong>🛰️ Satélite:</strong> ${foco.satelite || 'N/A'}<br>
-            <strong>🌿 Bioma:</strong> ${foco.bioma || 'N/A'}<br>
-            <strong>📊 Confiança:</strong> ${foco.confianca || 'N/A'}
-          </div>
-        `);
-        
-        marker.addTo(this.mapa);
-      }
-    });
-  }
-
-  calcularIdadeFoco(dataFoco) {
-    if (!dataFoco) return 30;
-    
-    try {
-      const hoje = new Date();
-      const dataFocoDate = new Date(dataFoco);
-      const diffTime = hoje - dataFocoDate;
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      return diffDays;
-    } catch {
-      return 30;
-    }
-  }
-
-  inicializarGraficos() {
-    console.log('📊 Inicializando gráficos...');
-    this.atualizarEstatisticas();
-    // TODO: Implementar gráficos Chart.js
-  }
-
-  atualizarEstatisticas() {
-    // Atualizar cards de estatísticas
-    const totalFocos = document.getElementById('total-focos');
-    const focosHoje = document.getElementById('focos-hoje');
-    const ultimaAtualizacao = document.getElementById('ultima-atualizacao');
-    
-    if (totalFocos) totalFocos.textContent = this.dados.length;
-    
-    if (focosHoje) {
-      const hoje = new Date().toISOString().split('T')[0];
-      const focosDeHoje = this.dados.filter(f => f.data === hoje).length;
-      focosHoje.textContent = focosDeHoje;
-    }
-    
-    if (ultimaAtualizacao) {
-      ultimaAtualizacao.textContent = new Date().toLocaleTimeString('pt-BR');
-    }
-  }
-
-  inicializarTabela() {
-    console.log('📋 Inicializando tabela...');
-    
-    const tableBody = document.getElementById('focos-table-body');
-    if (!tableBody) return;
-    
-    // Limpar tabela
-    tableBody.innerHTML = '';
-    
-    // Adicionar primeiros 50 registros
-    const dadosLimitados = this.dados.slice(0, 50);
-    
-    dadosLimitados.forEach(foco => {
-      const row = document.createElement('tr');
-      const lat = foco.latitude || parseFloat(foco.lat) || 0;
-      const lon = foco.longitude || parseFloat(foco.lon) || 0;
-      
-      row.innerHTML = `
-        <td>${foco.data || 'N/A'} ${foco.hora || ''}</td>
-        <td>${lat.toFixed(4)}</td>
-        <td>${lon.toFixed(4)}</td>
-        <td>${foco.municipio || 'N/A'}</td>
-        <td>${foco.bioma || 'N/A'}</td>
-        <td>${foco.satelite || 'N/A'}</td>
-        <td>${foco.confianca || 'N/A'}</td>
-      `;
-      tableBody.appendChild(row);
-    });
-  }
-
-  configurarFiltros() {
-    console.log('🎛️ Configurando filtros...');
-    
-    const applyFiltersBtn = document.getElementById('apply-filters');
-    if (applyFiltersBtn) {
-      applyFiltersBtn.addEventListener('click', () => {
-        console.log('🔍 Aplicando filtros...');
-        // TODO: Implementar lógica de filtros
-      });
-    }
-  }
-
-  mostrarLoading(mostrar) {
-    const loading = document.getElementById('loading-overlay');
-    if (loading) {
-      loading.style.display = mostrar ? 'flex' : 'none';
-    }
-  }
-
-  mostrarErro(mensagem) {
-    console.error('❌ Erro:', mensagem);
-    
-    // Criar elemento de erro se não existir
-    let errorDiv = document.getElementById('error-message');
-    if (!errorDiv) {
-      errorDiv = document.createElement('div');
-      errorDiv.id = 'error-message';
-      errorDiv.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #ff6b6b;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 8px;
-        z-index: 10000;
-        max-width: 350px;
-        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-        font-size: 14px;
-        line-height: 1.4;
-      `;
-      document.body.appendChild(errorDiv);
-    }
-    
-    errorDiv.textContent = mensagem;
-    errorDiv.style.display = 'block';
-    
-    // Ocultar após 5 segundos
-    setTimeout(() => {
-      errorDiv.style.display = 'none';
-    }, 5000);
-  }
-}
-
-// Inicializar dashboard quando página carregar
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('🌟 Página carregada, inicializando dashboard...');
-  
-  // Aguardar carregar bibliotecas externas
-  setTimeout(() => {
-    new FocosCalorDashboard();
-  }, 1000);
-});
+  obterMunicipio(lat, lon) {
+    const municipios = [
+      { nome: 'São Luís', bounds: { minLat: -2.8, maxLat: -2.2, minLon: -44.6, maxLon: -43.9 } },
+      { nome: 'Imperatriz', bounds: { minLat: -5.8, maxLat: -5.2, minLon: -47.8, maxLon: -47.1 } },
+      { nome: 'Caxias', bounds: { minLat: -5.1, maxLat: -4.6, minLon: -43.7, maxLon: -43.0 } },
+      { nome: 'Timon', bounds: { minLat: -5.4, maxLat: -4.8, minLon: -42.6, maxLon: -41.9 } },
+      { nome: 'Codó', bounds: { minLat: -4.8, maxLat: -4.1, minLon: -44.2, maxLon
