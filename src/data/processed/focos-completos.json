@@ -13,7 +13,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250529_2300.csv",
@@ -29,7 +29,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250529_2300.csv",
@@ -40,22 +40,6 @@
     "latitude": -7.2405,
     "longitude": -43.0899,
     "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 81
-  },
-  {
-    "source_file": "focos_10min_20250529_2300.csv",
-    "lat": -7.6051,
-    "lon": -45.7464,
-    "satelite": "GOES-19",
-    "data": "2025-05-29 22:40:00",
-    "latitude": -7.6051,
-    "longitude": -45.7464,
-    "municipio": "Balsas",
     "bioma": "Cerrado",
     "uc": "",
     "regiao": "Centro",
@@ -65,6 +49,22 @@
   },
   {
     "source_file": "focos_10min_20250529_2300.csv",
+    "lat": -7.6051,
+    "lon": -45.7464,
+    "satelite": "GOES-19",
+    "data": "2025-05-29 22:40:00",
+    "latitude": -7.6051,
+    "longitude": -45.7464,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 62
+  },
+  {
+    "source_file": "focos_10min_20250529_2300.csv",
     "lat": -7.6239,
     "lon": -45.7447,
     "satelite": "GOES-19",
@@ -77,7 +77,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250529_2320.csv",
@@ -93,7 +93,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250529_2320.csv",
@@ -109,7 +109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250529_2320.csv",
@@ -125,7 +125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250529_2320.csv",
@@ -141,7 +141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250529_2320.csv",
@@ -173,7 +173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250529_2330.csv",
@@ -189,7 +189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250529_2330.csv",
@@ -205,7 +205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250529_2330.csv",
@@ -216,22 +216,6 @@
     "latitude": -7.2405,
     "longitude": -43.0899,
     "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 84
-  },
-  {
-    "source_file": "focos_10min_20250529_2330.csv",
-    "lat": -7.6051,
-    "lon": -45.7464,
-    "satelite": "GOES-19",
-    "data": "2025-05-29 23:10:00",
-    "latitude": -7.6051,
-    "longitude": -45.7464,
-    "municipio": "Balsas",
     "bioma": "Cerrado",
     "uc": "",
     "regiao": "Centro",
@@ -241,6 +225,22 @@
   },
   {
     "source_file": "focos_10min_20250529_2330.csv",
+    "lat": -7.6051,
+    "lon": -45.7464,
+    "satelite": "GOES-19",
+    "data": "2025-05-29 23:10:00",
+    "latitude": -7.6051,
+    "longitude": -45.7464,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 78
+  },
+  {
+    "source_file": "focos_10min_20250529_2330.csv",
     "lat": -7.6239,
     "lon": -45.7447,
     "satelite": "GOES-19",
@@ -253,7 +253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250529_2330.csv",
@@ -269,7 +269,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250529_2340.csv",
@@ -285,7 +285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250529_2340.csv",
@@ -301,7 +301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250529_2340.csv",
@@ -317,7 +317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250529_2340.csv",
@@ -333,7 +333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250529_2340.csv",
@@ -349,7 +349,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250529_2350.csv",
@@ -365,7 +365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250529_2350.csv",
@@ -381,7 +381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250529_2350.csv",
@@ -397,7 +397,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250529_2350.csv",
@@ -413,7 +413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0000.csv",
@@ -429,7 +429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0000.csv",
@@ -445,7 +445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0000.csv",
@@ -461,7 +461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0000.csv",
@@ -477,7 +477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0020.csv",
@@ -493,7 +493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0020.csv",
@@ -509,7 +509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0040.csv",
@@ -525,7 +525,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0040.csv",
@@ -541,7 +541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0040.csv",
@@ -557,7 +557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0040.csv",
@@ -573,7 +573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0050.csv",
@@ -589,7 +589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0100.csv",
@@ -605,7 +605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0110.csv",
@@ -621,7 +621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0120.csv",
@@ -637,7 +637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0130.csv",
@@ -653,7 +653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0140.csv",
@@ -669,7 +669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -685,7 +685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -701,7 +701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -717,7 +717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -733,7 +733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -749,7 +749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -765,7 +765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -781,7 +781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -797,7 +797,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -813,7 +813,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -829,7 +829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -845,7 +845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -861,7 +861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -877,7 +877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -893,7 +893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -909,7 +909,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -925,7 +925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -941,7 +941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -957,7 +957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -973,7 +973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -989,7 +989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1005,7 +1005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1021,7 +1021,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1037,7 +1037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1053,7 +1053,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1069,7 +1069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1085,7 +1085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1101,7 +1101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1117,7 +1117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1133,7 +1133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1149,7 +1149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1165,7 +1165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1181,7 +1181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1197,7 +1197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1213,7 +1213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1229,7 +1229,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1245,7 +1245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1261,7 +1261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1277,7 +1277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1293,7 +1293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1309,7 +1309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1325,7 +1325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1341,7 +1341,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1357,7 +1357,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1373,7 +1373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1389,7 +1389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1405,7 +1405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1421,7 +1421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1437,7 +1437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1453,7 +1453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1469,7 +1469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1485,7 +1485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1501,7 +1501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1517,7 +1517,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1533,7 +1533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1549,7 +1549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1565,7 +1565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1581,7 +1581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0150.csv",
@@ -1597,7 +1597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1613,7 +1613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1629,7 +1629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1645,7 +1645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1661,7 +1661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1677,7 +1677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1693,7 +1693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1709,7 +1709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1725,7 +1725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1741,7 +1741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1757,7 +1757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1773,7 +1773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1789,7 +1789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1805,7 +1805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1821,7 +1821,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1837,7 +1837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1853,7 +1853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1869,7 +1869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1885,7 +1885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1901,7 +1901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1917,7 +1917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1933,7 +1933,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1949,7 +1949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0320.csv",
@@ -1965,7 +1965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0550.csv",
@@ -1981,7 +1981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0550.csv",
@@ -1997,7 +1997,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0550.csv",
@@ -2013,7 +2013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0550.csv",
@@ -2029,7 +2029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2045,7 +2045,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2061,7 +2061,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2077,7 +2077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2093,7 +2093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2109,7 +2109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2125,7 +2125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2141,7 +2141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2157,7 +2157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2173,7 +2173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2189,7 +2189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2205,7 +2205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2221,7 +2221,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2237,7 +2237,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2253,7 +2253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2269,7 +2269,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2285,7 +2285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2301,7 +2301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2317,7 +2317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2333,7 +2333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2365,7 +2365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2381,7 +2381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2413,7 +2413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2429,7 +2429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2445,7 +2445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2461,7 +2461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2477,7 +2477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2493,7 +2493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2509,7 +2509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2525,7 +2525,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2541,7 +2541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2557,7 +2557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2573,7 +2573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2589,7 +2589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2605,7 +2605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2621,7 +2621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2637,7 +2637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2653,7 +2653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2669,7 +2669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2685,7 +2685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2701,7 +2701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2717,7 +2717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2733,7 +2733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2749,7 +2749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2765,7 +2765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2781,7 +2781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2797,7 +2797,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2813,7 +2813,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2829,7 +2829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2845,7 +2845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2861,7 +2861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2877,7 +2877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2893,7 +2893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2925,7 +2925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2941,7 +2941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2957,7 +2957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2973,7 +2973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -2989,7 +2989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3005,7 +3005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3021,7 +3021,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3037,7 +3037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3053,7 +3053,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3069,7 +3069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3085,7 +3085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3101,7 +3101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3117,7 +3117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3133,7 +3133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3149,7 +3149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3165,7 +3165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3181,7 +3181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3197,7 +3197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3213,7 +3213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3229,7 +3229,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3245,7 +3245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3261,7 +3261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3277,7 +3277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3293,7 +3293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3309,7 +3309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3325,7 +3325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3341,7 +3341,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3357,7 +3357,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3373,7 +3373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3389,7 +3389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3405,7 +3405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3421,7 +3421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3437,7 +3437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3453,7 +3453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3469,7 +3469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3485,7 +3485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3501,7 +3501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3517,7 +3517,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3533,7 +3533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3549,7 +3549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3565,7 +3565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3581,7 +3581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3597,7 +3597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3613,7 +3613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3629,7 +3629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3645,7 +3645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3661,7 +3661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3677,7 +3677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3693,7 +3693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3709,7 +3709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3725,7 +3725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3741,7 +3741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3757,7 +3757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3773,7 +3773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3789,7 +3789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3805,7 +3805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3837,7 +3837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3853,7 +3853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3869,7 +3869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3885,7 +3885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3901,7 +3901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3917,7 +3917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3933,7 +3933,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3949,7 +3949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3965,7 +3965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -3981,7 +3981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4013,7 +4013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4029,7 +4029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4045,7 +4045,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4061,7 +4061,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4077,7 +4077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4093,7 +4093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4109,7 +4109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4125,7 +4125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4141,7 +4141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4157,7 +4157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4173,7 +4173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4189,7 +4189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4205,7 +4205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4221,7 +4221,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4237,7 +4237,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4253,7 +4253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4269,7 +4269,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4285,7 +4285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4301,7 +4301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4317,7 +4317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4333,7 +4333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4349,7 +4349,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4365,7 +4365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4381,7 +4381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4397,7 +4397,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4413,7 +4413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4429,7 +4429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4445,7 +4445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4461,7 +4461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4477,7 +4477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4493,7 +4493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4509,7 +4509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4525,7 +4525,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4541,7 +4541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4557,7 +4557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4573,7 +4573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4589,7 +4589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4605,7 +4605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4621,7 +4621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4637,7 +4637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4653,7 +4653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0640.csv",
@@ -4669,7 +4669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4685,7 +4685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4701,7 +4701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4717,7 +4717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4733,7 +4733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4749,7 +4749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4765,7 +4765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0720.csv",
@@ -4781,7 +4781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4797,7 +4797,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4813,7 +4813,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4829,7 +4829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4845,7 +4845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4861,7 +4861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4877,7 +4877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4893,7 +4893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4909,7 +4909,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4925,7 +4925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4941,7 +4941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4957,7 +4957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4973,7 +4973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -4989,7 +4989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5005,7 +5005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5021,7 +5021,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5037,7 +5037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5053,7 +5053,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5069,7 +5069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5085,7 +5085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5101,7 +5101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5117,7 +5117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5133,7 +5133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5149,7 +5149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5165,7 +5165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5181,7 +5181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5197,7 +5197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5213,7 +5213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5245,7 +5245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5261,7 +5261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5277,7 +5277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5293,7 +5293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5309,7 +5309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5325,7 +5325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5341,7 +5341,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5357,7 +5357,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5373,7 +5373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5389,7 +5389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5405,7 +5405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5421,7 +5421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5437,7 +5437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5453,7 +5453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5469,7 +5469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5485,7 +5485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5501,7 +5501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5517,7 +5517,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5533,7 +5533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5549,7 +5549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5565,7 +5565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5581,7 +5581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5597,7 +5597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5613,7 +5613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5629,7 +5629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5645,7 +5645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5661,7 +5661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5677,7 +5677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5693,7 +5693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5709,7 +5709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5725,7 +5725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5741,7 +5741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5757,7 +5757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5773,7 +5773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5789,7 +5789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5805,7 +5805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5821,7 +5821,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5837,7 +5837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5853,7 +5853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5869,7 +5869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5885,7 +5885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5901,7 +5901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5917,7 +5917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5933,7 +5933,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5949,7 +5949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5965,7 +5965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5981,7 +5981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -5997,7 +5997,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6013,7 +6013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6029,7 +6029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6045,7 +6045,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6061,7 +6061,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6077,7 +6077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6093,7 +6093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6109,7 +6109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6125,7 +6125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6157,7 +6157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6173,7 +6173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6189,7 +6189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6205,7 +6205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6221,7 +6221,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6237,7 +6237,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6253,7 +6253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6269,7 +6269,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6285,7 +6285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6301,7 +6301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6317,7 +6317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6333,7 +6333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6349,7 +6349,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6365,7 +6365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6381,7 +6381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6397,7 +6397,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6413,7 +6413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6429,7 +6429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6445,7 +6445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6461,7 +6461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6477,7 +6477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6493,7 +6493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6509,7 +6509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6525,7 +6525,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6541,7 +6541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6557,7 +6557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6573,7 +6573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6589,7 +6589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6605,7 +6605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6621,7 +6621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6637,7 +6637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6653,7 +6653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6669,7 +6669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6685,7 +6685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6701,7 +6701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6717,7 +6717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6733,7 +6733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6749,7 +6749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6765,7 +6765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6781,7 +6781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6797,7 +6797,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6813,7 +6813,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6829,7 +6829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6845,7 +6845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6861,7 +6861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6877,7 +6877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6893,7 +6893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6909,7 +6909,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6925,7 +6925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6941,7 +6941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6957,7 +6957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6973,7 +6973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -6989,7 +6989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7005,7 +7005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7037,7 +7037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7069,7 +7069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7085,7 +7085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7101,7 +7101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7117,7 +7117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7133,7 +7133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7149,7 +7149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7165,7 +7165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7181,7 +7181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7197,7 +7197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7213,7 +7213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7229,7 +7229,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7245,7 +7245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7261,7 +7261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7277,7 +7277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7293,7 +7293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7309,7 +7309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7325,7 +7325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7341,7 +7341,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7357,7 +7357,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7373,7 +7373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7389,7 +7389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7405,7 +7405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7421,7 +7421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7437,7 +7437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7453,7 +7453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7469,7 +7469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7485,7 +7485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7501,7 +7501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7517,7 +7517,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7533,7 +7533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7549,7 +7549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0750.csv",
@@ -7565,7 +7565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7581,7 +7581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7597,7 +7597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7613,7 +7613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7629,7 +7629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7645,7 +7645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7661,7 +7661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7677,7 +7677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7693,7 +7693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7709,7 +7709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7725,7 +7725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7741,7 +7741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7757,7 +7757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7773,7 +7773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7789,7 +7789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7805,7 +7805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7821,7 +7821,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7837,7 +7837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7853,7 +7853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7869,7 +7869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7885,7 +7885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7901,7 +7901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7917,7 +7917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7933,7 +7933,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7949,7 +7949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7965,7 +7965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7981,7 +7981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -7997,7 +7997,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8013,7 +8013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8029,7 +8029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8045,7 +8045,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8077,7 +8077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8093,7 +8093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8109,7 +8109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8125,7 +8125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8141,7 +8141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8157,7 +8157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8173,7 +8173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8189,7 +8189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8205,7 +8205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8221,7 +8221,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8237,7 +8237,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8253,7 +8253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8285,7 +8285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8301,7 +8301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8317,7 +8317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8333,7 +8333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8349,7 +8349,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8365,7 +8365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8381,7 +8381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8397,7 +8397,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8413,7 +8413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8429,7 +8429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8445,7 +8445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8461,7 +8461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8477,7 +8477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8493,7 +8493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8509,7 +8509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8541,7 +8541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8557,7 +8557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8573,7 +8573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8589,7 +8589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8605,7 +8605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8621,7 +8621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8637,7 +8637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8653,7 +8653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8669,7 +8669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8685,7 +8685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8701,7 +8701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8717,7 +8717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8733,7 +8733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8749,7 +8749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8765,7 +8765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8781,7 +8781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 60
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8797,7 +8797,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8813,7 +8813,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8829,7 +8829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8845,7 +8845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8861,7 +8861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8877,7 +8877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8893,7 +8893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8909,7 +8909,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8925,7 +8925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8941,7 +8941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0830.csv",
@@ -8957,7 +8957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -8973,7 +8973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -8989,7 +8989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9005,7 +9005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9021,7 +9021,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9037,7 +9037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9053,7 +9053,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9069,7 +9069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9085,7 +9085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9101,7 +9101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9117,7 +9117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9133,7 +9133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9149,7 +9149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9165,7 +9165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9181,7 +9181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9197,7 +9197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9213,7 +9213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9229,7 +9229,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9245,7 +9245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9261,7 +9261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9277,7 +9277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9293,7 +9293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9309,7 +9309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9325,7 +9325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9341,7 +9341,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9373,7 +9373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9389,7 +9389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9405,7 +9405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9421,7 +9421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9437,7 +9437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9453,7 +9453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9469,7 +9469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9485,7 +9485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9501,7 +9501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9517,7 +9517,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9533,7 +9533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9549,7 +9549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9565,7 +9565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9581,7 +9581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9597,7 +9597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9613,7 +9613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9629,7 +9629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9645,7 +9645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9661,7 +9661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9677,7 +9677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9693,7 +9693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9709,7 +9709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9725,7 +9725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9741,7 +9741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9757,7 +9757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9773,7 +9773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9789,7 +9789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9805,7 +9805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9821,7 +9821,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9837,7 +9837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9853,7 +9853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9869,7 +9869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9885,7 +9885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9901,7 +9901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9917,7 +9917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9933,7 +9933,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9949,7 +9949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9965,7 +9965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9981,7 +9981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -9997,7 +9997,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10013,7 +10013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10029,7 +10029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10061,7 +10061,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10077,7 +10077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10093,7 +10093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10109,7 +10109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10125,7 +10125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10141,7 +10141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10157,7 +10157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10173,7 +10173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10189,7 +10189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10205,7 +10205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10221,7 +10221,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10237,7 +10237,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10253,7 +10253,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10269,7 +10269,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 62
+    "confianca": 86
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10285,7 +10285,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10301,7 +10301,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10317,7 +10317,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 94
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10333,7 +10333,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10349,7 +10349,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10365,7 +10365,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10381,7 +10381,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_0930.csv",
@@ -10397,7 +10397,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_1120.csv",
@@ -10413,7 +10413,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_1130.csv",
@@ -10429,7 +10429,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_1140.csv",
@@ -10440,294 +10440,6 @@
     "latitude": -6.3536,
     "longitude": -43.3816,
     "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 76
-  },
-  {
-    "source_file": "focos_10min_20250530_1140.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:20:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 73
-  },
-  {
-    "source_file": "focos_10min_20250530_1150.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:30:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 63
-  },
-  {
-    "source_file": "focos_10min_20250530_1150.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:30:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 71
-  },
-  {
-    "source_file": "focos_10min_20250530_1200.csv",
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:40:00",
-    "latitude": -6.3348,
-    "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 79
-  },
-  {
-    "source_file": "focos_10min_20250530_1200.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:40:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 62
-  },
-  {
-    "source_file": "focos_10min_20250530_1200.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:40:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 62
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:50:00",
-    "latitude": -6.3348,
-    "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 67
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:50:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 64
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 11:50:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 96
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:00:00",
-    "latitude": -6.3348,
-    "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 88
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:00:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 71
-  },
-  {
-    "source_file": "focos_10min_20250530_1220.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:00:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 79
-  },
-  {
-    "source_file": "focos_10min_20250530_1230.csv",
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:10:00",
-    "latitude": -6.3348,
-    "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 80
-  },
-  {
-    "source_file": "focos_10min_20250530_1230.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:10:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 64
-  },
-  {
-    "source_file": "focos_10min_20250530_1230.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:10:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 95
-  },
-  {
-    "source_file": "focos_10min_20250530_1240.csv",
-    "lat": -6.3348,
-    "lon": -43.3832,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:20:00",
-    "latitude": -6.3348,
-    "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 76
-  },
-  {
-    "source_file": "focos_10min_20250530_1240.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:20:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 62
-  },
-  {
-    "source_file": "focos_10min_20250530_1240.csv",
-    "lat": -6.9804,
-    "lon": -42.7854,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:20:00",
-    "latitude": -6.9804,
-    "longitude": -42.7854,
-    "municipio": "Timon",
     "bioma": "Cerrado",
     "uc": "",
     "regiao": "Centro",
@@ -10736,6 +10448,294 @@
     "confianca": 85
   },
   {
+    "source_file": "focos_10min_20250530_1140.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:20:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 97
+  },
+  {
+    "source_file": "focos_10min_20250530_1150.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:30:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 66
+  },
+  {
+    "source_file": "focos_10min_20250530_1150.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:30:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 62
+  },
+  {
+    "source_file": "focos_10min_20250530_1200.csv",
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:40:00",
+    "latitude": -6.3348,
+    "longitude": -43.3832,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 89
+  },
+  {
+    "source_file": "focos_10min_20250530_1200.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:40:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 92
+  },
+  {
+    "source_file": "focos_10min_20250530_1200.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:40:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 77
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:50:00",
+    "latitude": -6.3348,
+    "longitude": -43.3832,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 71
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:50:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 69
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 11:50:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 93
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:00:00",
+    "latitude": -6.3348,
+    "longitude": -43.3832,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 73
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:00:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 91
+  },
+  {
+    "source_file": "focos_10min_20250530_1220.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:00:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 75
+  },
+  {
+    "source_file": "focos_10min_20250530_1230.csv",
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:10:00",
+    "latitude": -6.3348,
+    "longitude": -43.3832,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 76
+  },
+  {
+    "source_file": "focos_10min_20250530_1230.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:10:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 90
+  },
+  {
+    "source_file": "focos_10min_20250530_1230.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:10:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 67
+  },
+  {
+    "source_file": "focos_10min_20250530_1240.csv",
+    "lat": -6.3348,
+    "lon": -43.3832,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:20:00",
+    "latitude": -6.3348,
+    "longitude": -43.3832,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 82
+  },
+  {
+    "source_file": "focos_10min_20250530_1240.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:20:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 68
+  },
+  {
+    "source_file": "focos_10min_20250530_1240.csv",
+    "lat": -6.9804,
+    "lon": -42.7854,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:20:00",
+    "latitude": -6.9804,
+    "longitude": -42.7854,
+    "municipio": "Timon",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 71
+  },
+  {
     "source_file": "focos_10min_20250530_1250.csv",
     "lat": -6.3348,
     "lon": -43.3832,
@@ -10749,7 +10749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1250.csv",
@@ -10765,7 +10765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_1250.csv",
@@ -10781,7 +10781,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_1300.csv",
@@ -10791,22 +10791,6 @@
     "data": "2025-05-30 12:40:00",
     "latitude": -6.3348,
     "longitude": -43.3832,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 94
-  },
-  {
-    "source_file": "focos_10min_20250530_1300.csv",
-    "lat": -6.3536,
-    "lon": -43.3816,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 12:40:00",
-    "latitude": -6.3536,
-    "longitude": -43.3816,
     "municipio": "Caxias",
     "bioma": "Cerrado",
     "uc": "",
@@ -10817,6 +10801,22 @@
   },
   {
     "source_file": "focos_10min_20250530_1300.csv",
+    "lat": -6.3536,
+    "lon": -43.3816,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 12:40:00",
+    "latitude": -6.3536,
+    "longitude": -43.3816,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 69
+  },
+  {
+    "source_file": "focos_10min_20250530_1300.csv",
     "lat": -6.9804,
     "lon": -42.7854,
     "satelite": "GOES-19",
@@ -10829,7 +10829,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_1310.csv",
@@ -10845,7 +10845,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_1310.csv",
@@ -10861,7 +10861,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_1320.csv",
@@ -10877,7 +10877,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_1320.csv",
@@ -10893,7 +10893,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_1330.csv",
@@ -10909,7 +10909,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_1330.csv",
@@ -10925,7 +10925,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_1340.csv",
@@ -10941,7 +10941,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_1350.csv",
@@ -10957,7 +10957,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 83
   },
   {
     "source_file": "focos_10min_20250530_1350.csv",
@@ -10973,7 +10973,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -10989,7 +10989,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -11005,7 +11005,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -11021,7 +11021,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -11037,7 +11037,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -11053,7 +11053,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_1410.csv",
@@ -11069,7 +11069,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11085,7 +11085,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11101,7 +11101,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11117,7 +11117,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11133,7 +11133,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11149,7 +11149,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11165,7 +11165,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11181,7 +11181,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11197,7 +11197,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11213,7 +11213,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11229,7 +11229,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11245,7 +11245,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 64
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11261,7 +11261,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11277,7 +11277,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11293,7 +11293,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 72
+    "confianca": 67
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11309,7 +11309,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 78
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11325,7 +11325,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11357,7 +11357,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11373,7 +11373,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11389,7 +11389,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 83
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11405,7 +11405,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11421,7 +11421,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11437,7 +11437,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11453,7 +11453,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11469,7 +11469,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11485,7 +11485,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 60
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11501,7 +11501,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11533,7 +11533,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11549,7 +11549,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 87
+    "confianca": 63
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11565,7 +11565,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 82
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11581,7 +11581,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11597,7 +11597,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11613,7 +11613,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11629,7 +11629,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11645,7 +11645,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11661,7 +11661,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 74
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11677,7 +11677,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11693,7 +11693,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11709,7 +11709,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11725,7 +11725,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11741,7 +11741,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11757,7 +11757,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 65
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11773,7 +11773,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 82
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11789,7 +11789,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 72
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11805,7 +11805,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11821,7 +11821,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 86
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11837,7 +11837,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 90
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11853,7 +11853,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 67
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11869,7 +11869,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 90
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11885,7 +11885,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 97
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11901,7 +11901,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 92
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11917,7 +11917,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 95
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11949,7 +11949,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 98
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11965,7 +11965,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11981,7 +11981,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 80
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -11997,7 +11997,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 71
+    "confianca": 61
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -12013,7 +12013,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 97
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -12029,7 +12029,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 85
+    "confianca": 75
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -12045,7 +12045,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 88
+    "confianca": 99
   },
   {
     "source_file": "focos_10min_20250530_1420.csv",
@@ -12061,7 +12061,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12077,7 +12077,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 89
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12093,7 +12093,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 68
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12109,7 +12109,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12125,7 +12125,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 66
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12141,7 +12141,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 91
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_1430.csv",
@@ -12157,7 +12157,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_1440.csv",
@@ -12173,7 +12173,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 99
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_1440.csv",
@@ -12189,7 +12189,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 94
+    "confianca": 84
   },
   {
     "source_file": "focos_10min_20250530_1440.csv",
@@ -12205,7 +12205,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 66
   },
   {
     "source_file": "focos_10min_20250530_1440.csv",
@@ -12215,102 +12215,6 @@
     "data": "2025-05-30 14:20:00",
     "latitude": -6.2038,
     "longitude": -43.3475,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 85
-  },
-  {
-    "source_file": "focos_10min_20250530_1440.csv",
-    "lat": -8.8101,
-    "lon": -47.1937,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:20:00",
-    "latitude": -8.8101,
-    "longitude": -47.1937,
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 78
-  },
-  {
-    "source_file": "focos_10min_20250530_1440.csv",
-    "lat": -6.2226,
-    "lon": -43.3459,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:20:00",
-    "latitude": -6.2226,
-    "longitude": -43.3459,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 79
-  },
-  {
-    "source_file": "focos_10min_20250530_1440.csv",
-    "lat": -6.2228,
-    "lon": -43.3226,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:20:00",
-    "latitude": -6.2228,
-    "longitude": -43.3226,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 93
-  },
-  {
-    "source_file": "focos_10min_20250530_1450.csv",
-    "lat": -6.2038,
-    "lon": -43.3475,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
-    "latitude": -6.2038,
-    "longitude": -43.3475,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 94
-  },
-  {
-    "source_file": "focos_10min_20250530_1450.csv",
-    "lat": -6.2224,
-    "lon": -43.3693,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
-    "latitude": -6.2224,
-    "longitude": -43.3693,
-    "municipio": "Caxias",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 87
-  },
-  {
-    "source_file": "focos_10min_20250530_1450.csv",
-    "lat": -6.2226,
-    "lon": -43.3459,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
-    "latitude": -6.2226,
-    "longitude": -43.3459,
     "municipio": "Caxias",
     "bioma": "Cerrado",
     "uc": "",
@@ -12320,43 +12224,11 @@
     "confianca": 84
   },
   {
-    "source_file": "focos_10min_20250530_1450.csv",
-    "lat": -7.585,
-    "lon": -45.8608,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
-    "latitude": -7.585,
-    "longitude": -45.8608,
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 94
-  },
-  {
-    "source_file": "focos_10min_20250530_1450.csv",
-    "lat": -8.099,
-    "lon": -45.3144,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
-    "latitude": -8.099,
-    "longitude": -45.3144,
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 83
-  },
-  {
-    "source_file": "focos_10min_20250530_1450.csv",
+    "source_file": "focos_10min_20250530_1440.csv",
     "lat": -8.8101,
     "lon": -47.1937,
     "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
+    "data": "2025-05-30 14:20:00",
     "latitude": -8.8101,
     "longitude": -47.1937,
     "municipio": "Balsas",
@@ -12365,14 +12237,30 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 68
+    "confianca": 75
   },
   {
-    "source_file": "focos_10min_20250530_1450.csv",
+    "source_file": "focos_10min_20250530_1440.csv",
+    "lat": -6.2226,
+    "lon": -43.3459,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:20:00",
+    "latitude": -6.2226,
+    "longitude": -43.3459,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 71
+  },
+  {
+    "source_file": "focos_10min_20250530_1440.csv",
     "lat": -6.2228,
     "lon": -43.3226,
     "satelite": "GOES-19",
-    "data": "2025-05-30 14:30:00",
+    "data": "2025-05-30 14:20:00",
     "latitude": -6.2228,
     "longitude": -43.3226,
     "municipio": "Caxias",
@@ -12381,46 +12269,14 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 95
+    "confianca": 66
   },
   {
-    "source_file": "focos_10min_20250530_1500.csv",
-    "lat": -7.585,
-    "lon": -45.8608,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:40:00",
-    "latitude": -7.585,
-    "longitude": -45.8608,
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 62
-  },
-  {
-    "source_file": "focos_10min_20250530_1500.csv",
-    "lat": -8.099,
-    "lon": -45.3144,
-    "satelite": "GOES-19",
-    "data": "2025-05-30 14:40:00",
-    "latitude": -8.099,
-    "longitude": -45.3144,
-    "municipio": "Balsas",
-    "bioma": "Cerrado",
-    "uc": "",
-    "regiao": "Centro",
-    "categoria_temporal": "Hoje",
-    "periodo_dia": "Desconhecido",
-    "confianca": 82
-  },
-  {
-    "source_file": "focos_10min_20250530_1500.csv",
+    "source_file": "focos_10min_20250530_1450.csv",
     "lat": -6.2038,
     "lon": -43.3475,
     "satelite": "GOES-19",
-    "data": "2025-05-30 14:40:00",
+    "data": "2025-05-30 14:30:00",
     "latitude": -6.2038,
     "longitude": -43.3475,
     "municipio": "Caxias",
@@ -12432,6 +12288,150 @@
     "confianca": 98
   },
   {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -6.2224,
+    "lon": -43.3693,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -6.2224,
+    "longitude": -43.3693,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 71
+  },
+  {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -6.2226,
+    "lon": -43.3459,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -6.2226,
+    "longitude": -43.3459,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 78
+  },
+  {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -7.585,
+    "lon": -45.8608,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -7.585,
+    "longitude": -45.8608,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 83
+  },
+  {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -8.099,
+    "lon": -45.3144,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -8.099,
+    "longitude": -45.3144,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 74
+  },
+  {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -8.8101,
+    "lon": -47.1937,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -8.8101,
+    "longitude": -47.1937,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 74
+  },
+  {
+    "source_file": "focos_10min_20250530_1450.csv",
+    "lat": -6.2228,
+    "lon": -43.3226,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:30:00",
+    "latitude": -6.2228,
+    "longitude": -43.3226,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 90
+  },
+  {
+    "source_file": "focos_10min_20250530_1500.csv",
+    "lat": -7.585,
+    "lon": -45.8608,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:40:00",
+    "latitude": -7.585,
+    "longitude": -45.8608,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 79
+  },
+  {
+    "source_file": "focos_10min_20250530_1500.csv",
+    "lat": -8.099,
+    "lon": -45.3144,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:40:00",
+    "latitude": -8.099,
+    "longitude": -45.3144,
+    "municipio": "Balsas",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 81
+  },
+  {
+    "source_file": "focos_10min_20250530_1500.csv",
+    "lat": -6.2038,
+    "lon": -43.3475,
+    "satelite": "GOES-19",
+    "data": "2025-05-30 14:40:00",
+    "latitude": -6.2038,
+    "longitude": -43.3475,
+    "municipio": "Caxias",
+    "bioma": "Cerrado",
+    "uc": "",
+    "regiao": "Centro",
+    "categoria_temporal": "Hoje",
+    "periodo_dia": "Desconhecido",
+    "confianca": 78
+  },
+  {
     "source_file": "focos_10min_20250530_1500.csv",
     "lat": -6.2224,
     "lon": -43.3693,
@@ -12445,7 +12445,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 96
+    "confianca": 71
   },
   {
     "source_file": "focos_10min_20250530_1500.csv",
@@ -12461,7 +12461,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 70
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_1500.csv",
@@ -12477,7 +12477,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 88
   },
   {
     "source_file": "focos_10min_20250530_1500.csv",
@@ -12493,7 +12493,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 93
+    "confianca": 64
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12509,7 +12509,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 79
+    "confianca": 85
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12525,7 +12525,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 65
+    "confianca": 70
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12541,7 +12541,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 73
+    "confianca": 79
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12557,7 +12557,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 98
+    "confianca": 81
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12573,7 +12573,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 81
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_1510.csv",
@@ -12589,7 +12589,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 75
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12605,7 +12605,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 69
+    "confianca": 76
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12621,7 +12621,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 92
+    "confianca": 87
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12637,7 +12637,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 80
+    "confianca": 74
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12653,7 +12653,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 73
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12669,7 +12669,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 69
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12685,7 +12685,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 63
+    "confianca": 62
   },
   {
     "source_file": "focos_10min_20250530_1530.csv",
@@ -12701,7 +12701,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 78
+    "confianca": 96
   },
   {
     "source_file": "focos_10min_20250530_1540.csv",
@@ -12717,7 +12717,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 91
   },
   {
     "source_file": "focos_10min_20250530_1540.csv",
@@ -12733,7 +12733,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 77
+    "confianca": 89
   },
   {
     "source_file": "focos_10min_20250530_1540.csv",
@@ -12749,7 +12749,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 61
+    "confianca": 77
   },
   {
     "source_file": "focos_10min_20250530_1540.csv",
@@ -12765,7 +12765,7 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 84
+    "confianca": 93
   },
   {
     "source_file": "focos_10min_20250530_1540.csv",
@@ -12781,6 +12781,6 @@
     "regiao": "Centro",
     "categoria_temporal": "Hoje",
     "periodo_dia": "Desconhecido",
-    "confianca": 76
+    "confianca": 78
   }
 ]
