@@ -1,12 +1,7 @@
 {
   "totalFiles": 100,
-  "processedAt": "2025-05-30T02:50:58.840Z",
+  "processedAt": "2025-05-30T03:36:35.300Z",
   "files": [
-    "focos_10min_20250529_0940.csv",
-    "focos_10min_20250529_0950.csv",
-    "focos_10min_20250529_1000.csv",
-    "focos_10min_20250529_1010.csv",
-    "focos_10min_20250529_1020.csv",
     "focos_10min_20250529_1030.csv",
     "focos_10min_20250529_1040.csv",
     "focos_10min_20250529_1050.csv",
@@ -101,7 +96,12 @@
     "focos_10min_20250530_0210.csv",
     "focos_10min_20250530_0220.csv",
     "focos_10min_20250530_0230.csv",
-    "focos_10min_20250530_0240.csv"
+    "focos_10min_20250530_0240.csv",
+    "focos_10min_20250530_0250.csv",
+    "focos_10min_20250530_0300.csv",
+    "focos_10min_20250530_0310.csv",
+    "focos_10min_20250530_0320.csv",
+    "focos_10min_20250530_0330.csv"
   ],
   "dataPath": "src/data/raw",
   "status": "success",
