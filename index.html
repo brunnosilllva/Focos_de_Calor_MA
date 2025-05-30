@@ -3,167 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Focos de Calor no Maranhão</title>
+    <title>Dashboard de Focos de Calor - Maranhão</title>
     
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+    
+    <!-- CSS Libraries -->
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <!-- Leaflet MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="src/css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="app">
-        <header class="dashboard-header">
-            <div class="container">
-                <h1>🔥 Dashboard - Focos de Calor no Maranhão</h1>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Carregando Dashboard de Focos de Calor...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1><i class="fas fa-fire"></i> Dashboard Focos de Calor</h1>
+                    <p>Monitoramento em Tempo Real - Estado do Maranhão</p>
+                </div>
                 <div class="header-stats">
-                    <div class="stat-card">
-                        <span class="stat-number" id="total-focos">-</span>
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-focos">0</span>
                         <span class="stat-label">Total de Focos</span>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-number" id="focos-hoje">-</span>
-                        <span class="stat-label">Focos Hoje</span>
+                    <div class="stat-item">
+                        <span class="stat-value" id="contador-filtrado">0 focos exibidos</span>
+                        <span class="stat-label">Filtrados</span>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-number" id="ultima-atualizacao">-</span>
-                        <span class="stat-label">Última Atualização</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="dashboard-controls">
-            <div class="container">
-                <div class="filters">
-                    <select id="filter-municipio">
-                        <option value="">Todos os Municípios</option>
-                    </select>
-                    
-                    <select id="filter-bioma">
-                        <option value="">Todos os Biomas</option>
-                    </select>
-                    
-                    <input type="date" id="filter-data-inicio" />
-                    <input type="date" id="filter-data-fim" />
-                    
-                    <button id="apply-filters">Aplicar Filtros</button>
-                    <button id="clear-filters">Limpar</button>
                 </div>
             </div>
         </div>
+    </header>
 
-        <main class="dashboard-content">
-            <div class="container">
-                <div class="dashboard-grid">
-                    <!-- Mapa Principal -->
+    <!-- Main Container -->
+    <main class="main-container">
+        <div class="container">
+            
+            <!-- Filters Section -->
+            <section class="filters-section">
+                <div class="filters-header">
+                    <h2><i class="fas fa-filter"></i> Filtros</h2>
+                    <button id="btn-reset-filtros" class="btn btn-secondary">
+                        <i class="fas fa-refresh"></i> Limpar Filtros
+                    </button>
+                </div>
+                
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="filtro-municipio">
+                            <i class="fas fa-map-marker-alt"></i> Município
+                        </label>
+                        <select id="filtro-municipio" class="filter-select">
+                            <option value="todos">Todos os Municípios</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filtro-bioma">
+                            <i class="fas fa-tree"></i> Bioma
+                        </label>
+                        <select id="filtro-bioma" class="filter-select">
+                            <option value="todos">Todos os Biomas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filtro-satelite">
+                            <i class="fas fa-satellite"></i> Satélite
+                        </label>
+                        <select id="filtro-satelite" class="filter-select">
+                            <option value="todos">Todos os Satélites</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filtro-periodo">
+                            <i class="fas fa-calendar"></i> Período
+                        </label>
+                        <select id="filtro-periodo" class="filter-select">
+                            <option value="todos">Todo o Período</option>
+                            <option value="hoje">Hoje</option>
+                            <option value="7dias">Últimos 7 dias</option>
+                            <option value="30dias">Últimos 30 dias</option>
+                            <option value="90dias">Últimos 90 dias</option>
+                            <option value="ano-atual">Ano Atual</option>
+                            <option value="mes-atual">Mês Atual</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                
+                <!-- Left Column: Map -->
+                <section class="map-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-globe"></i> Mapa Interativo</h2>
+                        <div class="map-controls">
+                            <button id="btn-centralizar" class="btn btn-sm" title="Centralizar no Maranhão">
+                                <i class="fas fa-crosshairs"></i>
+                            </button>
+                            <button id="btn-fullscreen" class="btn btn-sm" title="Tela Cheia">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div class="map-container">
-                        <div id="map" class="map"></div>
-                        <div class="map-legend">
-                            <h4>Legenda</h4>
-                            <div class="legend-item">
-                                <span class="legend-color" style="background: #ff4444;"></span>
-                                <span>Focos Últimas 24h</span>
+                        <div id="mapa-container" class="mapa"></div>
+                    </div>
+                </section>
+
+                <!-- Right Column: Statistics and Charts -->
+                <section class="analytics-section">
+                    
+                    <!-- Quick Stats -->
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="legend-item">
-                                <span class="legend-color" style="background: #ff8800;"></span>
-                                <span>Focos Última Semana</span>
+                            <div class="stat-info">
+                                <span class="stat-value" id="municipio-lider">-</span>
+                                <span class="stat-label">Município Líder</span>
                             </div>
-                            <div class="legend-item">
-                                <span class="legend-color" style="background: #ffaa00;"></span>
-                                <span>Focos Mais Antigos</span>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="bioma-predominante">-</span>
+                                <span class="stat-label">Bioma Predominante</span>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="satelite-principal">-</span>
+                                <span class="stat-label">Satélite Principal</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Gráficos -->
-                    <div class="charts-container">
-                        <div class="chart-card">
-                            <h3>Focos por Município (Top 10)</h3>
-                            <canvas id="chart-municipios"></canvas>
+                    <!-- Charts Tabs -->
+                    <div class="charts-section">
+                        <div class="charts-tabs">
+                            <button class="tab-btn active" data-tab="temporal">
+                                <i class="fas fa-chart-line"></i> Temporal
+                            </button>
+                            <button class="tab-btn" data-tab="ranking">
+                                <i class="fas fa-chart-bar"></i> Ranking
+                            </button>
+                            <button class="tab-btn" data-tab="distribuicao">
+                                <i class="fas fa-chart-pie"></i> Distribuição
+                            </button>
                         </div>
-                        
-                        <div class="chart-card">
-                            <h3>Evolução Temporal</h3>
-                            <canvas id="chart-temporal"></canvas>
-                        </div>
-                        
-                        <div class="chart-card">
-                            <h3>Focos por Bioma</h3>
-                            <canvas id="chart-biomas"></canvas>
-                        </div>
-                        
-                        <div class="chart-card">
-                            <h3>Distribuição por Uso do Solo</h3>
-                            <canvas id="chart-uso-solo"></canvas>
-                        </div>
-                    </div>
 
-                    <!-- Tabela de Dados -->
-                    <div class="table-container">
-                        <div class="table-header">
-                            <h3>Dados Detalhados</h3>
-                            <div class="table-controls">
-                                <button id="export-csv">Exportar CSV</button>
-                                <button id="export-json">Exportar JSON</button>
+                        <!-- Tab Content: Temporal -->
+                        <div class="tab-content active" id="tab-temporal">
+                            <div class="chart-container">
+                                <div class="chart-header">
+                                    <h3>Série Temporal</h3>
+                                    <p>Evolução dos focos ao longo do tempo</p>
+                                </div>
+                                <div class="chart-wrapper">
+                                    <canvas id="grafico-temporal"></canvas>
+                                </div>
                             </div>
                         </div>
-                        <div class="table-wrapper">
-                            <table id="focos-table">
-                                <thead>
-                                    <tr>
-                                        <th>Data/Hora</th>
-                                        <th>Latitude</th>
-                                        <th>Longitude</th>
-                                        <th>Município</th>
-                                        <th>Bioma</th>
-                                        <th>Uso do Solo</th>
-                                        <th>UC</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="focos-table-body">
-                                    <!-- Dados carregados dinamicamente -->
-                                </tbody>
-                            </table>
+
+                        <!-- Tab Content: Ranking -->
+                        <div class="tab-content" id="tab-ranking">
+                            <div class="chart-container">
+                                <div class="chart-header">
+                                    <h3>Top 10 Municípios</h3>
+                                    <p>Municípios com mais focos detectados</p>
+                                </div>
+                                <div class="chart-wrapper">
+                                    <canvas id="grafico-municipios"></canvas>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table-pagination">
-                            <button id="prev-page" disabled>Anterior</button>
-                            <span id="page-info">Página 1 de 1</span>
-                            <button id="next-page" disabled>Próxima</button>
+
+                        <!-- Tab Content: Distribuição -->
+                        <div class="tab-content" id="tab-distribuicao">
+                            <div class="charts-grid">
+                                <div class="chart-container">
+                                    <div class="chart-header">
+                                        <h4>Por Biomas</h4>
+                                    </div>
+                                    <div class="chart-wrapper">
+                                        <canvas id="grafico-biomas"></canvas>
+                                    </div>
+                                </div>
+                                
+                                <div class="chart-container">
+                                    <div class="chart-header">
+                                        <h4>Por Satélites</h4>
+                                    </div>
+                                    <div class="chart-wrapper">
+                                        <canvas id="grafico-satelites"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Extended Charts Section -->
+            <section class="extended-charts">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-area"></i> Análises Avançadas</h2>
+                </div>
+                
+                <div class="extended-charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Evolução Mensal</h3>
+                            <p>Comparativo entre anos</p>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="grafico-mensal"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Tendência Anual</h3>
+                            <p>Histórico e projeções</p>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="grafico-comparativo"></canvas>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-section">
+                <div class="action-buttons">
+                    <button id="btn-exportar" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Exportar Dados
+                    </button>
+                    <button id="btn-relatorio" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> Gerar Relatório
+                    </button>
+                    <button id="btn-compartilhar" class="btn btn-outline">
+                        <i class="fas fa-share"></i> Compartilhar
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 Dashboard de Focos de Calor - Maranhão</p>
+                    <p>Dados atualizados a cada 10 minutos</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Sobre</a>
+                    <a href="#" class="footer-link">Metodologia</a>
+                    <a href="#" class="footer-link">API</a>
+                    <a href="#" class="footer-link">Contato</a>
+                </div>
             </div>
-        </main>
+        </div>
+    </footer>
 
-        <footer class="dashboard-footer">
-            <div class="container">
-                <p>Dashboard desenvolvido para monitoramento de focos de calor no Estado do Maranhão</p>
-                <p>Dados atualizados automaticamente a cada hora | Fonte: INPE/BDQUEIMADAS</p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Loading overlay -->
-    <div id="loading-overlay" class="loading-overlay">
-        <div class="loading-spinner"></div>
-        <p>Carregando dados...</p>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
-    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- Leaflet MarkerCluster JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
     
-    <!-- Custom Scripts -->
+    <!-- Custom JavaScript -->
     <script src="src/js/dataLoader.js"></script>
-    <script src="src/js/spatialJoins.js"></script>
     <script src="src/js/mapHandler.js"></script>
     <script src="src/js/chartHandler.js"></script>
     <script src="src/js/app.js"></script>
+
+    <!-- Tab Functionality -->
+    <script>
+        // Funcionalidade das abas dos gráficos
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+
+                    // Remove active class from all tabs and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(`tab-${targetTab}`).classList.add('active');
+                    
+                    // Trigger chart resize if needed
+                    if (window.dashboard && window.dashboard.chartHandler) {
+                        setTimeout(() => {
+                            Object.values(window.dashboard.chartHandler.charts).forEach(chart => {
+                                if (chart && chart.resize) chart.resize();
+                            });
+                        }, 100);
+                    }
+                });
+            });
+
+            // Botões de controle do mapa
+            document.getElementById('btn-centralizar')?.addEventListener('click', function() {
+                if (window.dashboard && window.dashboard.mapHandler) {
+                    window.dashboard.mapHandler.voltarParaMaranhao();
+                }
+            });
+
+            document.getElementById('btn-fullscreen')?.addEventListener('click', function() {
+                const mapContainer = document.querySelector('.map-section');
+                if (mapContainer.requestFullscreen) {
+                    mapContainer.requestFullscreen();
+                } else if (mapContainer.webkitRequestFullscreen) {
+                    mapContainer.webkitRequestFullscreen();
+                } else if (mapContainer.msRequestFullscreen) {
+                    mapContainer.msRequestFullscreen();
+                }
+            });
+
+            // Responsividade - redimensionar mapa quando necessário
+            window.addEventListener('resize', function() {
+                if (window.dashboard && window.dashboard.mapHandler) {
+                    window.dashboard.mapHandler.redimensionar();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
