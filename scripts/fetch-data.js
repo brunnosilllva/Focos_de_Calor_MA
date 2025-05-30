@@ -66,7 +66,13 @@ class GoogleDriveDataFetcher {
     console.log(`📊 Encontrados ${csvFiles.length} arquivos CSV`);
     
     const outputDir = path.join(__dirname, '../src/data/raw');
-    await fs.mkdir(outputDir, { recursive: true });
+    
+    try {
+      await fs.mkdir(outputDir, { recursive: true });
+    } catch (error) {
+      // Pasta já existe, continuar normalmente
+      console.log('📁 Pasta raw já existe, continuando...');
+    }
     
     const downloadedFiles = [];
     
