@@ -1,13 +1,11 @@
-# .github/workflows/update-data.yml
-name: Atualizar Dados dos Focos de Calor
+name: Atualizar Dados de Focos de Calor
 
 on:
   schedule:
-    # Executa a cada 60 minutos
-    - cron: '0 * * * *'
-  workflow_dispatch: # Permite execução manual
+    - cron: '*/10 * * * *'  # A cada 10 minutos
+  workflow_dispatch:  # Permite execução manual
   push:
-    branches: [ main ] # Executa também no push
+    branches: [ main ]
 
 jobs:
   update-data:
@@ -16,43 +14,82 @@ jobs:
     steps:
     - name: Checkout código
       uses: actions/checkout@v4
-      
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-        
+
     - name: Instalar dependências
-      run: npm install
-      
-    - name: Baixar dados do Google Drive
-      env:
-        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
-        SHAPEFILE_FOLDER_ID: ${{ secrets.SHAPEFILE_FOLDER_ID }}
-      run: node scripts/fetch-data.js
-      
-    - name: Processar dados espaciais
-      run: node scripts/process-spatial-data.js
-      
-    - name: Atualizar arquivos processados
+      run: |
+        npm install @turf/turf papaparse
+
+    - name: Configurar Git
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add src/data/processed/
-        git diff --staged --quiet || git commit -m "🔄 Dados atualizados automaticamente - $(date)"
+        git config --local pull.rebase false
+
+    - name: Pull mudanças recentes
+      run: |
+        git pull origin main || true
+
+    - name: Executar fetch de dados
+      env:
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      run: |
+        node scripts/fetch-data.js || echo "Erro no fetch, continuando..."
+
+    - name: Processar dados espaciais
+      run: |
+        node scripts/process-spatial-data.js || echo "Erro no processamento, continuando..."
+
+    - name: Verificar mudanças
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Arquivos modificados:"
+          git status --porcelain
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "Nenhuma mudança detectada"
+        fi
+
+    - name: Commit e Push mudanças
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git add src/data/processed/ || true
+        git add src/data/raw/ || true
         
-    - name: Push mudanças
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-        
+        # Verificar se há algo para commitar
+        if [ -n "$(git diff --staged)" ]; then
+          git commit -m "🔄 Atualização automática dos dados - $(date '+%Y-%m-%d %H:%M:%S')" || true
+          
+          # Tentar push com retry
+          for i in {1..3}; do
+            git pull --rebase origin main || true
+            if git push origin main; then
+              echo "✅ Push realizado com sucesso na tentativa $i"
+              break
+            else
+              echo "❌ Falha no push, tentativa $i/3"
+              sleep 5
+            fi
+          done
+        else
+          echo "ℹ️ Nenhuma mudança para commitar"
+        fi
+
     - name: Deploy para GitHub Pages
-      if: github.ref == 'refs/heads/main'
+      if: steps.verify-changed-files.outputs.changed == 'true'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: .
         publish_branch: gh-pages
+        force_orphan: true
