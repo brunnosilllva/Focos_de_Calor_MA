@@ -1,4 +1,4 @@
-// src/js/app.js - Script principal do dashboard
+// src/js/app.js - Dashboard Final que carrega dados reais
 class FocosCalorDashboard {
   constructor() {
     this.dados = [];
@@ -34,7 +34,12 @@ class FocosCalorDashboard {
       
     } catch (error) {
       console.error('❌ Erro ao inicializar dashboard:', error);
-      this.mostrarErro('Erro ao carregar dados. Tente novamente em alguns minutos.');
+      this.mostrarErro('Erro ao carregar dados. Usando dados de exemplo.');
+      
+      // Fallback para dados de exemplo
+      this.dados = this.gerarDadosExemplo();
+      this.inicializarComponentesComDados();
+      this.mostrarLoading(false);
     }
   }
 
@@ -42,27 +47,25 @@ class FocosCalorDashboard {
     console.log('📊 Carregando dados de focos...');
     
     try {
-      // Tentar carregar dados processados primeiro
-      const dadosProcessados = await this.buscarDadosProcessados();
+      // Tentar carregar summary primeiro
+      const summary = await this.buscarSummary();
       
-      if (dadosProcessados && dadosProcessados.length > 0) {
-        this.dados = dadosProcessados;
-        console.log(`✅ ${this.dados.length} focos carregados (dados processados)`);
-        return;
+      if (summary && summary.files && summary.files.length > 0) {
+        console.log(`📋 Summary encontrado: ${summary.totalFiles} arquivos CSV`);
+        
+        // Tentar carregar alguns CSVs mais recentes
+        const dadosCSV = await this.buscarCSVsRecentes(summary.files);
+        
+        if (dadosCSV && dadosCSV.length > 0) {
+          this.dados = dadosCSV;
+          console.log(`✅ ${this.dados.length} focos carregados dos CSVs`);
+          return;
+        }
       }
       
-      // Se não houver dados processados, carregar CSVs diretamente
-      const dadosCSV = await this.buscarCSVsProcessados();
-      
-      if (dadosCSV && dadosCSV.length > 0) {
-        this.dados = dadosCSV;
-        console.log(`✅ ${this.dados.length} focos carregados (CSVs)`);
-        return;
-      }
-      
-      // Se não encontrar nada, mostrar dados de exemplo
-      this.dados = this.gerarDadosExemplo();
+      // Se não conseguir, usar dados de exemplo
       console.log('⚠️ Usando dados de exemplo - aguarde próxima atualização');
+      this.dados = this.gerarDadosExemplo();
       
     } catch (error) {
       console.error('❌ Erro ao carregar dados:', error);
@@ -70,144 +73,105 @@ class FocosCalorDashboard {
     }
   }
 
-  async buscarDadosProcessados() {
+  async buscarSummary() {
     try {
-      // Primeiro, tentar carregar o resumo do processamento
-      const summaryResponse = await fetch('src/data/processed/processing-summary.json');
+      const response = await fetch('src/data/processed/processing-summary.json');
       
-      if (!summaryResponse.ok) {
-        console.log('📋 Resumo não encontrado, tentando CSVs diretos...');
-        return await this.buscarCSVsProcessados();
+      if (!response.ok) {
+        console.log('📋 Summary não encontrado');
+        return null;
       }
       
       const summary = await response.json();
-      console.log('📊 Resumo dos dados encontrado:', summary);
-      
-      // Tentar carregar CSVs da pasta processed
-      return await this.buscarCSVsProcessados();
+      console.log('📊 Summary carregado:', summary);
+      return summary;
       
     } catch (error) {
-      console.log('📋 Erro ao buscar dados processados:', error.message);
-      return await this.buscarCSVsProcessados();
+      console.log('📋 Erro ao buscar summary:', error.message);
+      return null;
     }
   }
 
-  async buscarCSVsProcessados() {
-    try {
-      // Buscar CSVs que podem estar na pasta processed
-      console.log('🔍 Buscando CSVs na pasta processed...');
-      
-      // Listar arquivos possíveis baseado no padrão de nomes
-      const agora = new Date();
-      const hoje = agora.toISOString().slice(0, 10).replace(/-/g, '');
-      
-      // Tentar alguns horários recentes
-      const horasPossiveis = [];
-      for (let h = agora.getHours(); h >= Math.max(0, agora.getHours() - 3); h--) {
-        for (let m = 50; m >= 0; m -= 10) {
-          horasPossiveis.push(`${h.toString().padStart(2, '0')}${m.toString().padStart(2, '0')}`);
-        }
-      }
-      
-      // Tentar encontrar arquivos CSV
-      for (const hora of horasPossiveis) {
-        const arquivos = [
-          `src/data/processed/focos_10min_${hoje}_${hora}.csv`,
-          `src/data/raw/focos_10min_${hoje}_${hora}.csv` // backup
+  async buscarCSVsRecentes(arquivos) {
+    console.log('🔍 Tentando carregar CSVs mais recentes...');
+    
+    // Ordenar arquivos por nome (que contém timestamp)
+    const arquivosOrdenados = arquivos
+      .filter(nome => nome.includes('.csv'))
+      .sort()
+      .reverse()
+      .slice(0, 5); // Tentar os 5 mais recentes
+    
+    const todosDados = [];
+    
+    for (const arquivo of arquivosOrdenados) {
+      try {
+        console.log(`🔍 Tentando carregar: ${arquivo}`);
+        
+        // Tentar diferentes locais onde o arquivo pode estar
+        const urlsPossiveis = [
+          `src/data/raw/${arquivo}`,
+          `src/data/processed/${arquivo}`,
+          `${arquivo}` // caso esteja na raiz
         ];
         
-        for (const arquivo of arquivos) {
+        for (const url of urlsPossiveis) {
           try {
-            console.log(`🔍 Tentando carregar: ${arquivo}`);
-            const response = await fetch(arquivo);
+            const response = await fetch(url);
             
             if (response.ok) {
               const csvText = await response.text();
               const dados = this.parseCSV(csvText);
               
-              if (dados.length > 0) {
-                console.log(`✅ ${dados.length} focos carregados de: ${arquivo}`);
-                return dados;
+              if (dados && dados.length > 0) {
+                console.log(`✅ ${dados.length} focos carregados de: ${url}`);
+                todosDados.push(...dados);
+                break; // Parar de tentar URLs para este arquivo
               }
             }
-          } catch (error) {
-            console.log(`⏭️ ${arquivo} não encontrado`);
+          } catch (urlError) {
+            // Continuar tentando próxima URL
           }
         }
+        
+        // Se já temos dados suficientes, parar
+        if (todosDados.length > 50) break;
+        
+      } catch (error) {
+        console.log(`⏭️ Não foi possível carregar ${arquivo}`);
       }
-      
-      return null;
-      
-    } catch (error) {
-      console.log('❌ Erro ao buscar CSVs processados:', error);
-      return null;
     }
-  }
-
-  async buscarDadosCSV() {
-    try {
-      // Tentar carregar CSV mais recente
-      const agora = new Date();
-      const dataHoje = agora.toISOString().slice(0, 10).replace(/-/g, '');
-      const horaAtual = agora.getHours().toString().padStart(2, '0');
-      const minutoAtual = Math.floor(agora.getMinutes() / 10) * 10;
-      const minutoStr = minutoAtual.toString().padStart(2, '0');
-      
-      // Tentar últimos arquivos possíveis
-      const arquivosPossiveis = [
-        `focos_10min_${dataHoje}_${horaAtual}${minutoStr}.csv`,
-        `focos_10min_${dataHoje}_${horaAtual}${(minutoAtual - 10).toString().padStart(2, '0')}.csv`,
-        `focos_10min_${dataHoje}_${(horaAtual - 1).toString().padStart(2, '0')}50.csv`
-      ];
-      
-      for (const arquivo of arquivosPossiveis) {
-        try {
-          const response = await fetch(`src/data/raw/${arquivo}`);
-          
-          if (response.ok) {
-            const csvText = await response.text();
-            const dados = this.parseCSV(csvText);
-            
-            if (dados.length > 0) {
-              console.log(`✅ Dados carregados de: ${arquivo}`);
-              return dados;
-            }
-          }
-        } catch (error) {
-          console.log(`⏭️ Arquivo ${arquivo} não encontrado`);
-        }
-      }
-      
-      return null;
-      
-    } catch (error) {
-      console.error('❌ Erro ao buscar CSVs:', error);
-      return null;
-    }
+    
+    return todosDados.length > 0 ? todosDados : null;
   }
 
   parseCSV(csvText) {
     try {
       const linhas = csvText.split('\n');
-      const headers = linhas[0].split(',').map(h => h.trim());
+      if (linhas.length < 2) return [];
       
+      const headers = linhas[0].split(',').map(h => h.trim().replace(/"/g, ''));
       const dados = [];
       
       for (let i = 1; i < linhas.length; i++) {
         const linha = linhas[i].trim();
         if (!linha) continue;
         
-        const valores = linha.split(',');
+        const valores = linha.split(',').map(v => v.trim().replace(/"/g, ''));
         
         if (valores.length >= 2) {
           const foco = {};
           
           headers.forEach((header, index) => {
-            foco[header] = valores[index] ? valores[index].trim() : '';
+            foco[header] = valores[index] || '';
           });
           
           // Validar coordenadas básicas
-          if (foco.lat && foco.lon && !isNaN(foco.lat) && !isNaN(foco.lon)) {
+          if (foco.lat && foco.lon && !isNaN(parseFloat(foco.lat)) && !isNaN(parseFloat(foco.lon))) {
+            // Normalizar campos comuns
+            foco.latitude = parseFloat(foco.lat);
+            foco.longitude = parseFloat(foco.lon);
+            
             dados.push(foco);
           }
         }
@@ -222,42 +186,59 @@ class FocosCalorDashboard {
   }
 
   gerarDadosExemplo() {
-    console.log('🎭 Gerando dados de exemplo...');
+    console.log('🎭 Gerando dados de exemplo para o Maranhão...');
     
     const dados = [];
     const agora = new Date();
     
-    // Gerar alguns focos de exemplo no Maranhão
+    // Coordenadas reais de municípios do Maranhão
     const coordenadasMA = [
-      { lat: -2.5, lon: -44.2, municipio: 'São Luís' },
-      { lat: -5.1, lon: -47.5, municipio: 'Imperatriz' },
-      { lat: -3.7, lon: -43.4, municipio: 'Caxias' },
-      { lat: -4.8, lon: -45.3, municipio: 'Timon' },
-      { lat: -2.9, lon: -41.8, municipio: 'Barreirinhas' }
+      { lat: -2.5297, lon: -44.2828, municipio: 'São Luís', regiao: 'Norte' },
+      { lat: -5.5244, lon: -47.4601, municipio: 'Imperatriz', regiao: 'Oeste' },
+      { lat: -4.8594, lon: -43.3558, municipio: 'Caxias', regiao: 'Leste' },
+      { lat: -5.0947, lon: -42.2877, municipio: 'Timon', regiao: 'Leste' },
+      { lat: -2.7581, lon: -42.8256, municipio: 'Barreirinhas', regiao: 'Norte' },
+      { lat: -3.7502, lon: -43.3741, municipio: 'Codó', regiao: 'Centro' },
+      { lat: -4.2444, lon: -44.2133, municipio: 'Chapadinha', regiao: 'Leste' },
+      { lat: -2.8800, lon: -45.2744, municipio: 'Bacabal', regiao: 'Centro' },
+      { lat: -3.1019, lon: -44.3636, municipio: 'Santa Inês', regiao: 'Centro' },
+      { lat: -4.0389, lon: -45.3553, municipio: 'Barra do Corda', regiao: 'Centro' }
     ];
     
-    for (let i = 0; i < 20; i++) {
+    // Gerar focos distribuídos ao longo do tempo
+    for (let i = 0; i < 50; i++) {
       const coord = coordenadasMA[i % coordenadasMA.length];
-      const dataHora = new Date(agora.getTime() - Math.random() * 24 * 60 * 60 * 1000);
+      const horasAtras = Math.random() * 24; // Últimas 24 horas
+      const dataHora = new Date(agora.getTime() - horasAtras * 60 * 60 * 1000);
       
       dados.push({
-        lat: coord.lat + (Math.random() - 0.5) * 0.5,
-        lon: coord.lon + (Math.random() - 0.5) * 0.5,
+        lat: coord.lat + (Math.random() - 0.5) * 0.3, // Variação nas coordenadas
+        lon: coord.lon + (Math.random() - 0.5) * 0.3,
+        latitude: coord.lat + (Math.random() - 0.5) * 0.3,
+        longitude: coord.lon + (Math.random() - 0.5) * 0.3,
         municipio: coord.municipio,
+        regiao: coord.regiao,
         data: dataHora.toISOString().split('T')[0],
         hora: dataHora.toTimeString().split(' ')[0],
         satelite: Math.random() > 0.5 ? 'AQUA_M-T' : 'TERRA_M-T',
-        bioma: 'Cerrado'
+        bioma: Math.random() > 0.7 ? 'Cerrado' : Math.random() > 0.5 ? 'Caatinga' : 'Amazônia',
+        confianca: Math.floor(Math.random() * 40) + 60 + '%' // 60-99%
       });
     }
     
     return dados;
   }
 
+  inicializarComponentesComDados() {
+    this.inicializarMapa();
+    this.inicializarGraficos();
+    this.inicializarTabela();
+    this.configurarFiltros();
+  }
+
   inicializarMapa() {
     console.log('🗺️ Inicializando mapa...');
     
-    // Verificar se o elemento do mapa existe
     const mapElement = document.getElementById('map');
     if (!mapElement) {
       console.error('❌ Elemento #map não encontrado');
@@ -266,11 +247,12 @@ class FocosCalorDashboard {
     
     try {
       // Inicializar mapa centrado no Maranhão
-      this.mapa = L.map('map').setView([-4.9, -45.0], 7);
+      this.mapa = L.map('map').setView([-4.5, -44.5], 7);
       
       // Adicionar camada base
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 18
       }).addTo(this.mapa);
       
       // Adicionar focos ao mapa
@@ -289,10 +271,17 @@ class FocosCalorDashboard {
     console.log(`📍 Adicionando ${this.dados.length} focos ao mapa...`);
     
     this.dados.forEach(foco => {
-      if (foco.lat && foco.lon) {
-        const marker = L.circleMarker([parseFloat(foco.lat), parseFloat(foco.lon)], {
-          radius: 4,
-          fillColor: '#ff4444',
+      const lat = foco.latitude || parseFloat(foco.lat);
+      const lon = foco.longitude || parseFloat(foco.lon);
+      
+      if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
+        // Cor baseada na idade do foco
+        const ageFactor = this.calcularIdadeFoco(foco.data);
+        const color = ageFactor < 1 ? '#ff4444' : ageFactor < 7 ? '#ff8800' : '#ffaa00';
+        
+        const marker = L.circleMarker([lat, lon], {
+          radius: 5,
+          fillColor: color,
           color: '#ffffff',
           weight: 1,
           opacity: 1,
@@ -300,11 +289,15 @@ class FocosCalorDashboard {
         });
         
         marker.bindPopup(`
-          <strong>Foco de Calor</strong><br>
-          <strong>Município:</strong> ${foco.municipio || 'N/A'}<br>
-          <strong>Data:</strong> ${foco.data || 'N/A'}<br>
-          <strong>Hora:</strong> ${foco.hora || 'N/A'}<br>
-          <strong>Satélite:</strong> ${foco.satelite || 'N/A'}
+          <div style="min-width: 200px;">
+            <strong>🔥 Foco de Calor</strong><br>
+            <strong>📍 Município:</strong> ${foco.municipio || 'N/A'}<br>
+            <strong>📅 Data:</strong> ${foco.data || 'N/A'}<br>
+            <strong>🕒 Hora:</strong> ${foco.hora || 'N/A'}<br>
+            <strong>🛰️ Satélite:</strong> ${foco.satelite || 'N/A'}<br>
+            <strong>🌿 Bioma:</strong> ${foco.bioma || 'N/A'}<br>
+            <strong>📊 Confiança:</strong> ${foco.confianca || 'N/A'}
+          </div>
         `);
         
         marker.addTo(this.mapa);
@@ -312,11 +305,24 @@ class FocosCalorDashboard {
     });
   }
 
+  calcularIdadeFoco(dataFoco) {
+    if (!dataFoco) return 30;
+    
+    try {
+      const hoje = new Date();
+      const dataFocoDate = new Date(dataFoco);
+      const diffTime = hoje - dataFocoDate;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      return diffDays;
+    } catch {
+      return 30;
+    }
+  }
+
   inicializarGraficos() {
     console.log('📊 Inicializando gráficos...');
-    
-    // TODO: Implementar gráficos com Chart.js
     this.atualizarEstatisticas();
+    // TODO: Implementar gráficos Chart.js
   }
 
   atualizarEstatisticas() {
@@ -352,14 +358,17 @@ class FocosCalorDashboard {
     
     dadosLimitados.forEach(foco => {
       const row = document.createElement('tr');
+      const lat = foco.latitude || parseFloat(foco.lat) || 0;
+      const lon = foco.longitude || parseFloat(foco.lon) || 0;
+      
       row.innerHTML = `
         <td>${foco.data || 'N/A'} ${foco.hora || ''}</td>
-        <td>${parseFloat(foco.lat).toFixed(4)}</td>
-        <td>${parseFloat(foco.lon).toFixed(4)}</td>
+        <td>${lat.toFixed(4)}</td>
+        <td>${lon.toFixed(4)}</td>
         <td>${foco.municipio || 'N/A'}</td>
         <td>${foco.bioma || 'N/A'}</td>
-        <td>${foco.uso_solo || 'N/A'}</td>
-        <td>${foco.uc || 'N/A'}</td>
+        <td>${foco.satelite || 'N/A'}</td>
+        <td>${foco.confianca || 'N/A'}</td>
       `;
       tableBody.appendChild(row);
     });
@@ -368,7 +377,6 @@ class FocosCalorDashboard {
   configurarFiltros() {
     console.log('🎛️ Configurando filtros...');
     
-    // TODO: Implementar filtros funcionais
     const applyFiltersBtn = document.getElementById('apply-filters');
     if (applyFiltersBtn) {
       applyFiltersBtn.addEventListener('click', () => {
@@ -397,12 +405,15 @@ class FocosCalorDashboard {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: #ff4444;
+        background: #ff6b6b;
         color: white;
-        padding: 15px;
-        border-radius: 5px;
+        padding: 15px 20px;
+        border-radius: 8px;
         z-index: 10000;
-        max-width: 300px;
+        max-width: 350px;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        font-size: 14px;
+        line-height: 1.4;
       `;
       document.body.appendChild(errorDiv);
     }
@@ -420,5 +431,9 @@ class FocosCalorDashboard {
 // Inicializar dashboard quando página carregar
 document.addEventListener('DOMContentLoaded', () => {
   console.log('🌟 Página carregada, inicializando dashboard...');
-  new FocosCalorDashboard();
+  
+  // Aguardar carregar bibliotecas externas
+  setTimeout(() => {
+    new FocosCalorDashboard();
+  }, 1000);
 });
