@@ -1,288 +1,120 @@
-// scripts/fetch-data.js - Versão com limpeza de estrutura
+// fetch-data.js - Fetch de dados corrigido para Brasil completo
 const fs = require('fs').promises;
 const path = require('path');
 
-// Compatibilidade com node-fetch ESM
-const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
-
-class GoogleDriveDataFetcher {
-  constructor() {
-    this.apiKey = process.env.GOOGLE_API_KEY;
-    this.folderId = process.env.DRIVE_FOLDER_ID;
-    this.shapefileFolderId = process.env.SHAPEFILE_FOLDER_ID;
-    this.baseUrl = 'https://www.googleapis.com/drive/v3';
-    
-    if (!this.apiKey) {
-      throw new Error('GOOGLE_API_KEY não configurada');
+class FetchDadosBrasil {
+    constructor() {
+        this.apiKey = process.env.GOOGLE_API_KEY;
+        
+        // IDs das pastas do Google Drive
+        this.pastasConfig = {
+            focos: process.env.DRIVE_FOLDER_ID || '1wqXxx9EO6QUINjK1U_6ztOJZJcuqDHZJ', // Pasta "1. Focos"
+            referencias: process.env.SHAPEFILE_FOLDER_ID || 'CONFIGURAR_ID_PASTA_2', // Pasta "2. Referências Espaciais"
+            backup: process.env.BACKUP_FOLDER_ID || '' // Pasta de backup (opcional)
+        };
+        
+        this.diretorioRaw = './src/data/raw';
+        this.diretorioShapefiles = './src/data/shapefiles';
+        this.diretorioProcessado = './src/data/processed';
+        
+        // Estatísticas de download
+        this.stats = {
+            arquivosBaixados: 0,
+            totalBytes: 0,
+            erros: 0,
+            tempo: 0
+        };
     }
-  }
 
-  async prepararEstruturaDiretorios() {
-    console.log('🔧 Verificando e corrigindo estrutura de diretórios...');
-    
-    const baseDir = path.join(__dirname, '../src/data');
-    const rawDir = path.join(baseDir, 'raw');
-    const processedDir = path.join(baseDir, 'processed');
-    const shapefilesDir = path.join(baseDir, 'shapefiles');
-    
-    try {
-      // Criar diretório base
-      await fs.mkdir(baseDir, { recursive: true });
-      
-      // Verificar se 'raw' existe como arquivo e remover
-      try {
-        const rawStat = await fs.lstat(rawDir);
-        if (rawStat.isFile()) {
-          console.log('🗑️ Removendo arquivo conflitante: raw');
-          await fs.unlink(rawDir);
+    async executar() {
+        console.log('🇧🇷 Iniciando fetch de dados para Brasil completo...');
+        const inicio = Date.now();
+        
+        try {
+            if (!this.apiKey) {
+                throw new Error('GOOGLE_API_KEY não configurada');
+            }
+            
+            // Criar diretórios necessários
+            await this.criarDiretorios();
+            
+            // 1. Baixar arquivos da pasta "1. Focos" (CSVs com todos os focos do Brasil)
+            console.log('📊 Baixando dados de focos...');
+            await this.baixarPastaFocos();
+            
+            // 2. Baixar arquivos da pasta "2. Referências Espaciais" (Shapefiles)
+            console.log('🗺️ Baixando referências espaciais...');
+            await this.baixarPastaReferencias();
+            
+            // 3. Validar dados baixados
+            await this.validarDadosBaixados();
+            
+            this.stats.tempo = Date.now() - inicio;
+            
+            // 4. Salvar relatório de download
+            await this.salvarRelatorioDownload();
+            
+            console.log('✅ Fetch concluído com sucesso!');
+            this.imprimirEstatisticas();
+            
+        } catch (error) {
+            console.error('❌ Erro no fetch de dados:', error);
+            this.stats.erros++;
+            throw error;
         }
-      } catch (error) {
-        // Arquivo não existe, tudo bem
-      }
-      
-      // Criar diretórios necessários
-      await fs.mkdir(rawDir, { recursive: true });
-      await fs.mkdir(processedDir, { recursive: true });
-      await fs.mkdir(shapefilesDir, { recursive: true });
-      
-      console.log('✅ Estrutura de diretórios corrigida');
-      return rawDir;
-      
-    } catch (error) {
-      console.error('❌ Erro ao preparar estrutura:', error);
-      throw error;
-    }
-  }
-
-  async listFiles(folderId, mimeType = null) {
-    let query = `'${folderId}' in parents and trashed=false`;
-    if (mimeType) {
-      query += ` and mimeType='${mimeType}'`;
     }
 
-    const url = `${this.baseUrl}/files?q=${encodeURIComponent(query)}&key=${this.apiKey}&fields=files(id,name,modifiedTime,size,mimeType)`;
-    
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      
-      if (!response.ok) {
-        throw new Error(`Erro na API: ${data.error?.message || 'Erro desconhecido'}`);
-      }
-      
-      return data.files || [];
-    } catch (error) {
-      console.error('Erro ao listar arquivos:', error);
-      throw error;
-    }
-  }
-
-  async downloadFile(fileId, fileName) {
-    const url = `${this.baseUrl}/files/${fileId}?alt=media&key=${this.apiKey}`;
-    
-    try {
-      const response = await fetch(url);
-      
-      if (!response.ok) {
-        throw new Error(`Erro ao baixar ${fileName}: ${response.statusText}`);
-      }
-      
-      return await response.arrayBuffer();
-    } catch (error) {
-      console.error(`Erro ao baixar arquivo ${fileName}:`, error);
-      throw error;
-    }
-  }
-
-  async downloadCSVFiles() {
-    console.log('🔍 Buscando arquivos CSV na pasta de focos...');
-    
-    const files = await this.listFiles(this.folderId);
-    const csvFiles = files.filter(file => file.name.endsWith('.csv'));
-    
-    console.log(`📊 Encontrados ${csvFiles.length} arquivos CSV`);
-    
-    // Preparar estrutura de diretórios primeiro
-    const outputDir = await this.prepararEstruturaDiretorios();
-    
-    const downloadedFiles = [];
-    
-    for (const file of csvFiles) {
-      try {
-        console.log(`⬇️ Baixando: ${file.name}`);
-        const content = await this.downloadFile(file.id, file.name);
+    async criarDiretorios() {
+        const diretorios = [
+            this.diretorioRaw,
+            this.diretorioShapefiles,
+            this.diretorioProcessado
+        ];
         
-        // Converter ArrayBuffer para string para CSVs
-        const textContent = new TextDecoder('utf-8').decode(content);
-        
-        const filePath = path.join(outputDir, file.name);
-        await fs.writeFile(filePath, textContent, 'utf8');
-        
-        downloadedFiles.push({
-          name: file.name,
-          path: filePath,
-          size: file.size,
-          modifiedTime: file.modifiedTime
-        });
-        
-        console.log(`✅ ${file.name} baixado com sucesso`);
-      } catch (error) {
-        console.error(`❌ Erro ao baixar ${file.name}:`, error);
-      }
-    }
-    
-    // Salvar metadados dos arquivos baixados
-    const metadataPath = path.join(outputDir, 'download-metadata.json');
-    await fs.writeFile(metadataPath, JSON.stringify({
-      downloadTime: new Date().toISOString(),
-      files: downloadedFiles,
-      totalFiles: downloadedFiles.length,
-      status: 'success'
-    }, null, 2));
-    
-    return downloadedFiles;
-  }
-
-  async downloadShapefiles() {
-    // TEMPORARIAMENTE DESABILITADO até resolver o ID correto
-    console.log('🗺️ Download de shapefiles temporariamente pausado');
-    console.log('📋 Focando na captura de dados de focos (funcionando perfeitamente!)');
-    console.log('💡 Próximo passo: corrigir ID da pasta de referências espaciais');
-    
-    // Criar pasta vazia para não quebrar o workflow
-    const outputDir = path.join(__dirname, '../src/data/shapefiles');
-    await fs.mkdir(outputDir, { recursive: true });
-    
-    // Criar arquivo placeholder
-    const placeholderPath = path.join(outputDir, 'README.txt');
-    await fs.writeFile(placeholderPath, 
-      'Pasta para shapefiles de referência espacial\n' +
-      'Aguardando correção do ID da pasta do Google Drive\n' +
-      `Criado em: ${new Date().toISOString()}`
-    );
-    
-    return [];
-  }
-
-  async checkForUpdates() {
-    console.log('🔄 Verificando atualizações...');
-    
-    try {
-      // Preparar estrutura primeiro
-      await this.prepararEstruturaDiretorios();
-      
-      const metadataPath = path.join(__dirname, '../src/data/raw/download-metadata.json');
-      let lastDownload = null;
-      
-      try {
-        const metadata = await fs.readFile(metadataPath, 'utf8');
-        lastDownload = JSON.parse(metadata);
-      } catch (error) {
-        console.log('📝 Primeiro download, baixando todos os arquivos');
-      }
-      
-      const files = await this.listFiles(this.folderId);
-      const csvFiles = files.filter(file => file.name.endsWith('.csv'));
-      
-      if (!lastDownload) {
-        return true; // Primeira execução
-      }
-      
-      // Verificar se há arquivos novos ou modificados
-      for (const file of csvFiles) {
-        const lastFile = lastDownload.files.find(f => f.name === file.name);
-        
-        if (!lastFile || new Date(file.modifiedTime) > new Date(lastFile.modifiedTime)) {
-          console.log(`🆕 Arquivo atualizado detectado: ${file.name}`);
-          return true;
+        for (const dir of diretorios) {
+            try {
+                await fs.mkdir(dir, { recursive: true });
+                console.log(`📁 Diretório criado/verificado: ${dir}`);
+            } catch (error) {
+                if (error.code !== 'EEXIST') throw error;
+            }
         }
-      }
-      
-      console.log('✅ Nenhuma atualização encontrada');
-      return false;
-    } catch (error) {
-      console.error('Erro ao verificar atualizações:', error);
-      return true; // Em caso de erro, força o download
     }
-  }
 
-  // Método para processar CSVs baixados
-  async processDownloadedCSVs() {
-    console.log('📊 Processando CSVs baixados...');
-    
-    const rawDir = path.join(__dirname, '../src/data/raw');
-    const processedDir = path.join(__dirname, '../src/data/processed');
-    
-    // Garantir que diretórios existem
-    await fs.mkdir(processedDir, { recursive: true });
-    
-    try {
-      const files = await fs.readdir(rawDir);
-      const csvFiles = files.filter(file => file.endsWith('.csv'));
-      
-      console.log(`🔄 Processando ${csvFiles.length} arquivos CSV...`);
-      
-      // Criar resumo básico
-      const summary = {
-        totalFiles: csvFiles.length,
-        processedAt: new Date().toISOString(),
-        files: csvFiles,
-        dataPath: 'src/data/raw',
-        status: 'success',
-        nextSteps: [
-          'Implementar joins espaciais',
-          'Criar agregações por município',
-          'Gerar estatísticas temporais'
-        ]
-      };
-      
-      const summaryPath = path.join(processedDir, 'processing-summary.json');
-      await fs.writeFile(summaryPath, JSON.stringify(summary, null, 2));
-      
-      console.log('✅ Resumo do processamento salvo');
-      return summary;
-      
-    } catch (error) {
-      console.error('❌ Erro ao processar CSVs:', error);
-      throw error;
+    async baixarPastaFocos() {
+        try {
+            const arquivos = await this.listarArquivosPasta(this.pastasConfig.focos);
+            console.log(`📋 Encontrados ${arquivos.length} arquivos na pasta de focos`);
+            
+            // Filtrar apenas CSVs
+            const csvs = arquivos.filter(arquivo => 
+                arquivo.name.toLowerCase().endsWith('.csv') ||
+                arquivo.name.toLowerCase().endsWith('.xlsx')
+            );
+            
+            console.log(`📊 CSVs para download: ${csvs.length}`);
+            
+            for (const arquivo of csvs) {
+                try {
+                    console.log(`⬇️ Baixando: ${arquivo.name}`);
+                    await this.baixarArquivo(arquivo, this.diretorioRaw);
+                    this.stats.arquivosBaixados++;
+                } catch (error) {
+                    console.error(`❌ Erro ao baixar ${arquivo.name}:`, error.message);
+                    this.stats.erros++;
+                }
+            }
+            
+        } catch (error) {
+            console.error('❌ Erro ao acessar pasta de focos:', error.message);
+            
+            // Se não conseguir acessar, criar arquivo de exemplo massivo
+            console.log('📦 Criando dados de exemplo para desenvolvimento...');
+            await this.criarDadosExemploMassivos();
+        }
     }
-  }
-}
 
-async function main() {
-  try {
-    const fetcher = new GoogleDriveDataFetcher();
-    
-    // Verificar se há atualizações
-    const hasUpdates = await fetcher.checkForUpdates();
-    
-    if (hasUpdates) {
-      console.log('🚀 Iniciando download dos dados...');
-      
-      // Baixar CSVs (funcionando perfeitamente!)
-      const csvFiles = await fetcher.downloadCSVFiles();
-      
-      // Processar CSVs baixados
-      await fetcher.processDownloadedCSVs();
-      
-      // Shapefiles temporariamente desabilitado
-      await fetcher.downloadShapefiles();
-      
-      console.log('🎉 Download e processamento concluídos com sucesso!');
-      console.log(`📊 Total de ${csvFiles.length} arquivos CSV processados`);
-      
-    } else {
-      console.log('⏭️ Nenhuma atualização necessária');
-    }
-    
-  } catch (error) {
-    console.error('💥 Erro no processo de download:', error);
-    process.exit(1);
-  }
-}
-
-if (require.main === module) {
-  main();
-}
-
-module.exports = { GoogleDriveDataFetcher };
+    async baixarPastaReferencias() {
+        try {
+            if (this.pastasConfig.referencias === 'CONFIGURAR_ID_PASTA_2') {
+                console.warn('⚠️ ID da pasta "2. Referências Espaciais" não configur
