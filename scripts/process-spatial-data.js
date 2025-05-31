@@ -1,424 +1,543 @@
-// scripts/process-spatial-data.js - Implementação completa dos joins espaciais
+// process-spatial-data.js - Processamento Espacial Corrigido para Brasil Completo
 const fs = require('fs').promises;
 const path = require('path');
+const turf = require('@turf/turf');
 
-class SpatialDataProcessor {
-  constructor() {
-    this.baseDir = path.join(__dirname, '../src/data');
-    this.rawDir = path.join(this.baseDir, 'raw');
-    this.processedDir = path.join(this.baseDir, 'processed');
-    this.shapefilesDir = path.join(this.baseDir, 'shapefiles');
-  }
-
-  async processAllData() {
-    console.log('🗺️ Iniciando processamento espacial completo...');
-    
-    try {
-      // 1. Carregar todos os CSVs
-      const allFocos = await this.loadAllCSVs();
-      console.log(`📊 Total de focos carregados: ${allFocos.length}`);
-      
-      if (allFocos.length === 0) {
-        throw new Error('Nenhum foco encontrado para processar');
-      }
-      
-      // 2. Carregar dados espaciais (simulação - sem shapefiles por enquanto)
-      const spatialData = await this.loadSpatialReferences();
-      
-      // 3. Fazer joins espaciais
-      const focosEnriquecidos = await this.performSpatialJoins(allFocos, spatialData);
-      
-      // 4. Adicionar campos calculados
-      const focosCompletos = this.addCalculatedFields(focosEnriquecidos);
-      
-      // 5. Salvar resultados processados
-      await this.saveProcessedData(focosCompletos);
-      
-      // 6. Gerar estatísticas
-      await this.generateStatistics(focosCompletos);
-      
-      console.log('✅ Processamento espacial concluído com sucesso!');
-      
-    } catch (error) {
-      console.error('❌ Erro no processamento espacial:', error);
-      throw error;
+class ProcessadorEspacialBrasil {
+    constructor() {
+        this.diretorioRaw = './src/data/raw';
+        this.diretorioProcessado = './src/data/processed';
+        this.diretorioShapefiles = './src/data/shapefiles';
+        
+        // 🇧🇷 COORDENADAS CORRETAS DO BRASIL COMPLETO
+        this.boundsBrasil = {
+            north: 5.264877,      // Roraima
+            south: -33.742156,    // Rio Grande do Sul
+            east: -28.847894,     // Fernando de Noronha
+            west: -73.982817      // Acre
+        };
+        
+        // Referências espaciais que serão carregadas
+        this.referenciasSpatiais = {
+            municipios: null,
+            estados: null,
+            biomas: null,
+            unidadesConservacao: null,
+            terrasIndigenas: null,
+            propriedadesRurais: null
+        };
+        
+        this.estatisticas = {
+            totalFocos: 0,
+            focosComMunicipio: 0,
+            focosSemMunicipio: 0,
+            focosComBioma: 0,
+            joinsRealizados: 0,
+            tempoProcessamento: 0
+        };
     }
-  }
 
-  async loadAllCSVs() {
-    console.log('📂 Carregando todos os arquivos CSV...');
-    
-    const allFocos = [];
-    
-    try {
-      const files = await fs.readdir(this.rawDir);
-      const csvFiles = files.filter(file => file.endsWith('.csv'));
-      
-      console.log(`📄 Encontrados ${csvFiles.length} arquivos CSV`);
-      
-      for (const file of csvFiles) {
+    async executar() {
+        console.log('🇧🇷 Iniciando processamento espacial para Brasil completo...');
+        const inicio = Date.now();
+        
         try {
-          const filePath = path.join(this.rawDir, file);
-          const content = await fs.readFile(filePath, 'utf8');
-          const focos = this.parseCSV(content, file);
-          
-          if (focos.length > 0) {
-            allFocos.push(...focos);
-            console.log(`✅ ${file}: ${focos.length} focos`);
-          }
-        } catch (error) {
-          console.error(`❌ Erro ao carregar ${file}:`, error.message);
-        }
-      }
-      
-      return allFocos;
-      
-    } catch (error) {
-      console.error('❌ Erro ao listar arquivos CSV:', error);
-      return [];
-    }
-  }
-
-  parseCSV(content, fileName) {
-    try {
-      const lines = content.split('\n');
-      if (lines.length < 2) return [];
-      
-      const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
-      const focos = [];
-      
-      for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        
-        const values = line.split(',').map(v => v.trim().replace(/"/g, ''));
-        
-        if (values.length >= 2) {
-          const foco = { source_file: fileName };
-          
-          headers.forEach((header, index) => {
-            foco[header] = values[index] || '';
-          });
-          
-          // Normalizar coordenadas
-          const lat = parseFloat(foco.lat || foco.latitude || 0);
-          const lon = parseFloat(foco.lon || foco.longitude || foco.M || 0);
-          
-          // Validar se está no Maranhão (aproximadamente)
-          if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
-            // Bounds aproximados do Maranhão: lat: -10 a 0, lon: -50 a -40
-            if (lat >= -10 && lat <= 0 && lon >= -50 && lon <= -40) {
-              foco.lat = lat;
-              foco.lon = lon;
-              foco.latitude = lat;
-              foco.longitude = lon;
-              
-              focos.push(foco);
+            // 1. Criar diretórios necessários
+            await this.criarDiretorios();
+            
+            // 2. Carregar referências espaciais
+            await this.carregarReferenciasSpatiais();
+            
+            // 3. Processar todos os CSVs da pasta raw
+            const arquivosCsv = await this.encontrarArquivosCsv();
+            console.log(`📁 Encontrados ${arquivosCsv.length} arquivos CSV para processar`);
+            
+            // 4. Processar arquivos em lotes para otimizar memória
+            const focosProcessados = [];
+            const tamanhoLote = 50000; // Processar 50k focos por vez
+            
+            for (const arquivo of arquivosCsv) {
+                console.log(`🔄 Processando: ${arquivo}`);
+                const focos = await this.processarArquivoCsv(arquivo);
+                
+                // Processar em lotes
+                for (let i = 0; i < focos.length; i += tamanhoLote) {
+                    const lote = focos.slice(i, i + tamanhoLote);
+                    const loteProcessado = await this.processarLoteFocos(lote);
+                    focosProcessados.push(...loteProcessado);
+                    
+                    console.log(`   ✅ Lote ${Math.floor(i/tamanhoLote) + 1} processado: ${loteProcessado.length} focos`);
+                }
             }
-          }
+            
+            console.log(`🎯 Total processado: ${focosProcessados.length} focos`);
+            
+            // 5. Calcular estatísticas finais
+            this.calcularEstatisticas(focosProcessados);
+            
+            // 6. Salvar resultados
+            await this.salvarResultados(focosProcessados);
+            
+            this.estatisticas.tempoProcessamento = Date.now() - inicio;
+            console.log(`⏱️ Processamento concluído em ${this.estatisticas.tempoProcessamento}ms`);
+            
+            // 7. Salvar relatório de processamento
+            await this.salvarRelatorioProcessamento();
+            
+        } catch (error) {
+            console.error('❌ Erro no processamento espacial:', error);
+            throw error;
         }
-      }
-      
-      return focos;
-      
-    } catch (error) {
-      console.error(`❌ Erro ao processar CSV ${fileName}:`, error);
-      return [];
     }
-  }
 
-  async loadSpatialReferences() {
-    console.log('🗺️ Carregando referências espaciais...');
-    
-    // Por enquanto, simulação baseada em coordenadas
-    // TODO: Implementar carregamento real de shapefiles quando disponíveis
-    
-    return {
-      municipios: this.getMunicipiosMaranhao(),
-      biomas: this.getBiomasMaranhao(),
-      ucs: this.getUCsMaranhao(),
-      regioes: this.getRegioesMaranhao()
-    };
-  }
-
-  getMunicipiosMaranhao() {
-    // Principais municípios do Maranhão com coordenadas aproximadas
-    return [
-      { nome: 'São Luís', lat: -2.5297, lon: -44.2828, bounds: { minLat: -2.8, maxLat: -2.2, minLon: -44.6, maxLon: -43.9 } },
-      { nome: 'Imperatriz', lat: -5.5244, lon: -47.4601, bounds: { minLat: -5.8, maxLat: -5.2, minLon: -47.8, maxLon: -47.1 } },
-      { nome: 'Caxias', lat: -4.8594, lon: -43.3558, bounds: { minLat: -5.1, maxLat: -4.6, minLon: -43.7, maxLon: -43.0 } },
-      { nome: 'Timon', lat: -5.0947, lon: -42.2877, bounds: { minLat: -5.4, maxLat: -4.8, minLon: -42.6, maxLon: -41.9 } },
-      { nome: 'Codó', lat: -4.4555, lon: -43.8856, bounds: { minLat: -4.8, maxLat: -4.1, minLon: -44.2, maxLon: -43.5 } },
-      { nome: 'Açailândia', lat: -4.9447, lon: -47.5072, bounds: { minLat: -5.2, maxLat: -4.7, minLon: -47.8, maxLon: -47.2 } },
-      { nome: 'Bacabal', lat: -4.2250, lon: -43.8289, bounds: { minLat: -4.5, maxLat: -3.9, minLon: -44.1, maxLon: -43.5 } },
-      { nome: 'Balsas', lat: -7.5325, lon: -46.0356, bounds: { minLat: -7.8, maxLat: -7.2, minLon: -46.4, maxLon: -45.7 } },
-      { nome: 'Chapadinha', lat: -3.7408, lon: -43.3608, bounds: { minLat: -4.0, maxLat: -3.4, minLon: -43.7, maxLon: -43.0 } },
-      { nome: 'Santa Inês', lat: -3.6667, lon: -45.3833, bounds: { minLat: -3.9, maxLat: -3.4, minLon: -45.7, maxLon: -45.0 } }
-    ];
-  }
-
-  getBiomasMaranhao() {
-    return [
-      { nome: 'Cerrado', region: 'sul-leste', bounds: { minLat: -10, maxLat: -4, minLon: -48, maxLon: -42 } },
-      { nome: 'Amazônia', region: 'oeste', bounds: { minLat: -6, maxLat: -1, minLon: -50, maxLon: -44 } },
-      { nome: 'Caatinga', region: 'leste', bounds: { minLat: -7, maxLat: -2, minLon: -45, maxLon: -40 } }
-    ];
-  }
-
-  getUCsMaranhao() {
-    return [
-      { nome: 'Parque Nacional da Chapada das Mesas', lat: -7.0, lon: -47.0, radius: 0.5 },
-      { nome: 'Parque Nacional dos Lençóis Maranhenses', lat: -2.5, lon: -43.0, radius: 0.8 },
-      { nome: 'Reserva Biológica do Gurupi', lat: -3.5, lon: -46.5, radius: 0.3 },
-      { nome: 'APA da Baixada Maranhense', lat: -3.0, lon: -45.0, radius: 1.0 }
-    ];
-  }
-
-  getRegioesMaranhao() {
-    return [
-      { nome: 'Norte', bounds: { minLat: -1, maxLat: -4, minLon: -45, maxLon: -42 } },
-      { nome: 'Sul', bounds: { minLat: -6, maxLat: -10, minLon: -48, maxLon: -44 } },
-      { nome: 'Leste', bounds: { minLat: -2, maxLat: -6, minLon: -44, maxLon: -40 } },
-      { nome: 'Oeste', bounds: { minLat: -3, maxLat: -7, minLon: -50, maxLon: -46 } },
-      { nome: 'Centro', bounds: { minLat: -3, maxLat: -6, minLon: -46, maxLon: -43 } }
-    ];
-  }
-
-  async performSpatialJoins(focos, spatialData) {
-    console.log('🔗 Realizando joins espaciais...');
-    
-    const focosEnriquecidos = focos.map(foco => {
-      const enrichedFoco = { ...foco };
-      
-      // Join com municípios
-      enrichedFoco.municipio = this.findMunicipio(foco.lat, foco.lon, spatialData.municipios);
-      
-      // Join com biomas
-      enrichedFoco.bioma = this.findBioma(foco.lat, foco.lon, spatialData.biomas);
-      
-      // Join com UCs
-      enrichedFoco.uc = this.findUC(foco.lat, foco.lon, spatialData.ucs);
-      
-      // Join com regiões
-      enrichedFoco.regiao = this.findRegiao(foco.lat, foco.lon, spatialData.regioes);
-      
-      return enrichedFoco;
-    });
-    
-    console.log(`✅ ${focosEnriquecidos.length} focos enriquecidos com dados espaciais`);
-    return focosEnriquecidos;
-  }
-
-  findMunicipio(lat, lon, municipios) {
-    for (const municipio of municipios) {
-      const bounds = municipio.bounds;
-      if (lat >= bounds.minLat && lat <= bounds.maxLat && 
-          lon >= bounds.minLon && lon <= bounds.maxLon) {
-        return municipio.nome;
-      }
+    async criarDiretorios() {
+        const diretorios = [this.diretorioProcessado, this.diretorioShapefiles];
+        
+        for (const dir of diretorios) {
+            try {
+                await fs.mkdir(dir, { recursive: true });
+            } catch (error) {
+                if (error.code !== 'EEXIST') throw error;
+            }
+        }
     }
-    
-    // Se não encontrou um município específico, determinar por proximidade
-    let closest = null;
-    let minDistance = Infinity;
-    
-    for (const municipio of municipios) {
-      const distance = Math.sqrt(
-        Math.pow(lat - municipio.lat, 2) + Math.pow(lon - municipio.lon, 2)
-      );
-      if (distance < minDistance) {
-        minDistance = distance;
-        closest = municipio;
-      }
+
+    async carregarReferenciasSpatiais() {
+        console.log('🗺️ Carregando referências espaciais...');
+        
+        try {
+            // Tentar carregar shapefiles se existirem
+            const arquivosReferencia = [
+                { nome: 'municipios', arquivo: 'municipios_brasil.geojson' },
+                { nome: 'estados', arquivo: 'estados_brasil.geojson' },
+                { nome: 'biomas', arquivo: 'biomas_brasil.geojson' },
+                { nome: 'unidadesConservacao', arquivo: 'unidades_conservacao.geojson' },
+                { nome: 'terrasIndigenas', arquivo: 'terras_indigenas.geojson' }
+            ];
+            
+            for (const ref of arquivosReferencia) {
+                try {
+                    const caminho = path.join(this.diretorioShapefiles, ref.arquivo);
+                    const dados = await fs.readFile(caminho, 'utf8');
+                    this.referenciasSpatiais[ref.nome] = JSON.parse(dados);
+                    console.log(`   ✅ ${ref.nome}: ${this.referenciasSpatiais[ref.nome].features?.length || 0} feições`);
+                } catch (error) {
+                    console.warn(`   ⚠️ ${ref.nome}: não encontrado (${ref.arquivo})`);
+                    this.referenciasSpatiais[ref.nome] = null;
+                }
+            }
+            
+            // Se não encontrou shapefiles, usar fallback com dados aproximados
+            if (!this.referenciasSpatiais.municipios) {
+                console.log('📦 Usando dados de municípios simplificados...');
+                this.referenciasSpatiais.municipios = await this.criarMunicipiosSimplificados();
+            }
+            
+            if (!this.referenciasSpatiais.biomas) {
+                console.log('📦 Usando dados de biomas simplificados...');
+                this.referenciasSpatiais.biomas = await this.criarBiomasSimplificados();
+            }
+            
+        } catch (error) {
+            console.warn('⚠️ Erro ao carregar referências espaciais:', error.message);
+            console.log('📦 Usando sistema de fallback...');
+            await this.criarReferenciasFallback();
+        }
     }
-    
-    return closest ? closest.nome : 'Outros Municípios';
-  }
 
-  findBioma(lat, lon, biomas) {
-    for (const bioma of biomas) {
-      const bounds = bioma.bounds;
-      if (lat >= bounds.minLat && lat <= bounds.maxLat && 
-          lon >= bounds.minLon && lon <= bounds.maxLon) {
-        return bioma.nome;
-      }
+    async encontrarArquivosCsv() {
+        try {
+            const arquivos = await fs.readdir(this.diretorioRaw);
+            return arquivos.filter(arquivo => 
+                arquivo.toLowerCase().endsWith('.csv') && 
+                !arquivo.startsWith('.')
+            );
+        } catch (error) {
+            console.warn('⚠️ Diretório raw não encontrado, criando dados de exemplo...');
+            return [];
+        }
     }
-    return 'Cerrado'; // Default para Maranhão
-  }
 
-  findUC(lat, lon, ucs) {
-    for (const uc of ucs) {
-      const distance = Math.sqrt(
-        Math.pow(lat - uc.lat, 2) + Math.pow(lon - uc.lon, 2)
-      );
-      if (distance <= uc.radius) {
-        return uc.nome;
-      }
+    async processarArquivoCsv(nomeArquivo) {
+        const caminhoArquivo = path.join(this.diretorioRaw, nomeArquivo);
+        
+        try {
+            const conteudo = await fs.readFile(caminhoArquivo, 'utf8');
+            const focos = this.parsearCsv(conteudo);
+            
+            console.log(`   📊 ${nomeArquivo}: ${focos.length} focos encontrados`);
+            return focos;
+            
+        } catch (error) {
+            console.error(`❌ Erro ao processar ${nomeArquivo}:`, error.message);
+            return [];
+        }
     }
-    return '';
-  }
 
-  findRegiao(lat, lon, regioes) {
-    for (const regiao of regioes) {
-      const bounds = regiao.bounds;
-      if (lat >= bounds.minLat && lat <= bounds.maxLat && 
-          lon >= bounds.minLon && lon <= bounds.maxLon) {
-        return regiao.nome;
-      }
+    parsearCsv(conteudo) {
+        const linhas = conteudo.split('\n');
+        const cabecalho = linhas[0].split(',').map(col => col.trim().toLowerCase());
+        
+        // Mapear colunas possíveis (flexível para diferentes formatos)
+        const mapeamentoColunas = {
+            lat: ['lat', 'latitude', 'y'],
+            lng: ['lon', 'lng', 'longitude', 'x'],
+            data: ['data', 'date', 'data_hora', 'datetime'],
+            satelite: ['satelite', 'satellite', 'sat'],
+            confianca: ['confianca', 'confidence', 'conf'],
+            temperatura: ['temperatura', 'temp', 'temperature'],
+            potencia: ['potencia', 'power', 'frp']
+        };
+        
+        const focos = [];
+        
+        for (let i = 1; i < linhas.length; i++) {
+            const linha = linhas[i].trim();
+            if (!linha) continue;
+            
+            const valores = linha.split(',');
+            
+            try {
+                const foco = this.extrairDadosFoco(cabecalho, valores, mapeamentoColunas);
+                
+                // Validar coordenadas (Brasil completo)
+                if (this.validarCoordenadas(foco.latitude, foco.longitude)) {
+                    focos.push(foco);
+                }
+                
+            } catch (error) {
+                // Pular linhas com erro silenciosamente
+                continue;
+            }
+        }
+        
+        return focos;
     }
-    return 'Centro';
-  }
 
-  addCalculatedFields(focos) {
-    console.log('📊 Adicionando campos calculados...');
-    
-    return focos.map(foco => {
-      // Adicionar categoria temporal
-      foco.categoria_temporal = this.categorizeTemporal(foco.data);
-      
-      // Adicionar período do dia
-      foco.periodo_dia = this.categorizePeriodo(foco.hora);
-      
-      // Adicionar índice de confiança simulado
-      foco.confianca = Math.floor(Math.random() * 40) + 60; // 60-99%
-      
-      // Normalizar satélite
-      foco.satelite = foco.satelite || (Math.random() > 0.5 ? 'AQUA_M-T' : 'TERRA_M-T');
-      
-      return foco;
-    });
-  }
-
-  categorizeTemporal(dataStr) {
-    if (!dataStr) return 'Antigo';
-    
-    try {
-      const dataFoco = new Date(dataStr);
-      const hoje = new Date();
-      const diffTime = hoje - dataFoco;
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      
-      if (diffDays <= 1) return 'Hoje';
-      if (diffDays <= 7) return 'Última Semana';
-      if (diffDays <= 30) return 'Último Mês';
-      return 'Antigo';
-    } catch {
-      return 'Antigo';
+    extrairDadosFoco(cabecalho, valores, mapeamento) {
+        const foco = { id: Math.random().toString(36).substr(2, 9) };
+        
+        // Extrair cada campo baseado no mapeamento
+        for (const [campo, possiveisNomes] of Object.entries(mapeamento)) {
+            const indice = possiveisNomes.find(nome => cabecalho.includes(nome));
+            if (indice !== undefined) {
+                const indiceCabecalho = cabecalho.indexOf(indice);
+                if (indiceCabecalho >= 0 && valores[indiceCabecalho]) {
+                    foco[campo] = valores[indiceCabecalho].trim();
+                }
+            }
+        }
+        
+        // Converter tipos
+        foco.latitude = parseFloat(foco.lat || foco.latitude);
+        foco.longitude = parseFloat(foco.lng || foco.longitude);
+        foco.confianca = parseInt(foco.confianca || 50);
+        foco.temperatura = parseFloat(foco.temperatura || 300);
+        foco.potencia = parseFloat(foco.potencia || 0);
+        
+        // Padronizar data
+        if (foco.data) {
+            foco.data_hora = this.padronizarData(foco.data);
+            foco.data = foco.data_hora.split('T')[0];
+        } else {
+            foco.data_hora = new Date().toISOString();
+            foco.data = foco.data_hora.split('T')[0];
+        }
+        
+        return foco;
     }
-  }
 
-  categorizePeriodo(horaStr) {
-    if (!horaStr) return 'Desconhecido';
-    
-    try {
-      const hora = parseInt(horaStr.split(':')[0]);
-      if (hora >= 6 && hora < 12) return 'Manhã';
-      if (hora >= 12 && hora < 18) return 'Tarde';
-      if (hora >= 18 && hora < 24) return 'Noite';
-      return 'Madrugada';
-    } catch {
-      return 'Desconhecido';
+    validarCoordenadas(lat, lng) {
+        if (isNaN(lat) || isNaN(lng)) return false;
+        
+        // Verificar se está dentro dos bounds do Brasil
+        return lat >= this.boundsBrasil.south && 
+               lat <= this.boundsBrasil.north &&
+               lng >= this.boundsBrasil.west && 
+               lng <= this.boundsBrasil.east;
     }
-  }
 
-  async saveProcessedData(focos) {
-    console.log('💾 Salvando dados processados...');
-    
-    await fs.mkdir(this.processedDir, { recursive: true });
-    
-    // Salvar dados completos
-    const completeDataPath = path.join(this.processedDir, 'focos-completos.json');
-    await fs.writeFile(completeDataPath, JSON.stringify(focos, null, 2));
-    
-    // Salvar versão simplificada para o dashboard
-    const simplifiedFocos = focos.map(foco => ({
-      lat: foco.lat,
-      lon: foco.lon,
-      data: foco.data,
-      hora: foco.hora,
-      municipio: foco.municipio,
-      bioma: foco.bioma,
-      uc: foco.uc,
-      regiao: foco.regiao,
-      categoria_temporal: foco.categoria_temporal,
-      periodo_dia: foco.periodo_dia,
-      satelite: foco.satelite,
-      confianca: foco.confianca
-    }));
-    
-    const dashboardDataPath = path.join(this.processedDir, 'focos-dashboard.json');
-    await fs.writeFile(dashboardDataPath, JSON.stringify(simplifiedFocos, null, 2));
-    
-    console.log(`✅ ${focos.length} focos salvos em arquivos processados`);
-  }
+    async processarLoteFocos(focos) {
+        const focosProcessados = [];
+        
+        for (const foco of focos) {
+            try {
+                // Realizar joins espaciais
+                const focoEnriquecido = await this.enriquecerFoco(foco);
+                focosProcessados.push(focoEnriquecido);
+                this.estatisticas.joinsRealizados++;
+                
+            } catch (error) {
+                // Em caso de erro, manter foco original
+                focosProcessados.push(foco);
+            }
+        }
+        
+        return focosProcessados;
+    }
 
-  async generateStatistics(focos) {
-    console.log('📈 Gerando estatísticas...');
-    
-    const stats = {
-      total_focos: focos.length,
-      por_municipio: this.groupBy(focos, 'municipio'),
-      por_bioma: this.groupBy(focos, 'bioma'),
-      por_periodo_temporal: this.groupBy(focos, 'categoria_temporal'),
-      por_periodo_dia: this.groupBy(focos, 'periodo_dia'),
-      por_satelite: this.groupBy(focos, 'satelite'),
-      ultima_atualizacao: new Date().toISOString(),
-      resumo_temporal: {
-        hoje: focos.filter(f => f.categoria_temporal === 'Hoje').length,
-        ultima_semana: focos.filter(f => f.categoria_temporal === 'Última Semana').length,
-        ultimo_mes: focos.filter(f => f.categoria_temporal === 'Último Mês').length,
-        antigos: focos.filter(f => f.categoria_temporal === 'Antigo').length
-      }
-    };
-    
-    const statsPath = path.join(this.processedDir, 'estatisticas.json');
-    await fs.writeFile(statsPath, JSON.stringify(stats, null, 2));
-    
-    // Atualizar summary principal
-    const summaryPath = path.join(this.processedDir, 'processing-summary.json');
-    const summary = {
-      totalFiles: focos.length,
-      totalFocos: focos.length,
-      processedAt: new Date().toISOString(),
-      dataPath: 'src/data/processed',
-      status: 'success',
-      estatisticas: stats.resumo_temporal
-    };
-    
-    await fs.writeFile(summaryPath, JSON.stringify(summary, null, 2));
-    
-    console.log('✅ Estatísticas geradas e salvas');
-  }
+    async enriquecerFoco(foco) {
+        const ponto = turf.point([foco.longitude, foco.latitude]);
+        
+        // Join com municípios
+        if (this.referenciasSpatiais.municipios) {
+            const municipio = this.encontrarFeicaoContenedora(
+                ponto, 
+                this.referenciasSpatiais.municipios
+            );
+            
+            if (municipio) {
+                foco.municipio = municipio.properties.NM_MUNICIP || municipio.properties.nome || 'Não identificado';
+                foco.estado = municipio.properties.SIGLA_UF || municipio.properties.uf || 'N/A';
+                foco.codigo_municipio = municipio.properties.CD_GEOCMU || municipio.properties.codigo || '';
+                this.estatisticas.focosComMunicipio++;
+            } else {
+                foco.municipio = 'Não identificado';
+                foco.estado = 'N/A';
+                this.estatisticas.focosSemMunicipio++;
+            }
+        }
+        
+        // Join com biomas
+        if (this.referenciasSpatiais.biomas) {
+            const bioma = this.encontrarFeicaoContenedora(
+                ponto, 
+                this.referenciasSpatiais.biomas
+            );
+            
+            if (bioma) {
+                foco.bioma = bioma.properties.NM_BIOMA || bioma.properties.nome || 'Não identificado';
+                this.estatisticas.focosComBioma++;
+            } else {
+                foco.bioma = this.estimarBiomaPorCoordenada(foco.latitude, foco.longitude);
+            }
+        } else {
+            foco.bioma = this.estimarBiomaPorCoordenada(foco.latitude, foco.longitude);
+        }
+        
+        // Join com unidades de conservação (se disponível)
+        if (this.referenciasSpatiais.unidadesConservacao) {
+            const uc = this.encontrarFeicaoContenedora(
+                ponto, 
+                this.referenciasSpatiais.unidadesConservacao
+            );
+            
+            if (uc) {
+                foco.unidade_conservacao = uc.properties.NOME_UC || uc.properties.nome || 'UC';
+                foco.categoria_uc = uc.properties.CATEGORI3 || uc.properties.categoria || 'N/A';
+            }
+        }
+        
+        // Join com terras indígenas (se disponível)
+        if (this.referenciasSpatiais.terrasIndigenas) {
+            const ti = this.encontrarFeicaoContenedora(
+                ponto, 
+                this.referenciasSpatiais.terrasIndigenas
+            );
+            
+            if (ti) {
+                foco.terra_indigena = ti.properties.TERRA_INDI || ti.properties.nome || 'TI';
+                foco.etnia = ti.properties.ETNIA || ti.properties.etnia || 'N/A';
+            }
+        }
+        
+        return foco;
+    }
 
-  groupBy(array, key) {
-    const grouped = {};
-    array.forEach(item => {
-      const value = item[key] || 'Não definido';
-      grouped[value] = (grouped[value] || 0) + 1;
-    });
-    
-    // Retornar ordenado por quantidade
-    return Object.entries(grouped)
-      .sort(([,a], [,b]) => b - a)
-      .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
-  }
+    encontrarFeicaoContenedora(ponto, geojson) {
+        try {
+            for (const feature of geojson.features) {
+                if (turf.booleanPointInPolygon(ponto, feature)) {
+                    return feature;
+                }
+            }
+        } catch (error) {
+            // Em caso de erro no turf, retornar null
+            return null;
+        }
+        
+        return null;
+    }
+
+    estimarBiomaPorCoordenada(lat, lng) {
+        // Estimativa simplificada baseada em coordenadas
+        // Amazônia: Norte do Brasil
+        if (lat > -5 && lng < -55) return 'Amazônia';
+        
+        // Cerrado: Centro-Oeste e partes do Nordeste/Sudeste
+        if (lat > -20 && lat < -5 && lng > -60 && lng < -40) return 'Cerrado';
+        
+        // Caatinga: Nordeste
+        if (lat > -15 && lat < -3 && lng > -45 && lng < -35) return 'Caatinga';
+        
+        // Mata Atlântica: Litoral
+        if (lng > -50 && lng < -35) return 'Mata Atlântica';
+        
+        // Pantanal: Região específica
+        if (lat > -22 && lat < -15 && lng > -60 && lng < -55) return 'Pantanal';
+        
+        // Pampas: Sul
+        if (lat < -28) return 'Pampas';
+        
+        return 'Não identificado';
+    }
+
+    padronizarData(dataString) {
+        try {
+            // Tentar diferentes formatos de data
+            const formatos = [
+                /(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/, // YYYY-MM-DD HH:MM:SS
+                /(\d{2})\/(\d{2})\/(\d{4})\s+(\d{2}):(\d{2}):(\d{2})/, // DD/MM/YYYY HH:MM:SS
+                /(\d{4})-(\d{2})-(\d{2})/, // YYYY-MM-DD
+                /(\d{2})\/(\d{2})\/(\d{4})/ // DD/MM/YYYY
+            ];
+            
+            for (const formato of formatos) {
+                const match = dataString.match(formato);
+                if (match) {
+                    // Converter para ISO string
+                    if (formato.source.includes('YYYY')) {
+                        return new Date(dataString).toISOString();
+                    } else {
+                        // DD/MM/YYYY -> YYYY-MM-DD
+                        const [, dia, mes, ano] = match;
+                        return new Date(`${ano}-${mes}-${dia}`).toISOString();
+                    }
+                }
+            }
+            
+            // Fallback
+            return new Date().toISOString();
+            
+        } catch (error) {
+            return new Date().toISOString();
+        }
+    }
+
+    calcularEstatisticas(focos) {
+        this.estatisticas.totalFocos = focos.length;
+        
+        // Estatísticas por campo
+        const municipios = {};
+        const estados = {};
+        const biomas = {};
+        const satelites = {};
+        
+        focos.forEach(foco => {
+            municipios[foco.municipio] = (municipios[foco.municipio] || 0) + 1;
+            estados[foco.estado] = (estados[foco.estado] || 0) + 1;
+            biomas[foco.bioma] = (biomas[foco.bioma] || 0) + 1;
+            satelites[foco.satelite] = (satelites[foco.satelite] || 0) + 1;
+        });
+        
+        this.estatisticas.municipios = municipios;
+        this.estatisticas.estados = estados;
+        this.estatisticas.biomas = biomas;
+        this.estatisticas.satelites = satelites;
+        
+        console.log(`📊 Estatísticas finais:`);
+        console.log(`   Total de focos: ${this.estatisticas.totalFocos.toLocaleString()}`);
+        console.log(`   Focos com município: ${this.estatisticas.focosComMunicipio.toLocaleString()}`);
+        console.log(`   Focos sem município: ${this.estatisticas.focosSemMunicipio.toLocaleString()}`);
+        console.log(`   Estados únicos: ${Object.keys(estados).length}`);
+        console.log(`   Municípios únicos: ${Object.keys(municipios).length}`);
+        console.log(`   Biomas únicos: ${Object.keys(biomas).length}`);
+    }
+
+    async salvarResultados(focos) {
+        console.log('💾 Salvando resultados...');
+        
+        // Dados completos
+        await this.salvarArquivo('focos-completos.json', focos);
+        
+        // Versão simplificada para dashboard
+        const focosSimplificados = focos.map(foco => ({
+            id: foco.id,
+            latitude: foco.latitude,
+            longitude: foco.longitude,
+            municipio: foco.municipio,
+            estado: foco.estado,
+            bioma: foco.bioma,
+            satelite: foco.satelite,
+            data: foco.data,
+            data_hora: foco.data_hora,
+            confianca: foco.confianca
+        }));
+        
+        await this.salvarArquivo('focos-dashboard.json', focosSimplificados);
+        
+        // Estatísticas
+        await this.salvarArquivo('estatisticas.json', this.estatisticas);
+        
+        console.log('✅ Todos os arquivos salvos com sucesso!');
+    }
+
+    async salvarArquivo(nomeArquivo, dados) {
+        const caminho = path.join(this.diretorioProcessado, nomeArquivo);
+        await fs.writeFile(caminho, JSON.stringify(dados, null, 2));
+        console.log(`   ✅ ${nomeArquivo}: ${Array.isArray(dados) ? dados.length : 'objeto'} itens`);
+    }
+
+    async salvarRelatorioProcessamento() {
+        const relatorio = {
+            timestamp: new Date().toISOString(),
+            versao: '2.0.0-brasil-completo',
+            estatisticas: this.estatisticas,
+            configuracao: {
+                boundsBrasil: this.boundsBrasil,
+                referenciasSpatiais: Object.keys(this.referenciasSpatiais).filter(
+                    key => this.referenciasSpatiais[key] !== null
+                )
+            }
+        };
+        
+        await this.salvarArquivo('processing-summary.json', relatorio);
+    }
+
+    // Fallbacks para quando não há shapefiles
+    async criarMunicipiosSimplificados() {
+        // Criar uma grade simplificada baseada em coordenadas conhecidas
+        // Este é um fallback muito básico - idealmente usar shapefiles reais
+        console.log('📦 Criando referência simplificada de municípios...');
+        
+        return {
+            type: "FeatureCollection",
+            features: [] // Retorna vazio para usar estimativa por coordenadas
+        };
+    }
+
+    async criarBiomasSimplificados() {
+        console.log('📦 Criando referência simplificada de biomas...');
+        
+        return {
+            type: "FeatureCollection", 
+            features: [] // Retorna vazio para usar estimativa por coordenadas
+        };
+    }
+
+    async criarReferenciasFallback() {
+        this.referenciasSpatiais = {
+            municipios: await this.criarMunicipiosSimplificados(),
+            biomas: await this.criarBiomasSimplificados(),
+            estados: null,
+            unidadesConservacao: null,
+            terrasIndigenas: null
+        };
+    }
 }
 
-async function main() {
-  try {
-    const processor = new SpatialDataProcessor();
-    await processor.processAllData();
-    
-    console.log('🎉 Processamento espacial completo finalizado!');
-    
-  } catch (error) {
-    console.error('💥 Erro no processamento espacial:', error);
-    process.exit(1);
-  }
-}
-
+// Executar se chamado diretamente
 if (require.main === module) {
-  main();
+    const processador = new ProcessadorEspacialBrasil();
+    processador.executar()
+        .then(() => {
+            console.log('🎉 Processamento espacial concluído com sucesso!');
+            process.exit(0);
+        })
+        .catch(error => {
+            console.error('💥 Erro fatal no processamento:', error);
+            process.exit(1);
+        });
 }
 
-module.exports = { SpatialDataProcessor };
+module.exports = ProcessadorEspacialBrasil;
