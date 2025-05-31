@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-05-31T21:48:30.078Z",
+  "versao": "2.0.0-brasil-completo",
+  "estatisticas": {
+    "totalFocos": 0,
+    "focosComMunicipio": 0,
+    "focosSemMunicipio": 0,
+    "focosComBioma": 0,
+    "joinsRealizados": 0,
+    "tempoProcessamento": 24,
+    "municipios": {},
+    "estados": {},
+    "biomas": {},
+    "satelites": {}
+  },
+  "configuracao": {
+    "boundsBrasil": {
+      "north": 5.264877,
+      "south": -33.742156,
+      "east": -28.847894,
+      "west": -73.982817
+    },
+    "referenciasSpatiais": [
+      "municipios",
+      "biomas"
+    ]
+  }
+}

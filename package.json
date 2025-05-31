@@ -1,0 +1,38 @@
+{
+  "name": "dashboard-focos-calor-ma",
+  "version": "1.0.0",
+  "description": "Dashboard interativo para monitoramento de focos de calor no Maranhão",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 8080 -c-1",
+    "build": "node scripts/build.js",
+    "fetch-data": "node scripts/fetch-data.js",
+    "process-data": "node scripts/process-spatial-data.js",
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "chart.js": "^4.4.0",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^2.30.0",
+    "leaflet": "^1.9.4",
+    "papaparse": "^5.5.3",
+    "proj4": "^2.9.2",
+    "shapefile": "^0.6.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "http-server": "^14.1.1",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "dashboard",
+    "gis",
+    "maranhao",
+    "focos-calor",
+    "javascript",
+    "leaflet"
+  ],
+  "author": "Seu Nome Aqui",
+  "license": "MIT"
+}
