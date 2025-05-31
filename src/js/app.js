@@ -5,6 +5,7 @@ class DashboardFocosCalor {
         this.dadosFiltrados = [];
         this.filtros = {
             municipio: 'todos',
+            estado: 'todos',
             bioma: 'todos',
             satelite: 'todos',
             periodo: 'todos'
@@ -112,6 +113,7 @@ class DashboardFocosCalor {
         
         // Popular dropdowns
         this.popularFiltroMunicipios();
+        this.popularFiltroEstados();
         this.popularFiltroBiomas();
         this.popularFiltroSatelites();
     }
@@ -122,6 +124,7 @@ class DashboardFocosCalor {
         // Eventos dos filtros
         const elementos = [
             { id: 'filtro-municipio', propriedade: 'municipio' },
+            { id: 'filtro-estado', propriedade: 'estado' },
             { id: 'filtro-bioma', propriedade: 'bioma' },
             { id: 'filtro-satelite', propriedade: 'satelite' },
             { id: 'filtro-periodo', propriedade: 'periodo' }
@@ -152,6 +155,10 @@ class DashboardFocosCalor {
         // Aplicar cada filtro
         if (this.filtros.municipio !== 'todos') {
             dadosFiltrados = dadosFiltrados.filter(d => d.municipio === this.filtros.municipio);
+        }
+
+        if (this.filtros.estado !== 'todos') {
+            dadosFiltrados = dadosFiltrados.filter(d => d.estado === this.filtros.estado);
         }
 
         if (this.filtros.bioma !== 'todos') {
@@ -208,6 +215,21 @@ class DashboardFocosCalor {
         });
     }
 
+    popularFiltroEstados() {
+        const select = document.getElementById('filtro-estado');
+        if (!select) return;
+
+        const estados = [...new Set(this.dados.map(d => d.estado).filter(Boolean))].sort();
+        
+        select.innerHTML = '<option value="todos">Todos os Estados</option>';
+        estados.forEach(estado => {
+            const option = document.createElement('option');
+            option.value = estado;
+            option.textContent = estado;
+            select.appendChild(option);
+        });
+    }
+
     popularFiltroBiomas() {
         const select = document.getElementById('filtro-bioma');
         if (!select) return;
@@ -241,13 +263,14 @@ class DashboardFocosCalor {
     resetarFiltros() {
         this.filtros = {
             municipio: 'todos',
+            estado: 'todos',
             bioma: 'todos',
             satelite: 'todos',
             periodo: 'todos'
         };
 
         // Resetar selects
-        ['filtro-municipio', 'filtro-bioma', 'filtro-satelite', 'filtro-periodo'].forEach(id => {
+        ['filtro-municipio', 'filtro-estado', 'filtro-bioma', 'filtro-satelite', 'filtro-periodo'].forEach(id => {
             const elemento = document.getElementById(id);
             if (elemento) elemento.selectedIndex = 0;
         });
@@ -273,17 +296,20 @@ class DashboardFocosCalor {
             return {
                 total: 0,
                 municipioLider: 'N/A',
+                estadoLider: 'N/A',
                 biomaPredominante: 'N/A',
                 satelitePrincipal: 'N/A'
             };
         }
 
         const municipios = {};
+        const estados = {};
         const biomas = {};
         const satelites = {};
 
         dados.forEach(d => {
             municipios[d.municipio] = (municipios[d.municipio] || 0) + 1;
+            estados[d.estado] = (estados[d.estado] || 0) + 1;
             biomas[d.bioma] = (biomas[d.bioma] || 0) + 1;
             satelites[d.satelite] = (satelites[d.satelite] || 0) + 1;
         });
@@ -291,6 +317,7 @@ class DashboardFocosCalor {
         return {
             total: dados.length,
             municipioLider: Object.entries(municipios).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A',
+            estadoLider: Object.entries(estados).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A',
             biomaPredominante: Object.entries(biomas).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A',
             satelitePrincipal: Object.entries(satelites).sort(([,a], [,b]) => b - a)[0]?.[0] || 'N/A'
         };
@@ -347,20 +374,44 @@ class DashboardFocosCalor {
 
     // Dados de exemplo para fallback
     gerarDadosExemplo() {
-        console.log('🎲 Gerando dados de exemplo...');
+        console.log('🎲 Gerando dados de exemplo para Brasil...');
         
-        const municipios = ['Balsas', 'Timon', 'Caxias', 'Imperatriz', 'São Luís'];
-        const biomas = ['Cerrado', 'Caatinga', 'Amazônia'];
-        const satelites = ['NOAA-21', 'NPP-375D', 'GOES-19'];
+        const regioesBrasil = [
+            // Norte - Amazônia
+            { municipio: 'Manaus', estado: 'AM', lat: -3.1, lng: -60.0, bioma: 'Amazônia' },
+            { municipio: 'Altamira', estado: 'PA', lat: -3.2, lng: -52.2, bioma: 'Amazônia' },
+            { municipio: 'Porto Velho', estado: 'RO', lat: -8.8, lng: -63.9, bioma: 'Amazônia' },
+            
+            // Nordeste - Cerrado/Caatinga
+            { municipio: 'Balsas', estado: 'MA', lat: -7.5, lng: -46.0, bioma: 'Cerrado' },
+            { municipio: 'Barreiras', estado: 'BA', lat: -12.2, lng: -45.0, bioma: 'Cerrado' },
+            { municipio: 'Petrolina', estado: 'PE', lat: -9.4, lng: -40.5, bioma: 'Caatinga' },
+            
+            // Centro-Oeste - Cerrado/Pantanal
+            { municipio: 'Sorriso', estado: 'MT', lat: -12.5, lng: -55.7, bioma: 'Cerrado' },
+            { municipio: 'Corumbá', estado: 'MS', lat: -19.0, lng: -57.7, bioma: 'Pantanal' },
+            
+            // Sudeste - Mata Atlântica/Cerrado
+            { municipio: 'Ribeirão Preto', estado: 'SP', lat: -21.2, lng: -47.8, bioma: 'Cerrado' },
+            { municipio: 'Uberaba', estado: 'MG', lat: -19.7, lng: -47.9, bioma: 'Cerrado' },
+            
+            // Sul - Mata Atlântica
+            { municipio: 'Ponta Grossa', estado: 'PR', lat: -25.1, lng: -50.2, bioma: 'Mata Atlântica' }
+        ];
+        
+        const satelites = ['NOAA-21', 'NPP-375D', 'GOES-19', 'TERRA_M-T', 'METOP-C'];
         
         const dados = [];
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 200; i++) {
+            const regiao = regioesBrasil[Math.floor(Math.random() * regioesBrasil.length)];
+            
             dados.push({
                 id: i + 1,
-                latitude: -3.5 + (Math.random() - 0.5) * 6,
-                longitude: -45.0 + (Math.random() - 0.5) * 8,
-                municipio: municipios[Math.floor(Math.random() * municipios.length)],
-                bioma: biomas[Math.floor(Math.random() * biomas.length)],
+                latitude: regiao.lat + (Math.random() - 0.5) * 2,
+                longitude: regiao.lng + (Math.random() - 0.5) * 2,
+                municipio: regiao.municipio,
+                estado: regiao.estado,
+                bioma: regiao.bioma,
                 satelite: satelites[Math.floor(Math.random() * satelites.length)],
                 data_hora: new Date().toISOString(),
                 confianca: Math.floor(Math.random() * 100)
