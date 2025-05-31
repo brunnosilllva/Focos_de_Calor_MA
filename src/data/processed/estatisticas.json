@@ -1,44 +1,12 @@
 {
-  "total_focos": 3260,
-  "por_municipio": {
-    "Balsas": 1640,
-    "Caxias": 764,
-    "Timon": 472,
-    "Imperatriz": 217,
-    "Chapadinha": 82,
-    "Açailândia": 43,
-    "Codó": 19,
-    "Santa Inês": 18,
-    "São Luís": 4,
-    "Bacabal": 1
-  },
-  "por_bioma": {
-    "Cerrado": 3102,
-    "Caatinga": 111,
-    "Amazônia": 47
-  },
-  "por_periodo_temporal": {
-    "Última Semana": 1670,
-    "Hoje": 1590
-  },
-  "por_periodo_dia": {
-    "Desconhecido": 3260
-  },
-  "por_satelite": {
-    "GOES-19": 1863,
-    "NOAA-20": 515,
-    "NOAA-21": 287,
-    "NPP-375": 246,
-    "NPP-375D": 177,
-    "AQUA_M-T": 109,
-    "TERRA_M-T": 56,
-    "AQUA_M-M": 7
-  },
-  "ultima_atualizacao": "2025-05-30T20:09:30.358Z",
-  "resumo_temporal": {
-    "hoje": 1590,
-    "ultima_semana": 1670,
-    "ultimo_mes": 0,
-    "antigos": 0
-  }
+  "totalFocos": 0,
+  "focosComMunicipio": 0,
+  "focosSemMunicipio": 0,
+  "focosComBioma": 0,
+  "joinsRealizados": 0,
+  "tempoProcessamento": 0,
+  "municipios": {},
+  "estados": {},
+  "biomas": {},
+  "satelites": {}
 }
