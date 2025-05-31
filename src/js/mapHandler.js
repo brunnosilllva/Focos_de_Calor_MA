@@ -8,12 +8,12 @@ class MapHandler {
         this.markers = [];
         this.clusters = null;
         
-        // Configurações do mapa
+        // Configurações do mapa para Brasil completo
         this.config = {
-            centro: [-3.5, -45.0], // Centro do Maranhão
-            zoom: 7,
+            centro: [-14.2, -51.9], // Centro do Brasil
+            zoom: 4,
             maxZoom: 18,
-            minZoom: 5
+            minZoom: 3
         };
         
         // Estilos para diferentes tipos de focos
@@ -372,7 +372,7 @@ class MapHandler {
         );
     }
 
-    voltarParaMaranhao() {
+    voltarParaBrasil() {
         this.mapa.setView(this.config.centro, this.config.zoom);
     }
 
